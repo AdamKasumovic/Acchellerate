@@ -18,6 +18,14 @@ add_to_gitattributes() {
     fi
 }
 
+add_files_and_commit() {
+    while IFS= read -r file; do
+        git add "$file"
+    done < "$TEMP_FILE"
+    git commit -m "Adding chunk $COMMIT_NUM of files"
+    git push origin main
+}
+
 # Iterate over each file in the directory (and its subdirectories)
 find "$DIR" -type f | while read file; do
   
@@ -36,12 +44,10 @@ find "$DIR" -type f | while read file; do
     # Add the file size to the total size
     TOTAL_SIZE=$((TOTAL_SIZE + FILE_SIZE))
 
-    # If the total size is greater than 10MB (i.e., 10240KB), commit and push the files
-    if [ "$TOTAL_SIZE" -gt 10240 ]; then
+    # If the total size is greater than 50MB (i.e., 51200KB), commit and push the files
+    if [ "$TOTAL_SIZE" -gt 51200 ]; then
       echo "Committing and pushing chunk $COMMIT_NUM..."
-      git add $(<"$TEMP_FILE")
-      git commit -m "Adding chunk $COMMIT_NUM of files"
-      git push origin main
+      add_files_and_commit
       COMMIT_NUM=$((COMMIT_NUM+1))
 
       # Reset the total size and the temp file
@@ -57,9 +63,7 @@ done
 # Handle any remaining files
 if [ "$TOTAL_SIZE" -gt 0 ]; then
   echo "Committing and pushing final chunk $COMMIT_NUM..."
-  git add $(<"$TEMP_FILE")
-  git commit -m "Adding final chunk $COMMIT_NUM of files"
-  git push origin main
+  add_files_and_commit
 fi
 
 # Cleanup
