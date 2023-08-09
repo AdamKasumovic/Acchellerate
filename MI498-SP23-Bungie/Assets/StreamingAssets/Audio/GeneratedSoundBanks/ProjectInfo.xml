@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="MI498-SP23-Bungie_WwiseProject" GUID="{866F48E8-EB7A-4A77-A38B-921262EE9FAC}" Generator="2022.1.2.8150"/>
+	<CacheRoot>../../../../MI498-SP23-Bungie_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{902CAD0A-56DC-4C12-BFB6-77E35970215D}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../MI498-SP23-Bungie_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{30FDD490-5F74-495C-BC27-AFCEB7C308FC}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../MI498-SP23-Bungie_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{4A557836-E071-41AE-9902-63359A1134CC}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{20A1A5B3-C599-493F-3E4B-5CEC70142710}</FileHash>
+</ProjectInfo>
