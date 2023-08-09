@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad5838f7516046498a5ce8950f9ff44, type: 3}
+  m_Name: D8418B47-2A69-46D8-B97E-C366CF49B0AD
+  m_EditorClassIdentifier: 
+  objectName: MusicState
+  id: 1021618141
+  guid: D8418B47-2A69-46D8-B97E-C366CF49B0AD
