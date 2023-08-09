@@ -1,0 +1,3 @@
+rep "MI498-SP23-Bungie@GameDev_at_MSU@cloud"
+  path "/"
+    smartbranch "/main"
