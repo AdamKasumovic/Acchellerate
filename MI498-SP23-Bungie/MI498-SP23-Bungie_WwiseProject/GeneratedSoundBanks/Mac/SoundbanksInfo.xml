@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{37307751-0AED-7224-FD35-67BC8BB386F1}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="640949982" Name="Speed"/>
+				<GameParameter Id="2415836739" Name="Volume"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1021618141" Name="MusicState">
+					<States>
+						<State Id="153585799" Name="BRank"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="782826392" Name="Default"/>
+						<State Id="1216448900" Name="ARank"/>
+						<State Id="1570785891" Name="ARankLevelComplete"/>
+						<State Id="2674757319" Name="DefaultLevelComplete"/>
+						<State Id="2729331502" Name="CRank"/>
+						<State Id="2740132969" Name="DRank"/>
+						<State Id="2805944725" Name="CRankLevelComplete"/>
+						<State Id="3195934671" Name="ZRank"/>
+						<State Id="3604647259" Name="MainMenu"/>
+						<State Id="3649428758" Name="ZRankLevelComplete"/>
+						<State Id="3689082510" Name="BRankLevelComplete"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3401398945" Name="TrackState">
+					<States>
+						<State Id="147420" Name="Track2"/>
+						<State Id="147423" Name="Track1"/>
+						<State Id="251412225" Name="Shop"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2033074619" Name="Track2LevelComplete"/>
+						<State Id="2754944934" Name="Track1LevelComplete"/>
+						<State Id="3604647259" Name="MainMenu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="1445037870" Name="MusicSwitch">
+					<GameParameterRef Id="640949982"/>
+					<Switches>
+						<Switch Id="782826392" Name="Default"/>
+						<Switch Id="1100754030" Name="All"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{432F65CE-ED3F-2939-6729-2D28618CF60F}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="91991997" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 1 Complete A Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 1 Complete A Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="199979841" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 2 D Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 2 D Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="224804180" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 1 C Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 1 C Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="235877040" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 2 B Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 2 B Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="258938728" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 1 A Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 1 A Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="283333686" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 2 Complete A Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 2 Complete A Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="292928007" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 2 A Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 2 A Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="339065431" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 1 Complete C Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 1 Complete C Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="340410571" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 1 Complete B Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 1 Complete B Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="382958651" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 1 B Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 1 B Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="387177178" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 2 Complete B Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 2 Complete B Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="431964494" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 1 Z Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 1 Z Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="453463643" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 2 C Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 2 C Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="527839406" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Salvation_in_Nowhere.wav</ShortName>
+					<CachePath>SFX/Salvation_in_Nowhere_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="535474979" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 2 Z Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 2 Z Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="589526469" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Loop 1 D Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Loop 1 D Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="779528907" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 1 Complete Z Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 1 Complete Z Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="844227655" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 2 Complete C Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 2 Complete C Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="913614350" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Title Screen With Radio Filter.wav</ShortName>
+					<CachePath>SFX/Title Screen With Radio Filter_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="957625946" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 2 Complete D Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 2 Complete D Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="989431019" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 1 Complete D Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 1 Complete D Rank_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1023498291" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Acchellerate Level 2 Complete Z Rank.wav</ShortName>
+					<CachePath>SFX/Acchellerate Level 2 Complete Z Rank_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3341137194" Name="MusicEvent" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3401398945" Id="147423"/>
+							<MediaRefs>
+								<MediaRef Id="224804180"/>
+								<MediaRef Id="258938728"/>
+								<MediaRef Id="382958651"/>
+								<MediaRef Id="431964494"/>
+								<MediaRef Id="589526469"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3401398945" Id="147420"/>
+							<MediaRefs>
+								<MediaRef Id="199979841"/>
+								<MediaRef Id="235877040"/>
+								<MediaRef Id="292928007"/>
+								<MediaRef Id="453463643"/>
+								<MediaRef Id="535474979"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3401398945" Id="2754944934"/>
+							<MediaRefs>
+								<MediaRef Id="91991997"/>
+								<MediaRef Id="339065431"/>
+								<MediaRef Id="340410571"/>
+								<MediaRef Id="779528907"/>
+								<MediaRef Id="989431019"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3401398945" Id="2033074619"/>
+							<MediaRefs>
+								<MediaRef Id="283333686"/>
+								<MediaRef Id="387177178"/>
+								<MediaRef Id="844227655"/>
+								<MediaRef Id="957625946"/>
+								<MediaRef Id="1023498291"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3401398945" Id="3604647259"/>
+							<MediaRefs>
+								<MediaRef Id="913614350"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3401398945" Id="251412225"/>
+							<MediaRefs>
+								<MediaRef Id="527839406"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="2415836739" Name="Volume"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3401398945" Name="TrackState">
+					<States>
+						<State Id="147420" Name="Track2"/>
+						<State Id="147423" Name="Track1"/>
+						<State Id="251412225" Name="Shop"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2033074619" Name="Track2LevelComplete"/>
+						<State Id="2754944934" Name="Track1LevelComplete"/>
+						<State Id="3604647259" Name="MainMenu"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B90A4F6F-1DE0-F2F6-9BCD-A9845A4938E2}</FileHash>
+</SoundBanksInfo>

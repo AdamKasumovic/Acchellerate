@@ -1,0 +1,36 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1445037870	MusicSwitch			\Default Work Unit\MusicSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	782826392	Default	MusicSwitch			
+	1100754030	All	MusicSwitch			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1021618141	MusicState			\Default Work Unit\MusicState	
+	3401398945	TrackState			\Default Work Unit\TrackState	
+
+State	ID	Name	State Group			Notes
+	153585799	BRank	MusicState			
+	748895195	None	MusicState			
+	782826392	Default	MusicState			
+	1216448900	ARank	MusicState			
+	1570785891	ARankLevelComplete	MusicState			
+	2674757319	DefaultLevelComplete	MusicState			
+	2729331502	CRank	MusicState			
+	2740132969	DRank	MusicState			
+	2805944725	CRankLevelComplete	MusicState			
+	3195934671	ZRank	MusicState			
+	3604647259	MainMenu	MusicState			
+	3649428758	ZRankLevelComplete	MusicState			
+	3689082510	BRankLevelComplete	MusicState			
+	147420	Track2	TrackState			
+	147423	Track1	TrackState			
+	748895195	None	TrackState			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
