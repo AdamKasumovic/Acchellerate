@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: df09dbe96b4d5cf488fec23e601cc519
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - SF Movie Poster Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 77008cc9c47d24849b902e9c9483e674, type: 3}
+  - {fileID: 12800000, guid: bb5ebeebb3a6e2e4886931c9c9a1b7d0, type: 3}
+  - {fileID: 12800000, guid: 01c76e77dacffaa499ce6a4cbf06379b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
