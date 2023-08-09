@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{12D5849F-4248-42D1-A950-CE2F882F0FCB}" SchemaVersion="110">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{12D5849F-4248-42D1-A950-CE2F882F0FCB}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="MusicState" ID="{D8418B47-2A69-46D8-B97E-C366CF49B0AD}">
+					<ChildrenList>
+						<State Name="None" ID="{95184549-93DA-4C9B-8E01-2FBEED66F289}"/>
+						<State Name="Default" ID="{0D005744-77D7-41B9-A067-86151B7522FF}"/>
+						<State Name="DRank" ID="{EA7AA9B4-DEB9-4E4B-847F-5624C5432F18}"/>
+						<State Name="CRank" ID="{616ABD57-314B-4043-981E-62ADCEDC804E}"/>
+						<State Name="BRank" ID="{D98D2C88-22AB-4169-A811-8A354DAC1402}"/>
+						<State Name="ARank" ID="{2C63417A-6B10-4593-8D6E-D538CEB35510}"/>
+						<State Name="ZRank" ID="{E7BA8622-22D2-4486-A13C-2355D758F485}"/>
+						<State Name="ARankLevelComplete" ID="{1474E5A7-15F3-4E14-9A19-84075C29B8AB}"/>
+						<State Name="BRankLevelComplete" ID="{D324E113-82AB-458E-9D30-0EE55DFDD97C}"/>
+						<State Name="CRankLevelComplete" ID="{E9D3D1BC-484D-48C7-837C-72071556063F}"/>
+						<State Name="DefaultLevelComplete" ID="{A4A1AFC9-2B81-4C35-B49A-B39ADC13B0C4}"/>
+						<State Name="ZRankLevelComplete" ID="{7E2FF111-D018-4CC3-A5F8-9AE6A1DDE56B}"/>
+						<State Name="MainMenu" ID="{452838C4-D935-4E60-B74C-DF9A5A15DFA0}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{95184549-93DA-4C9B-8E01-2FBEED66F289}"/>
+							<EndState Name="Default" ID="{0D005744-77D7-41B9-A067-86151B7522FF}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="TrackState" ID="{02C1CDFE-46C5-4BED-9EA7-80B5368FF468}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{90C46B03-913C-4FCF-88FE-446A98A6FAE2}"/>
+						<State Name="Track1" ID="{663553DE-C4E9-45CE-A4BB-A4F6B44FD8E3}"/>
+						<State Name="Track2" ID="{CEE9F259-BFDE-416E-A6EA-6F02B007F41A}"/>
+						<State Name="Track1LevelComplete" ID="{9E7E811B-183D-4A73-A5E5-56BAADA8400C}"/>
+						<State Name="Track2LevelComplete" ID="{F6B4E973-224A-4AE8-88A5-CA402D2F47B8}"/>
+						<State Name="MainMenu" ID="{E794E764-83D1-42D2-9F06-D185D627136B}"/>
+						<State Name="Shop" ID="{D0437BE4-63F7-4336-B061-FAC9CF588060}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

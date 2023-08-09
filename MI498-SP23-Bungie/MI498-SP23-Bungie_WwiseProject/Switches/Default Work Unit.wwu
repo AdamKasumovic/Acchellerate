@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{029AC63F-85F2-49A4-B315-A20D34696ABF}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{029AC63F-85F2-49A4-B315-A20D34696ABF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="MusicSwitch" ID="{561F9618-20A0-4D99-8862-F1297A98D203}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Default" ID="{BB9FE6FC-2CAC-4DBC-AA18-0FD8EA146964}"/>
+						<Switch Name="All" ID="{E98CE13C-1D07-4D33-8E90-7291DDB636CA}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Speed" ID="{76113349-FFD0-452B-810F-13FA8CDA46E6}"/>
+						<Curve Name="" ID="{72F42C4F-7F4B-4025-A80E-6EBE8584FBF0}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>50</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
