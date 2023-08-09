@@ -10,6 +10,14 @@ TEMP_FILE="temp_chunk_list.txt"
 TOTAL_SIZE=0
 COMMIT_NUM=1
 
+# Function to add file extension to .gitattributes for LFS tracking
+add_to_gitattributes() {
+    FILE_EXTENSION=".$1"
+    if ! grep -q "\*${FILE_EXTENSION} filter=lfs diff=lfs merge=lfs -text" .gitattributes; then
+        echo "*${FILE_EXTENSION} filter=lfs diff=lfs merge=lfs -text" >> .gitattributes
+    fi
+}
+
 # Iterate over each file in the directory (and its subdirectories)
 find "$DIR" -type f | while read file; do
   
@@ -18,6 +26,12 @@ find "$DIR" -type f | while read file; do
 
     # Get the size of the file in kilobytes
     FILE_SIZE=$(du -k "$file" | cut -f1)
+
+    # Check if the file size exceeds 50MB (i.e., 51200KB) and add its extension to .gitattributes
+    if [ "$FILE_SIZE" -gt 51200 ]; then
+        EXTENSION="${file##*.}"
+        add_to_gitattributes "$EXTENSION"
+    fi
 
     # Add the file size to the total size
     TOTAL_SIZE=$((TOTAL_SIZE + FILE_SIZE))
