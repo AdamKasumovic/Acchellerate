@@ -292,7 +292,7 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
-    - _VehiclePos: {r: 287.349, g: 15.945438, b: -381.0998, a: 0}
+    - _VehiclePos: {r: 26.249422, g: 0.9562307, b: 108.0701, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5258132095748440304
 MonoBehaviour:
