@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1530958310}
   m_IndirectSpecularColor: {r: 0.055225316, g: 0.059621457, b: 0.060319275, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: cb38fb4189666fe44baadd9c53b6e770, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: d73dc161562e8d34e87dc5dde1aabb8f, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -141,6 +141,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -280,6 +284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &3557882 stripped
@@ -305,6 +313,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -436,12 +448,94 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &25073972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1209000369518145762, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
   m_PrefabInstance: {fileID: 25073971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &44368402
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1215139300}
+    m_Modifications:
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -331.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.5077896
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 145.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 130.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273611434285703347, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_Name
+      value: Bulding_Silo01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273611434285703347, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+--- !u!4 &44368403 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+  m_PrefabInstance: {fileID: 44368402}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &48981768
 PrefabInstance:
@@ -461,6 +555,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -544,6 +642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -625,6 +727,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -756,6 +862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &102095663 stripped
@@ -763,16 +873,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1209000369518145762, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
   m_PrefabInstance: {fileID: 102095662}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &107387226
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1215139300}
+    m_Modifications:
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -393.28207
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.507801
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -394.9165
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 130.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273611434285703347, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_Name
+      value: Bulding_Silo01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273611434285703347, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+--- !u!4 &107387227 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+  m_PrefabInstance: {fileID: 107387226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &108036868
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -830,18 +1006,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &108036869 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 108036868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &113714458
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -899,8 +1084,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &113714459 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 113714458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &160786416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
@@ -911,11 +1105,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -961,18 +1155,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &170217126 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 170217125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &199555896
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -1030,8 +1233,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &199555897 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 199555896}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &219022600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
@@ -1051,7 +1263,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &222560797
 Transform:
@@ -1099,11 +1311,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1149,8 +1361,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &228695086 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 228695085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &244621975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
@@ -1174,6 +1395,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -1248,11 +1473,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -1310,8 +1535,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &265586956 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 265586955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &318034440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1322,6 +1556,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -1444,6 +1682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_SideGarage00 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6514267268939800259, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
 --- !u!4 &340759664 stripped
@@ -1469,6 +1711,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -1600,6 +1846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
 --- !u!4 &356322972 stripped
@@ -1624,7 +1874,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &365243258
 Transform:
@@ -1704,103 +1954,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365243257}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &376509678
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 376509679}
-  - component: {fileID: 376509682}
-  - component: {fileID: 376509681}
-  - component: {fileID: 376509680}
-  m_Layer: 0
-  m_Name: Cube (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &376509679
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376509678}
-  m_LocalRotation: {x: -0, y: -0.6800029, z: -0, w: 0.7332095}
-  m_LocalPosition: {x: -173.7, y: 8.5, z: 253.8}
-  m_LocalScale: {x: 20, y: 20, z: 35.442}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1215139300}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: -85.688, z: 0}
---- !u!65 &376509680
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376509678}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &376509681
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376509678}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &376509682
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376509678}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &378423170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1811,6 +1964,10 @@ PrefabInstance:
     - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp
+      objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
@@ -1867,6 +2024,14 @@ PrefabInstance:
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
@@ -1942,6 +2107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &380490066 stripped
@@ -1959,11 +2128,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2009,18 +2178,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &394089639 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 394089638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &419249911
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2066,8 +2244,83 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &419249912 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 419249911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &422104451
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1215139300}
+    m_Modifications:
+    - target: {fileID: 2373880227056407692, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_Name
+      value: Bulding_Silo00
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373880227056407692, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -383.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.507778
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -401.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+--- !u!4 &422104452 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+  m_PrefabInstance: {fileID: 422104451}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &424997142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,7 +2338,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &424997143
 Transform:
@@ -2170,11 +2423,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2220,8 +2473,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &465747144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 465747143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &467743976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2232,6 +2494,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -2309,6 +2575,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -2440,6 +2710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &571363209 stripped
@@ -2454,9 +2728,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573489959}
     m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleSquare00_Ramp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_RootOrder
@@ -2508,6 +2794,152 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
   m_PrefabInstance: {fileID: 585357879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &609106429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1215139300}
+    m_Modifications:
+    - target: {fileID: 930495754173847008, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821979016760434453, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325978041116744796, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3064444091818877108, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940724811192528006, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974975272745728178, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227347956789329989, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593512333991187414, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083310102304037585, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960234115332001733, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_Name
+      value: Building_Barn00
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960234115332001733, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204776095021781259, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316063516127495044, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477060848827745693, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -290.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.507744
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 182.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.44064385
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8976821
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 127.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512386183032123295, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549427168198005802, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099318103536822770, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078790426934789478, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8248619392263888012, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+--- !u!4 &609106430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6484288417935332735, guid: 0e66352de9ae5f242a0d612345e2ba61, type: 3}
+  m_PrefabInstance: {fileID: 609106429}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &638393038
 PrefabInstance:
@@ -2576,6 +3008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &638393039 stripped
@@ -2593,6 +3029,10 @@ PrefabInstance:
     - target: {fileID: 2373880227056407692, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
       propertyPath: m_Name
       value: Bulding_Silo00
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373880227056407692, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3150945039391460918, guid: 413fbe44c36fa4a458ed9b93bcbdb3aa, type: 3}
       propertyPath: m_RootOrder
@@ -2662,11 +3102,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -2694,7 +3134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.005617072
+      value: -0.0056170723
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2702,7 +3142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9999842
+      value: 0.99998426
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2724,18 +3164,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &649529104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 649529103}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &663408619
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalScale.x
@@ -2793,18 +3242,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &663408620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 663408619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &664374743
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -2862,8 +3320,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &664374744 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 664374743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &669736525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2931,6 +3398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &669736526 stripped
@@ -2948,6 +3419,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -3026,6 +3501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -3094,15 +3573,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp
       objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3144,8 +3627,99 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+--- !u!4 &689339316 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+  m_PrefabInstance: {fileID: 689339315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &702994170
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1215139300}
+    m_Modifications:
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -171.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 204.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 130.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273611434285703347, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_Name
+      value: Bulding_Silo01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273611434285703347, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+--- !u!4 &702994171 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1497074284255640073, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+  m_PrefabInstance: {fileID: 702994170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &704370206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3213,6 +3787,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &704370207 stripped
@@ -3238,6 +3816,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -3302,11 +3884,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -3364,8 +3946,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &710292418 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 710292417}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &726898286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3432,6 +4023,10 @@ PrefabInstance:
     - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
       propertyPath: m_Name
       value: Decor_Fence01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
@@ -3507,6 +4102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &775842063 stripped
@@ -3524,6 +4123,10 @@ PrefabInstance:
     - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
@@ -3581,6 +4184,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.801
       objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
 --- !u!1001 &799266396
@@ -3590,9 +4201,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573489959}
     m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleSquare00_Ramp (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_RootOrder
@@ -3655,6 +4278,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -3742,6 +4369,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -3873,6 +4504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bulding_Silo01
       objectReference: {fileID: 0}
+    - target: {fileID: 2273611434285703347, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5df5bbf00c5885442952306588daafea, type: 3}
 --- !u!4 &855898751 stripped
@@ -3898,6 +4533,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -3967,11 +4606,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4017,8 +4656,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &882390559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 882390558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &907256026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4037,6 +4685,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -4111,6 +4763,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -4237,6 +4893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &937511310 stripped
@@ -4261,7 +4921,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &947522882
 Transform:
@@ -4404,6 +5064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building_SideGarage00
       objectReference: {fileID: 0}
+    - target: {fileID: 6514267268939800259, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
 --- !u!4 &952891193 stripped
@@ -4418,9 +5082,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573489959}
     m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleSquare00_Ramp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_RootOrder
@@ -4552,6 +5228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bulding_Silo01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2273611434285703347, guid: 5df5bbf00c5885442952306588daafea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5df5bbf00c5885442952306588daafea, type: 3}
 --- !u!4 &970124069 stripped
@@ -4564,11 +5244,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalScale.x
@@ -4626,18 +5306,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &986865083 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 986865082}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1001078324
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -4695,8 +5384,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &1001078325 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 1001078324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1001503660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4715,6 +5413,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -4784,15 +5486,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_LocalScale.x
@@ -4846,8 +5552,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+--- !u!4 &1003199300 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+  m_PrefabInstance: {fileID: 1003199299}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1015685716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4858,6 +5577,10 @@ PrefabInstance:
     - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
@@ -4915,12 +5638,106 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
 --- !u!4 &1015685717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
   m_PrefabInstance: {fileID: 1015685716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1017042242
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1215139300}
+    m_Modifications:
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_Name
+      value: Decor_HaybaleRound00_Ramp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_RootOrder
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -216.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.86354315
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.039507937
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.498036
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.06850269
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 59.947
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 9.071
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+--- !u!4 &1017042243 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+  m_PrefabInstance: {fileID: 1017042242}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1028029067
 PrefabInstance:
@@ -4932,6 +5749,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -5010,6 +5831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -5078,11 +5903,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -5140,8 +5965,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &1095118165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 1095118164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1102138258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5149,9 +5983,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573489959}
     m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleSquare00_Ramp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_RootOrder
@@ -5271,6 +6117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1108144524 stripped
@@ -5288,6 +6138,10 @@ PrefabInstance:
     - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
@@ -5345,6 +6199,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
 --- !u!4 &1116740857 stripped
@@ -5370,6 +6232,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -5501,6 +6367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1139651377 stripped
@@ -5575,6 +6445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1150223851 stripped
@@ -5589,9 +6463,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573489959}
     m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleSquare00_Ramp (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_RootOrder
@@ -5649,11 +6535,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -5711,18 +6597,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &1162772530 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 1162772529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1173391058
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalScale.x
@@ -5780,8 +6675,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &1173391059 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 1173391058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1174278562
 GameObject:
   m_ObjectHideFlags: 0
@@ -5799,7 +6703,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1174278563
 Transform:
@@ -5898,7 +6802,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1215139300
 Transform:
@@ -5923,8 +6827,56 @@ Transform:
   - {fileID: 1287045207}
   - {fileID: 365243258}
   - {fileID: 1917874237}
-  - {fileID: 376509679}
   - {fileID: 1573489959}
+  - {fileID: 44368403}
+  - {fileID: 609106430}
+  - {fileID: 107387227}
+  - {fileID: 422104452}
+  - {fileID: 1281180165}
+  - {fileID: 1670914626}
+  - {fileID: 702994171}
+  - {fileID: 2056648363}
+  - {fileID: 2016556124}
+  - {fileID: 108036869}
+  - {fileID: 1844202588}
+  - {fileID: 265586956}
+  - {fileID: 2019613595}
+  - {fileID: 664374744}
+  - {fileID: 1001078325}
+  - {fileID: 1274517140}
+  - {fileID: 2114204763}
+  - {fileID: 1333426829}
+  - {fileID: 1095118165}
+  - {fileID: 1578990435}
+  - {fileID: 1162772530}
+  - {fileID: 2048820638}
+  - {fileID: 1687120253}
+  - {fileID: 710292418}
+  - {fileID: 113714459}
+  - {fileID: 649529104}
+  - {fileID: 1536340160}
+  - {fileID: 199555897}
+  - {fileID: 689339316}
+  - {fileID: 663408620}
+  - {fileID: 465747144}
+  - {fileID: 170217126}
+  - {fileID: 394089639}
+  - {fileID: 1720108040}
+  - {fileID: 228695086}
+  - {fileID: 1541985714}
+  - {fileID: 419249912}
+  - {fileID: 1839259036}
+  - {fileID: 1735802173}
+  - {fileID: 1331791592}
+  - {fileID: 882390559}
+  - {fileID: 1965029498}
+  - {fileID: 986865083}
+  - {fileID: 1571083471}
+  - {fileID: 1173391059}
+  - {fileID: 1950841002}
+  - {fileID: 1003199300}
+  - {fileID: 1366894245}
+  - {fileID: 1017042243}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5945,7 +6897,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1234271146
 Transform:
@@ -6044,6 +6996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -6126,6 +7082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -6194,11 +7154,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -6256,8 +7216,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &1274517140 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 1274517139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1275281845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6276,6 +7245,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -6340,6 +7313,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
   m_PrefabInstance: {fileID: 1275281845}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1281180164
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1215139300}
+    m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_Name
+      value: Decor_HaybaleSquare00_Ramp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.5077896
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -357.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2230737
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9748016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 154.221
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+--- !u!4 &1281180165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+  m_PrefabInstance: {fileID: 1281180164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1285234959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6358,6 +7405,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -6436,7 +7487,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1287045207
 Transform:
@@ -6490,6 +7541,7 @@ Transform:
   - {fileID: 353696822}
   - {fileID: 1001503661}
   - {fileID: 1262067434}
+  - {fileID: 1474234033}
   m_Father: {fileID: 1215139300}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6503,6 +7555,10 @@ PrefabInstance:
     - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
@@ -6548,6 +7604,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
 --- !u!4 &1306083889 stripped
@@ -6574,6 +7638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6592,7 +7660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -477.59
+      value: -462.7
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6600,7 +7668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -237.6
+      value: -306.8
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6642,11 +7710,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6692,18 +7760,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &1331791592 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 1331791591}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1333426828
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -6761,8 +7838,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &1333426829 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 1333426828}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1339992142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6773,6 +7859,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -6899,6 +7989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1353400043 stripped
@@ -6911,19 +8005,23 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1.5000001
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_LocalScale.y
@@ -6931,7 +8029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1.5000001
       objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6973,8 +8071,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+--- !u!4 &1366894245 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+  m_PrefabInstance: {fileID: 1366894244}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1382266826 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
@@ -6990,6 +8101,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -7066,7 +8181,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1394780325
 Transform:
@@ -7153,9 +8268,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573489959}
     m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleSquare00_Ramp (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_RootOrder
@@ -7275,6 +8402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1406121606 stripped
@@ -7300,6 +8431,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -7431,12 +8566,102 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1454877824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1209000369518145762, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
   m_PrefabInstance: {fileID: 1454877823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1474234032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1287045207}
+    m_Modifications:
+    - target: {fileID: 3162298364083863475, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c763a9a4c480e0445a9c140fc644cda7, type: 2}
+    - target: {fileID: 3162298364083863475, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: b96e3a37da59a024e8217f90a1d55f40, type: 2}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_Name
+      value: Foliage_Tree00 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -123.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 261.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+--- !u!4 &1474234033 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+  m_PrefabInstance: {fileID: 1474234032}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1488218323
 PrefabInstance:
@@ -7456,6 +8681,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -7586,6 +8815,10 @@ PrefabInstance:
     - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
       propertyPath: m_Name
       value: Decor_Fence01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
@@ -7781,11 +9014,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -7843,18 +9076,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &1536340160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 1536340159}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1541985713
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7900,8 +9142,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &1541985714 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 1541985713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1552184872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7912,6 +9163,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -7990,6 +9245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -8058,11 +9317,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalScale.x
@@ -8120,8 +9379,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &1571083471 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 1571083470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1573489958
 GameObject:
   m_ObjectHideFlags: 0
@@ -8136,7 +9404,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1573489959
 Transform:
@@ -8186,18 +9454,18 @@ Transform:
   - {fileID: 393498503}
   - {fileID: 817754607}
   m_Father: {fileID: 1215139300}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1578990434
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -8255,8 +9523,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &1578990435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 1578990434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1582460935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8324,6 +9601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1582460936 stripped
@@ -8341,6 +9622,10 @@ PrefabInstance:
     - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleRound00 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21175691193658275, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
       propertyPath: m_RootOrder
@@ -8497,6 +9782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -8579,6 +9868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -8649,9 +9942,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573489959}
     m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleSquare00_Ramp (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_RootOrder
@@ -8723,6 +10028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -8786,6 +10095,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
   m_PrefabInstance: {fileID: 1661152737}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1670914625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1215139300}
+    m_Modifications:
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_Name
+      value: Decor_HaybaleRound00_Ramp (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -421.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -348.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7031124
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7110787
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.646
+      objectReference: {fileID: 0}
+    - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+--- !u!4 &1670914626 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+  m_PrefabInstance: {fileID: 1670914625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1680178906
 GameObject:
   m_ObjectHideFlags: 0
@@ -8803,7 +10186,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1680178907
 Transform:
@@ -8889,11 +10272,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -8951,8 +10334,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &1687120253 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 1687120252}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1701142306
 GameObject:
   m_ObjectHideFlags: 0
@@ -9055,6 +10447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -9123,11 +10519,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9173,8 +10569,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &1720108040 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 1720108039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1721113968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9242,6 +10647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1721113969 stripped
@@ -9267,6 +10676,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -9350,6 +10763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -9423,11 +10840,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9473,8 +10890,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &1735802173 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 1735802172}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1765250812
 GameObject:
   m_ObjectHideFlags: 0
@@ -9492,7 +10918,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1765250813
 Transform:
@@ -9543,7 +10969,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 0f11ac715ded9e34ca8101f6fb341216, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9640,6 +11066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1795803605 stripped
@@ -9665,6 +11095,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -9740,6 +11174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -9784,6 +11222,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
 --- !u!4 &1813135252 stripped
@@ -9809,6 +11255,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -9878,11 +11328,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9928,18 +11378,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &1839259036 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 1839259035}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1844202587
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -9997,8 +11456,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &1844202588 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 1844202587}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1890112636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10066,6 +11534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1890112637 stripped
@@ -10095,7 +11567,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1917874237
 Transform:
@@ -10191,6 +11663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleRound00_Ramp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 181868499345688338, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 706485438384512424, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10247,6 +11723,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1265643460397635540, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464852305770542124, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbfe3cade598fcf4ea2fbf392a960246, type: 3}
 --- !u!4 &1927857715 stripped
@@ -10272,6 +11756,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -10341,11 +11829,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalScale.x
@@ -10403,8 +11891,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &1950841002 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 1950841001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1959686733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154980144557371340, guid: 93b16c57e91db174e81a7b35eee59cdd, type: 3}
@@ -10415,11 +11912,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10465,8 +11962,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_HaybaleSquare00 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2937523258014471565, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+--- !u!4 &1965029498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 139461016563323975, guid: f9e8918605ae70543b453aca30d881af, type: 3}
+  m_PrefabInstance: {fileID: 1965029497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1968036978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10485,6 +11991,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -10594,11 +12104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.026964152
+      value: -0.026964169
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0028356353
+      value: -0.0028356372
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -10626,11 +12136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266664966116, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.013117137
+      value: -0.0131172035
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266664966116, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0075369943
+      value: -0.0075370325
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266664966116, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -10738,11 +12248,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267033885782, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.02702688
+      value: -0.02702689
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267033885782, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0021291254
+      value: -0.002129126
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267033885782, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -10770,11 +12280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267072382064, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.026948057
+      value: -0.026948048
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267072382064, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.002964479
+      value: -0.0029644778
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267072382064, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -10822,11 +12332,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267426217601, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.013255919
+      value: -0.013256005
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267426217601, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00729012
+      value: -0.007290167
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267426217601, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -10870,7 +12380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267526318946, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.007953432
+      value: -0.007953431
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267526318946, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -10922,11 +12432,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.026964152
+      value: -0.026964162
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.002835635
+      value: -0.0028356358
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -11081,6 +12591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &1972243934 stripped
@@ -11154,6 +12668,10 @@ PrefabInstance:
     - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
       propertyPath: m_Name
       value: Decor_Fence01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
@@ -11229,6 +12747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!4 &2014676706 stripped
@@ -11254,6 +12776,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -11323,11 +12849,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -11385,18 +12911,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &2016556124 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 2016556123}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2019613594
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -11454,8 +12989,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &2019613595 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 2019613594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2022663601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11463,9 +13007,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573489959}
     m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleSquare00_Ramp (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_RootOrder
@@ -11537,6 +13093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_Tree00 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -11605,11 +13165,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -11667,8 +13227,95 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &2048820638 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 2048820637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2056648362
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1215139300}
+    m_Modifications:
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8250499
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -179.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 227.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5301151
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8479257
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -115.974
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514267268939800259, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_Name
+      value: Building_SideGarage00
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514267268939800259, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+--- !u!4 &2056648363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5849194317078070393, guid: 5c1316acfdc6bb24b9fd6f362fbc5180, type: 3}
+  m_PrefabInstance: {fileID: 2056648362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2061101465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11687,6 +13334,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -11758,9 +13409,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573489959}
     m_Modifications:
+    - target: {fileID: 835496668897188875, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 905323438380967227, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_Name
       value: Decor_HaybaleSquare00_Ramp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502387408108734089, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3022360353608244275, guid: 11cc3ad90c9cff348ad083176d1fb093, type: 3}
       propertyPath: m_RootOrder
@@ -11843,6 +13506,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -11974,6 +13641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence01
       objectReference: {fileID: 0}
+    - target: {fileID: 1985220757118102104, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6f79c8a142e55478b6b23aec4ef358, type: 3}
 --- !u!1001 &2114204762
@@ -11981,11 +13652,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1215139300}
     m_Modifications:
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
       propertyPath: m_LocalScale.x
@@ -12043,8 +13714,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Fence00 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4085409965321941696, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+--- !u!4 &2114204763 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3745194007138576506, guid: 4584a876a9882ae46a172246745e7ec4, type: 3}
+  m_PrefabInstance: {fileID: 2114204762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2115963309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12063,6 +13743,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -12145,6 +13829,10 @@ PrefabInstance:
     - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_Name
       value: Foliage_Tree00 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522450339345981030, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4299127054053115100, guid: 0270ecefa90f1754299e374623cc1c07, type: 3}
       propertyPath: m_RootOrder
@@ -12277,6 +13965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Gravestone01
       objectReference: {fileID: 0}
+    - target: {fileID: 3815324543308078294, guid: 7f6dd239c8ece45478cb90e6484ad111, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4591720921739642476, guid: 7f6dd239c8ece45478cb90e6484ad111, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -12395,6 +14087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Decor_Gravestone00
       objectReference: {fileID: 0}
+    - target: {fileID: 5500364127974199907, guid: 50c072b0cca30324482438eff65de8c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50c072b0cca30324482438eff65de8c6, type: 3}
 --- !u!4 &674632568521026172 stripped
@@ -12412,6 +14108,10 @@ PrefabInstance:
     - target: {fileID: 2444876358801674852, guid: 081ae0b998cbc0049832e0e0e11a4ca2, type: 3}
       propertyPath: m_Name
       value: Decor_Gravestone02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444876358801674852, guid: 081ae0b998cbc0049832e0e0e11a4ca2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3073181955918891230, guid: 081ae0b998cbc0049832e0e0e11a4ca2, type: 3}
       propertyPath: m_RootOrder
