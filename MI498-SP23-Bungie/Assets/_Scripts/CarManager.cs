@@ -670,7 +670,6 @@ public class CarManager : MonoBehaviour
             }
             else if (boost || (UpgradeUnlocks.horizontalBoosts > 0 && (leftBoostPressed || rightBoostPressed) && !(currentState == CarState.TiltingLeft || currentState == CarState.TiltingRight)))
             {
-                gotHitRecently = false;
                 if (horBoostTimer >= horBoostDuration)
                     SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.Boost);
                 meshTrail.DoFlashTrails();
@@ -730,7 +729,7 @@ public class CarManager : MonoBehaviour
         horBoostTimer += (boostRefreshing ? horBoostDuration/horBoostRecharge : 1) * Time.deltaTime;
         horBoostTimer = Mathf.Min(horBoostDuration, horBoostTimer);
 
-        if (!boost && wasBoost && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial))  // boost let go
+        if ((!boost && wasBoost && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial)) || (gotHitRecently && !boostRefreshing && horBoostTimer < horBoostDuration))  // boost let go
         {
             horBoostTimer = 0;
             boostRefreshing = true;
@@ -1071,6 +1070,8 @@ public class CarManager : MonoBehaviour
         {
             rb.velocity = new Vector3(Mathf.MoveTowards(rb.velocity.x, rb.velocity.normalized.x * carMaxSpeed / 3.6f, 0.5f), rb.velocity.y, Mathf.MoveTowards(rb.velocity.z, rb.velocity.normalized.z * carMaxSpeed / 3.6f, 100*Time.deltaTime/3.6f));
         }
+
+        gotHitRecently = false;
 
         LogInputs();
     }
