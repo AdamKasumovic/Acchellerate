@@ -678,7 +678,7 @@ public class CarManager : MonoBehaviour
                 if (boost)
                 {
                     horBoostSpeedMultiplier = Time.deltaTime;
-                    direction = transform.forward * (reverse ? -1 : 1);  // TODO: Handle when car crashes into wall, stop boost (gotHitRecently), handle rotation of car when boosting (nudge toward horizontal), handle vertical momentum loss when boost initialized
+                    direction = transform.forward * (reverse ? -1 : 1);  // TODO: handle rotation of car when boosting (nudge toward horizontal), handle vertical momentum loss when boost initialized
                 }
                 else if (leftBoostPressed)
                     direction = -transform.right;
@@ -729,7 +729,7 @@ public class CarManager : MonoBehaviour
         horBoostTimer += (boostRefreshing ? horBoostDuration/horBoostRecharge : 1) * Time.deltaTime;
         horBoostTimer = Mathf.Min(horBoostDuration, horBoostTimer);
 
-        if ((!boost && wasBoost && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial)) || (gotHitRecently && !boostRefreshing && horBoostTimer < horBoostDuration))  // boost let go
+        if ((!boost && wasBoost && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial)) || ((gotHitRecently || (!tornado && !isSpinning && GameManager.instance.gameState == GameManager.GameStates.play && (frontFlipTimer >= frontFlipCooldown && !(currentState == CarState.TiltingLeft || currentState == CarState.TiltingRight) && frontFlipPressed))) && !boostRefreshing && horBoostTimer < horBoostDuration))  // boost let go
         {
             horBoostTimer = 0;
             boostRefreshing = true;
