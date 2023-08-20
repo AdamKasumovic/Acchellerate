@@ -234,6 +234,9 @@ public class CarManager : MonoBehaviour
     public Transform startTunnel;
     public Transform endTunnel;
 
+    [HideInInspector]
+    public bool insideGravityField = false;
+
     public static CarManager Instance { get { return _instance; } }
     private void Awake()
     {
@@ -1095,7 +1098,7 @@ public class CarManager : MonoBehaviour
 
             rb.AddTorque(airborneRollSpeed * horizontalInput * transform.up + airbornePitchSpeed * verticalInput * transform.right, ForceMode.Acceleration);
         }
-        if (!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial)))
+        if ((!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial))) && !insideGravityField)
         {
             if (wasUpsideDown && !carController.isGrounded && Vector3.Dot(transform.up, Vector3.up) > 0)
                 rb.AddForce(4 * additionalGravity * rb.mass * Vector3.down);
@@ -1103,9 +1106,10 @@ public class CarManager : MonoBehaviour
                 rb.AddForce(additionalGravity * rb.mass * Vector3.down);
             rb.useGravity = true;
         }
-        else
+        else if (insideGravityField)
         {
             rb.useGravity = false;
+            rb.AddForce(4 * additionalGravity * rb.mass * -transform.up);
         }
 
         if (groundPoundKillIndicator)
