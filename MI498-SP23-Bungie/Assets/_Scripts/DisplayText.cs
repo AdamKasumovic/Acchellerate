@@ -13,7 +13,7 @@ public class DisplayText : MonoBehaviour
         box = GetComponent<TextMeshProUGUI>();
         if (flavorText == null && dataFile != null)
         {
-            flavorText = new string[12][];
+            flavorText = new string[99][];
             ReadData();
         }
     }
@@ -22,10 +22,16 @@ public class DisplayText : MonoBehaviour
         string[] lines = dataFile.text.Split('\n');
         for (int i = 0; i < lines.Length; i++)
         {
+            if (i >= flavorText.Length)  // Check if current index is within bounds of flavorText
+            {
+                Debug.LogWarning("More lines in dataFile than expected. Consider increasing the size of flavorText.");
+                break;  // exit the loop if you're trying to write beyond the end of the flavorText array
+            }
             string[] data = lines[i].Trim('\r').Split(',');
             flavorText[i] = data;
         }
     }
+
     public void DisplayGroundPoundFlavorText()
     {
         DisplayTextbox(flavorText[0][UpgradeUnlocks.groundPoundUnlockNum]);

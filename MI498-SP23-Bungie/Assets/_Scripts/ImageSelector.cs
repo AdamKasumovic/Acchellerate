@@ -25,9 +25,12 @@ public class ImageSelector : MonoBehaviour
     void Start()
     {
         instance = this;
-        image = imagego.GetComponent<Image>();
-        exitImage = exit.GetComponent<Image>();
-        text = exitSignText.GetComponent<TextMeshProUGUI>();
+        if (imagego != null)
+            image = imagego.GetComponent<Image>();
+        if (exit != null)
+            exitImage = exit.GetComponent<Image>();
+        if (exitSignText != null)
+            text = exitSignText.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
