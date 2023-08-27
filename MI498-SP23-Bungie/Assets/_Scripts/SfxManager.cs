@@ -87,8 +87,8 @@ public class SfxManager : MonoBehaviour
         }
         else if (instance != this)
         {
-            Destroy(gameObject);
-            Debug.LogError("Multiple SFXManagers in scene");
+            //Destroy(gameObject);
+            //Debug.LogError("Multiple SFXManagers in scene");
         }
         
         foreach (SfxMap map in maps)
