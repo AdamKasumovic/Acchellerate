@@ -281,10 +281,10 @@ public class CarManager : MonoBehaviour
         tornadoTime -= UpgradeUnlocks.groundPoundUnlockNum > 2 ? 0 : 2;
         if (!inTutorial)
         {
-            airbornePitchSpeed = UpgradeUnlocks.airControl > 0 ? airbornePitchSpeed : 0;
-            airborneRollSpeed = UpgradeUnlocks.airControl > 0 ? airborneRollSpeed : 0;
-            airbornePitchSpeed = UpgradeUnlocks.airControl > 1 ? airbornePitchSpeed : airbornePitchSpeed / 2f;
-            airborneRollSpeed = UpgradeUnlocks.airControl > 1 ? airborneRollSpeed : airborneRollSpeed / 2f;
+            //airbornePitchSpeed = UpgradeUnlocks.airControl > 0 ? airbornePitchSpeed : 0;
+            //airborneRollSpeed = UpgradeUnlocks.airControl > 0 ? airborneRollSpeed : 0;
+            //airbornePitchSpeed = UpgradeUnlocks.airControl > 1 ? airbornePitchSpeed : airbornePitchSpeed / 2f;
+            //airborneRollSpeed = UpgradeUnlocks.airControl > 1 ? airborneRollSpeed : airborneRollSpeed / 2f;
         }
         if (UpgradeUnlocks.tiltDuration == 0)
         {
@@ -304,48 +304,48 @@ public class CarManager : MonoBehaviour
         }
         if (!inTutorial)
         {
-            if (UpgradeUnlocks.jumpCooldown == 0)
-            {
-                vertBoostCooldown += 4;
-            }
-            else if (UpgradeUnlocks.jumpCooldown == 1)
-            {
-                vertBoostCooldown += 2;
-            }
-            if (UpgradeUnlocks.boostCooldown == 0)
-            {
-                horBoostRecharge += 2f;
-                horBoostDuration -= 1f;
-            }
-            else if (UpgradeUnlocks.boostCooldown == 1)
-            {
-                horBoostRecharge += 1f;
-                horBoostDuration -= 0.5f;
-            }
-            if (UpgradeUnlocks.flipCooldown == 0)
-            {
-                frontFlipCooldown += 2;
-            }
-            else if (UpgradeUnlocks.flipCooldown == 1)
-            {
-                frontFlipCooldown += 1;
-            }
-            if (UpgradeUnlocks.burnoutCooldown == 0)
-            {
-                spinCooldown += 4;
-            }
-            else if (UpgradeUnlocks.burnoutCooldown == 1)
-            {
-                spinCooldown += 2;
-            }
-            if (UpgradeUnlocks.tiltCooldown == 0)
-            {
-                tiltCooldown += 2;
-            }
-            else if (UpgradeUnlocks.tiltCooldown == 1)
-            {
-                tiltCooldown += 1;
-            }
+            //if (UpgradeUnlocks.jumpCooldown == 0)
+            //{
+            //    vertBoostCooldown += 4;
+            //}
+            //else if (UpgradeUnlocks.jumpCooldown == 1)
+            //{
+            //    vertBoostCooldown += 2;
+            //}
+            //if (UpgradeUnlocks.boostCooldown == 0)
+            //{
+            //    horBoostRecharge += 2f;
+            //    horBoostDuration -= 1f;
+            //}
+            //else if (UpgradeUnlocks.boostCooldown == 1)
+            //{
+            //    horBoostRecharge += 1f;
+            //    horBoostDuration -= 0.5f;
+            //}
+            //if (UpgradeUnlocks.flipCooldown == 0)
+            //{
+            //    frontFlipCooldown += 2;
+            //}
+            //else if (UpgradeUnlocks.flipCooldown == 1)
+            //{
+            //    frontFlipCooldown += 1;
+            //}
+            //if (UpgradeUnlocks.burnoutCooldown == 0)
+            //{
+            //    spinCooldown += 4;
+            //}
+            //else if (UpgradeUnlocks.burnoutCooldown == 1)
+            //{
+            //    spinCooldown += 2;
+            //}
+            //if (UpgradeUnlocks.tiltCooldown == 0)
+            //{
+            //    tiltCooldown += 2;
+            //}
+            //else if (UpgradeUnlocks.tiltCooldown == 1)
+            //{
+            //    tiltCooldown += 1;
+            //}
         }
         
         horBoostTimer = horBoostDuration;
@@ -669,10 +669,10 @@ public class CarManager : MonoBehaviour
             {
 
             }
-            else if (!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial)
-            {
+            //else if (!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial)
+            //{
 
-            }
+            //}
             else if (boost || (UpgradeUnlocks.horizontalBoosts > 0 && (leftBoostPressed || rightBoostPressed) && !(currentState == CarState.TiltingLeft || currentState == CarState.TiltingRight)))
             {
                 if (horBoostTimer >= horBoostDuration)
@@ -734,7 +734,12 @@ public class CarManager : MonoBehaviour
         horBoostTimer += (boostRefreshing ? horBoostDuration/horBoostRecharge : 1) * Time.deltaTime;
         horBoostTimer = Mathf.Min(horBoostDuration, horBoostTimer);
 
-        if ((!boost && wasBoost && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial)) || ((gotHitRecently || (!tornado && !isSpinning && GameManager.instance.gameState == GameManager.GameStates.play && (frontFlipTimer >= frontFlipCooldown && !(currentState == CarState.TiltingLeft || currentState == CarState.TiltingRight) && frontFlipPressed))) && !boostRefreshing && horBoostTimer < horBoostDuration))  // boost let go
+        //if ((!boost && wasBoost && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial)) || ((gotHitRecently || (!tornado && !isSpinning && GameManager.instance.gameState == GameManager.GameStates.play && (frontFlipTimer >= frontFlipCooldown && !(currentState == CarState.TiltingLeft || currentState == CarState.TiltingRight) && frontFlipPressed))) && !boostRefreshing && horBoostTimer < horBoostDuration))  // boost let go
+        //{
+        //    horBoostTimer = 0;
+        //    boostRefreshing = true;
+        //}
+        if ((!boost && wasBoost && !boostRefreshing) || ((gotHitRecently || (!tornado && !isSpinning && GameManager.instance.gameState == GameManager.GameStates.play && (frontFlipTimer >= frontFlipCooldown && !(currentState == CarState.TiltingLeft || currentState == CarState.TiltingRight) && frontFlipPressed))) && !boostRefreshing && horBoostTimer < horBoostDuration))  // boost let go
         {
             horBoostTimer = 0;
             boostRefreshing = true;
@@ -948,10 +953,10 @@ public class CarManager : MonoBehaviour
                 rb.angularVelocity = vertical >= 0 ? transform.right * 8f : -transform.right * 8f;
             else
             {
-                if (UpgradeUnlocks.barrelRolls > 0 || inTutorial)
+                //if (UpgradeUnlocks.barrelRolls > 0 || inTutorial)
                     rb.angularVelocity = horizontal >= 0 ? -transform.forward * 10f : transform.forward * 10f;
-                else
-                    rb.angularVelocity = vertical >= 0 ? transform.right * 8f : -transform.right * 8f;
+                //else
+                //    rb.angularVelocity = vertical >= 0 ? transform.right * 8f : -transform.right * 8f;
             }
             //}
             frontFlipTimer = 0f;
@@ -1100,7 +1105,8 @@ public class CarManager : MonoBehaviour
 
             rb.AddTorque(airborneRollSpeed * horizontalInput * transform.up + airbornePitchSpeed * verticalInput * transform.right, ForceMode.Acceleration);
         }
-        if ((!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial))) && !(insideGravityField && carSpeed >= minSpeedForGravityField))
+        //if ((!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial))) && !(insideGravityField && carSpeed >= minSpeedForGravityField))
+        if ((!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing)) && !(insideGravityField && carSpeed >= minSpeedForGravityField))
         {
             if (wasUpsideDown && !carController.isGrounded && Vector3.Dot(transform.up, Vector3.up) > 0)
                 rb.AddForce(4 * additionalGravity * rb.mass * Vector3.down);
