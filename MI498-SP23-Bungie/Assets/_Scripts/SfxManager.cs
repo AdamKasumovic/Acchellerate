@@ -69,7 +69,11 @@ public class SfxManager : MonoBehaviour
     public float gameAnnouncerVolume = 1f;
     
     public static bool countingDown = false;
-    
+
+    private bool initShop = false;
+
+    private string sceneName;
+
     //[SerializeField] private TextMeshProUGUI readyText;
     //[SerializeField] private TMP_FontAsset grungeFontAsset;
     //[SerializeField] private GameObject gameStartImage;
@@ -106,11 +110,12 @@ public class SfxManager : MonoBehaviour
         {
             Debug.LogError("No AudioSource attached to GameManager.");
         }
+
+        sceneName = SceneManager.GetActiveScene().name;
     }
 
     private IEnumerator Start()
     {
-        string sceneName = SceneManager.GetActiveScene().name;
         HashSet<string> countdownScenes = new HashSet<string> { "TutorialLevel", "Canyon_Main", "Canyon_CircleTrack", "Canyon_Arches", "Farm_Main" };  // scenes that should have countdowns
         if (sceneName == "MainMenu")
         {
@@ -170,6 +175,21 @@ public class SfxManager : MonoBehaviour
         // Reset the car volume so that it goes back to playing after the level is over. This should happen for any scene.
         if (GameManager.instance != null)
             GameManager.instance.volumeSettings.SetAudioChannelVolume("Car", 0);
+    }
+
+    private void Update()
+    {
+        if (!initShop)
+        {
+            if (sceneName == "ShopLevel")
+            {
+                Debug.Log("Shop");
+                Debug.Log($"AK Ambient: {AudioManager.instance.gameObject.GetComponentInChildren<AkAmbient>().gameObject}");
+                AkSoundEngine.PostEvent("MusicEvent", AudioManager.instance.gameObject.GetComponentInChildren<AkAmbient>().gameObject);
+                AudioManager.instance.SetState("Shop");
+            }
+            initShop = true;
+        }
     }
 
     // Have a certain percentage to play a specified sound effect
