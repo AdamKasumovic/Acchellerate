@@ -38,9 +38,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Rock04
   m_Shader: {fileID: -6465566751694194690, guid: 426f640a009e75942928da24b7be635b, type: 3}
-  m_ValidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
+  m_ValidKeywords: []
   m_InvalidKeywords:
+  - _DISABLE_SSR_TRANSPARENT
   - _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
@@ -78,7 +78,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Color:
-        m_Texture: {fileID: 2800000, guid: 1cff74dec4762574398a1f1fa9bad15b, type: 3}
+        m_Texture: {fileID: 2800000, guid: fc0987db5a4cdba499662da7fc732658, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMap:
@@ -110,11 +110,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetalAmbientDetailSmoothness:
-        m_Texture: {fileID: 2800000, guid: 03c353527c018b142986b5d05efaf897, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8151e2c039c039347a74be76b365ccc9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: 9f132bbc0caa2f943a8b80e4a24bb562, type: 3}
+        m_Texture: {fileID: 2800000, guid: 680b241953705774b955b64930163726, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -294,14 +294,14 @@ Material:
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
-    - _Dither_MinMax: {r: 10, g: 12.5, b: 0, a: 0}
+    - _Dither_MinMax: {r: 5, g: 10, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Emission_Color: {r: 0, g: 0, b: 0, a: 0}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _HSV_Offset: {r: 0, g: 1.05, b: 1, a: 0}
-    - _HSV_Offset_Random: {r: 2.5, g: 0.1, b: 0.15, a: 0}
+    - _HSV_Offset_Random: {r: 5, g: 2.5, b: 0.15, a: 0}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
