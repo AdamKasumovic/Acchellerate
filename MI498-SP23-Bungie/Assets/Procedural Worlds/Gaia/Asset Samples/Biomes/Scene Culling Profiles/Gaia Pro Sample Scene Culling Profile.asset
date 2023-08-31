@@ -24,20 +24,20 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   - 205
   - 1024
   - 1024
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
   - 0
   - 0
   - 0
@@ -54,8 +54,19 @@ MonoBehaviour:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Zombie
+  - ZombieRagdoll
+  - RCC
+  - RCC_WheelCollider
+  - RCC_DetachablePart
+  - RCC_Trailer
+  - RCC_Crasher
+  - VFX
+  - EnemyRespawnCollider
+  - PowerUps
+  - Environment
+  - SwoleZombie
+  - VR
   - PW_VFX
   - PW_Object_Small
   - PW_Object_Medium
@@ -68,19 +79,19 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Post Process
   m_shadowLayerDistances:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   - 0
   - 0
   - 0
@@ -93,17 +104,6 @@ MonoBehaviour:
   - 102
   - 512
   - 512
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
   - 0
   - 0
   - 0

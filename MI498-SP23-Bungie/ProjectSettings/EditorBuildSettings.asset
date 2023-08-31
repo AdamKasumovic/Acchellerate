@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/__Scenes/Release Scenes/OpenWorld_Test/OpenWorld_Test.unity
+    guid: 9c7963d85ddba104d82ba0e3c377ea1d
+  - enabled: 1
     path: Assets/__Scenes/Release Scenes/_MainMenu/MainMenu.unity
     guid: c69559c22f17fb3498f6a57b62133989
   - enabled: 1
