@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7462192880125363370}
   - component: {fileID: 1150146400}
   m_Layer: 0
-  m_Name: Zombie Spawn FX
+  m_Name: ZSpawn00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
