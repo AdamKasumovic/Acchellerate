@@ -1107,8 +1107,17 @@ public class CarManager : MonoBehaviour
                 rb.angularVelocity = Vector3.zero;
             float horizontalInput = horizontal;
             float verticalInput = vertical;
+
+            float offsetAngle = 0;
+            if (horizontalInput >= 0.3)
+                offsetAngle = 30;
+            else if (horizontalInput <= -0.3)
+                offsetAngle = -30;
+
+            // Calculate the target direction which is offsetAngle degrees clockwise of Vector3.up based on transform.forward
+            Vector3 targetDirection = Quaternion.AngleAxis(-offsetAngle, transform.forward) * Vector3.up;
             // Calculate the rotation needed to align transform.up with Vector3.up
-            Vector3 newUp = Vector3.RotateTowards(transform.up, Vector3.up, 720 * Mathf.Deg2Rad * Time.fixedDeltaTime, 0.0f);
+            Vector3 newUp = Vector3.RotateTowards(transform.up, targetDirection, 240 * Mathf.Deg2Rad * Time.fixedDeltaTime, 0.0f);
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, newUp) * transform.rotation;
 
             // Apply the rotation
