@@ -1103,10 +1103,17 @@ public class CarManager : MonoBehaviour
         }
         else if (!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing) // Handle it when the car is boosting
         {
+            if (supermanCamera.m_Priority != supermanCameraHighPriority)
+                rb.angularVelocity = Vector3.zero;
             float horizontalInput = horizontal;
             float verticalInput = vertical;
+            // Calculate the rotation needed to align transform.up with Vector3.up
+            Vector3 newUp = Vector3.RotateTowards(transform.up, Vector3.up, 720 * Mathf.Deg2Rad * Time.fixedDeltaTime, 0.0f);
+            Quaternion targetRotation = Quaternion.FromToRotation(transform.up, newUp) * transform.rotation;
 
-            rb.AddTorque(airborneRollSpeed * horizontalInput * transform.up + airbornePitchSpeed * verticalInput * transform.right, ForceMode.Acceleration);
+            // Apply the rotation
+            transform.rotation = targetRotation;
+            rb.AddTorque(airborneRollSpeed * horizontalInput * transform.up, ForceMode.Acceleration);
             supermanCamera.m_Priority = supermanCameraHighPriority;
         }
         if (!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing))
