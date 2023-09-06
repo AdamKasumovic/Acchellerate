@@ -193,6 +193,9 @@ public class CarManager : MonoBehaviour
     public CinemachineFreeLook airborneCamera;
     public int airborneCameraHighPriority = 14;
     public int airborneCameraLowPriority = 8;
+    public CinemachineFreeLook supermanCamera;
+    private int supermanCameraHighPriority = 16;
+    private int supermanCameraLowPriority = 8;
     [Tooltip("Shockwave VFX that plays upon impact from a ground pound.")]
     public GameObject gpImpactVFX;
 
@@ -1104,6 +1107,11 @@ public class CarManager : MonoBehaviour
             float verticalInput = vertical;
 
             rb.AddTorque(airborneRollSpeed * horizontalInput * transform.up + airbornePitchSpeed * verticalInput * transform.right, ForceMode.Acceleration);
+            supermanCamera.m_Priority = supermanCameraHighPriority;
+        }
+        else
+        {
+            supermanCamera.m_Priority = supermanCameraLowPriority;
         }
         //if ((!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing && !(!carController.isGrounded && UpgradeUnlocks.boostUnlockNum < 2 && !inTutorial))) && !(insideGravityField && carSpeed >= minSpeedForGravityField))
         if ((!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing)) && !(insideGravityField && carSpeed >= minSpeedForGravityField))
