@@ -1113,7 +1113,7 @@ public class CarManager : MonoBehaviour
 
             // Apply the rotation
             transform.rotation = targetRotation;
-            rb.AddTorque(airborneRollSpeed * horizontalInput * transform.up, ForceMode.Acceleration);
+            rb.AddTorque(airborneRollSpeed*0.75f * horizontalInput * transform.up, ForceMode.Acceleration);
             supermanCamera.m_Priority = supermanCameraHighPriority;
         }
         if (!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing))
