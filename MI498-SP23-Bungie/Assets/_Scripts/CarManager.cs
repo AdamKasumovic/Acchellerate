@@ -478,7 +478,7 @@ public class CarManager : MonoBehaviour
     void OnJump(InputValue input)
     {
         jump = input.isPressed && !autoDriving;
-        Debug.Log("JUMPED!");
+        //Debug.Log("JUMPED!");
     }
 
     bool frontFlip = false;
