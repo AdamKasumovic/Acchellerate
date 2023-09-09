@@ -686,7 +686,7 @@ public class CarManager : MonoBehaviour
                 if (boost)
                 {
                     horBoostSpeedMultiplier = Time.deltaTime;
-                    direction = transform.forward * (reverse ? -1 : 1);  // TODO: handle rotation of car when boosting (nudge toward horizontal), handle vertical momentum loss when boost initialized
+                    direction = transform.forward * (reverse ? -1 : 1);
                 }
                 else if (leftBoostPressed)
                     direction = -transform.right;
@@ -724,7 +724,8 @@ public class CarManager : MonoBehaviour
                     else
                     {
                         float horMagnitude = Mathf.Min(39f, Mathf.Max(horBoostStrength / 2f, rb.velocity.magnitude));
-                        rb.velocity = direction * (horMagnitude + horBoostStrength / 2f * horBoostSpeedMultiplier);
+                        Vector3 tempRBVelocity = direction * (horMagnitude + horBoostStrength / 2f * horBoostSpeedMultiplier);
+                        rb.velocity = new Vector3(tempRBVelocity.x, Mathf.Max(0,rb.velocity.y), tempRBVelocity.z);
                     }       
                 }
                 horBoostTimer = horBoostSpeedMultiplier == 1 ? 0 : horBoostTimer - 2*Time.deltaTime;
@@ -1178,6 +1179,7 @@ public class CarManager : MonoBehaviour
                 ++i;
             }
         }
+        // TODO: Make everything here a user setting called "landing assist"
         Vector3 localAngularVelocity = transform.InverseTransformDirection(rb.angularVelocity);
 
         // Calculate the "upside down" factor
