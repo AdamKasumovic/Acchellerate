@@ -21,15 +21,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Temp_Water
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: 4800000, guid: bcb8ab61b454e43759e4aed562a63ef0, type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _PW_SSS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -58,11 +58,31 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FoamTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalFadeMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalLayer0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalLayer1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalLayer2:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -76,6 +96,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaterDepthRamp:
+        m_Texture: {fileID: 2800000, guid: 963c350b718c6414e96f8c5692f060b1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -102,12 +126,29 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _EdgeWaterDist: 5
     - _EnvironmentReflections: 1
+    - _FoamDepth: 0.15
+    - _FoamStrength: 0.6
+    - _FoamTexTile: 256
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _NormalFadeDistance: 512
+    - _NormalFadeStart: 64
+    - _NormalLayer0Scale: 1
+    - _NormalLayer1Scale: 1
+    - _NormalLayer2Scale: 0.5
+    - _NormalMoveScale: 0.0003
+    - _NormalTile: 128
     - _OcclusionStrength: 1
+    - _PW_DstBlend: 0
+    - _PW_MainLightIntensity: 2.5121517
+    - _PW_SSS: 0
+    - _PW_SSSDistortion: 0.5
+    - _PW_SSSPower: 1
+    - _PW_SrcBlend: 1
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -116,11 +157,28 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _TransparentDepth: 8
+    - _TransparentMin: 0.45
+    - _WaveBackwashToggle: 1
+    - _WaveDirGlobal: 1
+    - _WaveLength: 64
+    - _WavePeakToggle: 1
+    - _WaveShoreClamp: 0.1
+    - _WaveSpeed: 0.4
+    - _WaveSteepness: 0.3
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - _AmbientColor: {r: 0.537093, g: 0.5752477, b: 0.72199243, a: 0.7449855}
     - _BaseColor: {r: 0.25055176, g: 0.3268242, b: 0.6415094, a: 1}
     - _Color: {r: 0.25055173, g: 0.32682416, b: 0.6415094, a: 1}
+    - _EdgeWaterColor: {r: 0.09999023, g: 0.09999023, b: 0.19999033, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _PW_MainLightColor: {r: 1, g: 0.9058824, b: 0.8000001, a: 1}
+    - _PW_MainLightDir: {r: -0, g: 0.707107, b: 0.7071067, a: 0}
+    - _PW_MainLightSpecular: {r: 0.09999997, g: 0.09999997, b: 0.09999997, a: 1}
+    - _PW_SSSTint: {r: 1, g: 1, b: 1, a: 1}
+    - _ReflectionColor: {r: 0.09999997, g: 0.11999995, b: 0.16999996, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _WaveDirection: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

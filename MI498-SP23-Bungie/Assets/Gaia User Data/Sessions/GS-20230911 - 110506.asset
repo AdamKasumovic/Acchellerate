@@ -1,0 +1,295 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e251860fcd970734c9f14ebd98a146c3, type: 3}
+  m_Name: GS-20230911 - 110506
+  m_EditorClassIdentifier: 
+  m_name: Session 20230911-110506
+  m_description: 'Rocking out at Creativity Central!
+
+
+    If you like Gaia please
+    consider rating it :)'
+  m_previewImage: {fileID: 0}
+  m_dateCreated: 9/11/2023 11:05:06 AM
+  m_terrainWidth: 1024
+  m_terrainDepth: 1024
+  m_terrainHeight: 1024
+  m_seaLevel: 20
+  m_spawnDensity: 0.8
+  m_isLocked: 0
+  m_previewImageBytes: 
+  m_previewImageWidth: 0
+  m_previewImageHeight: 0
+  m_operations:
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:07:41 AM
+    scriptableObjectAssetGUID: 24ce2d659604a654690049334bae1325
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 4k Island 2
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:08:53 AM
+    scriptableObjectAssetGUID: 61ffc2763db9009479237351f7a8ee6a
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:08:54 AM
+    scriptableObjectAssetGUID: c4c78e7e97ca51140b9db6e93a554d49
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Undo - 1 Terrains
+    m_operationType: 5
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:09:03 AM
+    scriptableObjectAssetGUID: b27812ebf9d2c1e40b6f285fd12c490c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Multiple Spawners (4)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:09:05 AM
+    scriptableObjectAssetGUID: d152b6fbf3f27ef44a9300c003021ffb
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 2k Island 1
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:09:40 AM
+    scriptableObjectAssetGUID: 825361376c862e048b052d759022e24a
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:09:41 AM
+    scriptableObjectAssetGUID: cab04c97f20ef594a9dc15f8662ff432
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Smooth - 2k Island 1
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:10:16 AM
+    scriptableObjectAssetGUID: 21ddb8512d6a7174090759269e311496
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:10:17 AM
+    scriptableObjectAssetGUID: b5a030db0ca06e74bba0bcdeeca9a12c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Undo - 1 Terrains
+    m_operationType: 5
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:13:16 AM
+    scriptableObjectAssetGUID: e0c089f46a4f22d4fb82d4087f9c435d
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Undo - 1 Terrains
+    m_operationType: 5
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:13:39 AM
+    scriptableObjectAssetGUID: 8a38b47f2e984054db0e2d239241e9e5
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 2k Island 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:14:37 AM
+    scriptableObjectAssetGUID: 2d40c5267e656434c8e15ee446a3e4a5
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:14:38 AM
+    scriptableObjectAssetGUID: 4f4c3534154df144682b3194187bca6c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Smooth - 2k Island 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:15:17 AM
+    scriptableObjectAssetGUID: 3b45503477375ef4897f4940f54c0ad0
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 110741
+    m_operationDateTime: 9/11/2023 11:15:18 AM
+    scriptableObjectAssetGUID: f77d10b0f370cfd4e9b154304245c33a
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 9/11/2023 11:17:04 AM
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 111704
+    m_operationDateTime: 9/11/2023 11:17:05 AM
+    scriptableObjectAssetGUID: d8746d33160458045a7bf2523b529063
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: BlendHeight - 2k Island 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 111704
+    m_operationDateTime: 9/11/2023 11:17:32 AM
+    scriptableObjectAssetGUID: a238beed87b61784086efa32e86053e6
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 111704
+    m_operationDateTime: 9/11/2023 11:17:33 AM
+    scriptableObjectAssetGUID: dffcc7c1162f4f943b25ef9e64cabcb1
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Undo - 1 Terrains
+    m_operationType: 5
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 111704
+    m_operationDateTime: 9/11/2023 11:18:00 AM
+    scriptableObjectAssetGUID: d6b49f9ed9a2bfe4395914b5b8d06ee8
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 9/11/2023 11:22:45 AM
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 1024'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 112245
+    m_operationDateTime: 9/11/2023 11:22:45 AM
+    scriptableObjectAssetGUID: 0180f88c846fc074bbe269238997e11c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  m_terrainMinMaxCache:
+  - guid: a96ac692167941d459913bfa6a2e30b2
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.2500038
+    max: 59.313404
+  - guid: 428d8e7294dc2204b94b2dcfe6c2795e
+    isWorldmap: 0
+    recalculate: 0
+    min: 0.2500038
+    max: 59.125904
+  - guid: 4fed296aad6af7b4eb426864d8fb85fe
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 52.125797
+  - guid: Worldmap
+    isWorldmap: 1
+    recalculate: 0
+    min: 0
+    max: 0
+  m_bakedMaskCacheEntries: []
+  m_worldBiomeMaskSettings: {fileID: 0}
