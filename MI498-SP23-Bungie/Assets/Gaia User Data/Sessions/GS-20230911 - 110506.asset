@@ -270,6 +270,25 @@ MonoBehaviour:
     sessionPlaybackState: 1
     m_terrainsFoldedOut: 0
     m_serializedExternalAction: 
+  - m_description: Spawning - Multiple Spawners (4)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230911 - 112245
+    - Terrain_(-1536.00, 0.00, -512.00)
+    - Terrain_(-1536.00, 0.00, 512.00)
+    - Terrain_(-512.00, 0.00, 512.00)
+    - Terrain_(512.00, 0.00, -512.00)
+    - Terrain_(-512.00, 0.00, -1536.00)
+    - Terrain_(512.00, 0.00, 512.00)
+    - Terrain_(512.00, 0.00, -1536.00)
+    - Terrain_(-1536.00, 0.00, -1536.00)
+    m_operationDateTime: 9/12/2023 10:35:00 AM
+    scriptableObjectAssetGUID: baf9259aade35cb46a5ac9d01efee614
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
   m_terrainMinMaxCache:
   - guid: a96ac692167941d459913bfa6a2e30b2
     isWorldmap: 0
@@ -285,11 +304,51 @@ MonoBehaviour:
     isWorldmap: 0
     recalculate: 0
     min: 0
-    max: 52.125797
+    max: 52.094543
   - guid: Worldmap
     isWorldmap: 1
     recalculate: 0
     min: 0
     max: 0
+  - guid: be0096a5a4347664dbe54c3fc3d3b0af
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 14.593973
+  - guid: 97887048fa8b3174099df3bee5d8c675
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 8.875135
+  - guid: 98b94b01bfb52a849a000ea651742d80
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 14.093966
+  - guid: 651c32fff463646419301772e91ad8a0
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 14.875227
+  - guid: f2062d3910590154c98fb2a494ae4ccc
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 11.750179
+  - guid: 7e3d1ac1b13d42f47beae1727ca23f40
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 13.281453
+  - guid: 8fa49e8743f8c984ea6a1051a4139e95
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 6.437598
+  - guid: 6244c1961be27134e8aab5ebde3261d7
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 11.750179
   m_bakedMaskCacheEntries: []
   m_worldBiomeMaskSettings: {fileID: 0}
