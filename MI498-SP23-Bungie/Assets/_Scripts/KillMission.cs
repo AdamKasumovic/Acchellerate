@@ -47,8 +47,25 @@ public class KillMission : SingleMission
 
         string progress = $"{KillCount}/{RequiredKills}";
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string enemyName = GetEnemyName(missionEnemyType);
 
-        MissionName = $"Kill {RequiredKills} enemies ({progress}).{timer}";
+        MissionName = $"Kill {RequiredKills} {enemyName} ({progress}).{timer}";
+    }
+
+    // Be sure to update this if new enemies are added
+    private string GetEnemyName(EnemyType type)
+    {
+        switch (type)
+        {
+            case EnemyType.regular:
+                return "regular zombies";
+            case EnemyType.swole:
+                return "swole zombies";
+            case EnemyType.balloon:
+                return "balloon zombies";
+            default:
+                return "enemies";
+        }
     }
 
     public override void Execute()
