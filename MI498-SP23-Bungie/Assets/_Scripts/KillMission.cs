@@ -48,11 +48,12 @@ public class KillMission : SingleMission
         string progress = $"{KillCount}/{RequiredKills}";
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
         string enemyName = GetEnemyName(missionEnemyType);
+        string killAction = GetKillAction(missionKillType);
 
-        MissionName = $"Kill {RequiredKills} {enemyName} ({progress}).{timer}";
+        MissionName = $"{killAction} {RequiredKills} {enemyName} ({progress}).{timer}";
     }
 
-    // Be sure to update this if new enemies are added
+    // Update this if new enemies added
     private string GetEnemyName(EnemyType type)
     {
         switch (type)
@@ -65,6 +66,30 @@ public class KillMission : SingleMission
                 return "balloon zombies";
             default:
                 return "enemies";
+        }
+    }
+
+    // Update this if new kill types added
+    private string GetKillAction(KillType type)
+    {
+        switch (type)
+        {
+            case KillType.frontFlip:
+                return "Flip kill";
+            case KillType.tilt:
+                return "Tilt kill";
+            case KillType.groundPound:
+                return "Ground pound";
+            case KillType.strafe:
+                return "Strafe kill";
+            case KillType.drift:
+                return "Drift kill";
+            case KillType.driving:
+                return "Drive kill";
+            case KillType.burnout:
+                return "Burnout kill";
+            default:
+                return "Kill";
         }
     }
 
