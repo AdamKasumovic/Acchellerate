@@ -19,6 +19,21 @@ public abstract class SingleMission : MonoBehaviour
 
     public bool IsActive { get; set; } = false;
 
+    [Header("Rewards")]
+    public bool DoPointMultiplication = false;
+    [Range(1, 100)]
+    public float PointMultiplier = 2.0f;
+    [Range(0, 1000000)]
+    public float PointMultiplierDuration = 30f;
+    public bool AddTokens = true;
+    [Range(0, 100)]
+    public int TokensToAdd = 1;
+    public bool DoSpeedBuff = false;
+    [Range(0, 1000)]
+    public float IncreaseToMaxSpeedInMPH = 60f;
+    [Range(0, 1000000)]
+    public float SpeedIncreaseDuration = 30f;
+
     protected virtual void Start()
     {
         if (UseTimer)
@@ -51,7 +66,21 @@ public abstract class SingleMission : MonoBehaviour
     {
         IsActive = false;
         IsCompleted = true;
+        
+        HandleRewards();
+        
         // Remove completed or failed missions
         Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
     }
+
+    void HandleRewards()
+    {
+        if (AddTokens)
+        {
+            UpgradeUnlocks.AddCredits(TokensToAdd);
+        }
+
+        // TODO: Implement the rest of the rewards here
+    }
+
 }
