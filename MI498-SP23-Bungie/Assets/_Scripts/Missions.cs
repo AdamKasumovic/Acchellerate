@@ -66,8 +66,7 @@ public class Missions : MonoBehaviour
 
     private void Update()
     {
-        // Remove completed or failed missions
-        activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
+
     }
 
     private void ScheduleNextRandomMission()

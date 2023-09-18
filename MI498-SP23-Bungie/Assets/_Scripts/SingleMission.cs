@@ -43,9 +43,15 @@ public abstract class SingleMission : MonoBehaviour
     public virtual void FailMission()
     {
         IsActive = false;
+        IsFailed = true;
+        // Remove completed or failed missions
+        Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
     }
     public virtual void CompleteMission()
     {
         IsActive = false;
+        IsCompleted = true;
+        // Remove completed or failed missions
+        Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
     }
 }
