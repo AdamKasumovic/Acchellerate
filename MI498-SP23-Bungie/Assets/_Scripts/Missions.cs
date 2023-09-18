@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 /// <summary>
 /// Class containing all SingleMissions for the level this script exists in. This should probably go on the car wherever Trigger collision is handled.
@@ -73,13 +74,28 @@ public class Missions : MonoBehaviour
         Invoke(nameof(ActivateRandomMission), nextInterval);
     }
 
+    private List<SingleMission> previouslyActivatedRandomMissions = new List<SingleMission>();
+
     private void ActivateRandomMission()
     {
         if (randomIntervalMissions.Count == 0 || activeMissions.Count >= maxActiveRandomMissions) return;
 
-        int randMissionIndex = Random.Range(0, randomIntervalMissions.Count);
-        SingleMission mission = randomIntervalMissions[randMissionIndex];
+        // Get missions that have not been previously activated
+        List<SingleMission> availableMissions = randomIntervalMissions.Except(previouslyActivatedRandomMissions).ToList();
+
+        // If all missions have been previously activated, clear the list and use all missions
+        if (availableMissions.Count == 0)
+        {
+            previouslyActivatedRandomMissions.Clear();
+            availableMissions = new List<SingleMission>(randomIntervalMissions);
+        }
+
+        int randMissionIndex = Random.Range(0, availableMissions.Count);
+        SingleMission mission = availableMissions[randMissionIndex];
         activeMissions.Add(mission);
+
+        // Add the activated mission to the previouslyActivated list
+        previouslyActivatedRandomMissions.Add(mission);
 
         ScheduleNextRandomMission();
     }
