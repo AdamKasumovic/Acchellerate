@@ -25,6 +25,9 @@ public abstract class SingleMission : MonoBehaviour
     public float PointMultiplier = 2.0f;
     [Range(0, 1000000)]
     public float PointMultiplierDuration = 30f;
+    public bool AddPoints = false;
+    [Range(0, 1000000000000)]
+    public float PointsToAdd = 100000f;
     public bool AddTokens = true;
     [Range(0, 100)]
     public int TokensToAdd = 1;
