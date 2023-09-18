@@ -15,7 +15,7 @@ public abstract class SingleMission : MonoBehaviour
     public bool UseTimer = false;
     public float MissionDuration = 0;  // Duration in seconds
 
-    private float timeRemaining;
+    protected float timeRemaining;
 
     protected virtual void Start()
     {
