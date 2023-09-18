@@ -57,7 +57,9 @@ public class Missions : MonoBehaviour
         for (int i = 0; i < numberOfStartMissionsToActivate && tempMissions.Count > 0; i++)
         {
             int randIndex = Random.Range(0, tempMissions.Count);
-            activeMissions.Add(tempMissions[randIndex]);
+            SingleMission tempMission = tempMissions[randIndex];
+            tempMission.IsActive = true; // Set the mission as active
+            activeMissions.Add(tempMission);
             tempMissions.RemoveAt(randIndex);
         }
     }
@@ -92,6 +94,7 @@ public class Missions : MonoBehaviour
 
         int randMissionIndex = Random.Range(0, availableMissions.Count);
         SingleMission mission = availableMissions[randMissionIndex];
+        mission.IsActive = true; // Set the mission as active
         activeMissions.Add(mission);
 
         // Add the activated mission to the previouslyActivated list
@@ -106,7 +109,9 @@ public class Missions : MonoBehaviour
         {
             if (entry.trigger == other)
             {
-                activeMissions.Add(entry.mission);
+                SingleMission triggerMission = entry.mission;
+                triggerMission.IsActive = true; // Set the mission as active
+                activeMissions.Add(triggerMission);
                 return;
             }
         }

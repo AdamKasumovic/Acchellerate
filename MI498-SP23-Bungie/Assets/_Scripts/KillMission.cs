@@ -104,12 +104,14 @@ public class KillMission : SingleMission
 
     public override void FailMission()
     {
+        base.FailMission();
         IsFailed = true;
         Debug.Log("Kill Mission Failed!");
     }
 
     public override void CompleteMission()
     {
+        base.CompleteMission();
         IsCompleted = true;
         Debug.Log("Kill Mission Completed!");
     }

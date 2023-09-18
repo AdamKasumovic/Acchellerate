@@ -17,6 +17,8 @@ public abstract class SingleMission : MonoBehaviour
 
     protected float timeRemaining;
 
+    public bool IsActive { get; set; } = false;
+
     protected virtual void Start()
     {
         if (UseTimer)
@@ -27,7 +29,7 @@ public abstract class SingleMission : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (UseTimer && !IsCompleted && !IsFailed)
+        if (UseTimer && !IsCompleted && !IsFailed && IsActive)
         {
             timeRemaining -= Time.deltaTime;
             if (timeRemaining <= 0)
@@ -38,6 +40,12 @@ public abstract class SingleMission : MonoBehaviour
     }
 
     public abstract void Execute();
-    public abstract void FailMission();
-    public abstract void CompleteMission();
+    public virtual void FailMission()
+    {
+        IsActive = false;
+    }
+    public virtual void CompleteMission()
+    {
+        IsActive = false;
+    }
 }
