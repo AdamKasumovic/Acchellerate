@@ -38,8 +38,17 @@ public class KillMission : SingleMission
     protected override void Start()
     {
         base.Start();
-        MissionName = $"Kill {RequiredKills} enemies";
         KillCount = 0;
+    }
+
+    protected override void Update()
+    {
+        base.Update();
+
+        string progress = $"{KillCount}/{RequiredKills}";
+        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+
+        MissionName = $"Kill {RequiredKills} enemies ({progress}).{timer}";
     }
 
     public override void Execute()
@@ -54,16 +63,12 @@ public class KillMission : SingleMission
     public override void FailMission()
     {
         IsFailed = true;
-        // Logic or events you want to trigger when the kill mission fails
-        // E.g., display a message to the player
         Debug.Log("Kill Mission Failed!");
     }
 
     public override void CompleteMission()
     {
         IsCompleted = true;
-        // Logic or events you want to trigger when the kill mission is completed
-        // E.g., display a message to the player
         Debug.Log("Kill Mission Completed!");
     }
 }

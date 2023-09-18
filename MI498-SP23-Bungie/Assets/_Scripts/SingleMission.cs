@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public abstract class SingleMission : MonoBehaviour
 {
-    public string MissionName { get; set; }
+    public string MissionName { get; set; }  // active mission MissionNames should be used for UI
     public bool IsCompleted { get; protected set; }
     public bool IsFailed { get; protected set; }
 
