@@ -77,10 +77,44 @@ public class EnemyStats : MonoBehaviour
         health -= damageTaken;
         if (health <= 0)
         {
+
+            bool frontFlipKill = CarManager.Instance.frontFlipKillIndicator;
+            bool tiltKill = CarManager.Instance.tiltKillIndicator;
+            bool groundPoundKill = CarManager.Instance.groundPoundKillIndicator;
+            bool strafeKill = CarManager.Instance.horBoostKillIndicator;
+            bool burnoutKill = CarManager.Instance.isSpinning;
+            bool driftKill;
+            if (!(frontFlipKill || tiltKill || groundPoundKill || strafeKill || burnoutKill) && (CarManager.currentState == CarManager.CarState.DriftingLeft || CarManager.currentState == CarManager.CarState.DriftingRight))
+            {
+                driftKill = true;
+            }
+            else
+            {
+                driftKill = false;
+            }
+            EnemyType thisEnemyType = EnemyType.regular;
             if (isSwole)
             {
                 CarManager.Instance.swoleKill = true;
+                thisEnemyType = EnemyType.swole;
             }
+
+            Missions missionsComponent = Missions.Instance;
+            if (frontFlipKill)
+                missionsComponent.RegisterKill(thisEnemyType, KillType.frontFlip);
+            if (tiltKill)
+                missionsComponent.RegisterKill(thisEnemyType, KillType.tilt);
+            if (groundPoundKill)
+                missionsComponent.RegisterKill(thisEnemyType, KillType.groundPound);
+            if (strafeKill)
+                missionsComponent.RegisterKill(thisEnemyType, KillType.strafe);
+            if (burnoutKill)
+                missionsComponent.RegisterKill(thisEnemyType, KillType.burnout);
+            if (driftKill)
+                missionsComponent.RegisterKill(thisEnemyType, KillType.drift);
+            if (!(frontFlipKill || tiltKill || groundPoundKill || strafeKill || burnoutKill || driftKill))
+                missionsComponent.RegisterKill(thisEnemyType, KillType.driving);
+
             //CarManager.numPoints += pointReward;
             // PUT THINGS THAT SHOULD BE DISABLED ON DEATH HERE
             //Destroy(gameObject.transform.GetChild(1).gameObject);

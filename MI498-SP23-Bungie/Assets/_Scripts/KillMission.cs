@@ -7,7 +7,6 @@ public enum EnemyType
 {
     regular,
     swole,
-    balloon,
     any
 }
 
@@ -51,6 +50,7 @@ public class KillMission : SingleMission
         string killAction = GetKillAction(missionKillType);
 
         MissionName = $"{killAction} {RequiredKills} {enemyName} ({progress}).{timer}";
+        Debug.Log(MissionName);
     }
 
     // Update this if new enemies added
@@ -62,8 +62,6 @@ public class KillMission : SingleMission
                 return "regular zombies";
             case EnemyType.swole:
                 return "swole zombies";
-            case EnemyType.balloon:
-                return "balloon zombies";
             default:
                 return "enemies";
         }
