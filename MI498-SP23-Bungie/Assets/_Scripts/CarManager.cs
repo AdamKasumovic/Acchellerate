@@ -22,6 +22,7 @@ public class CarManager : MonoBehaviour
     public static float carSpeed;  // Speed posted to all scripts at all times, can be used to calculate damages to zombies and car
     public static float carGas; // Gas posted to all scripts at all times
     public static float numPoints = 0; // Total points gathered posted to all scripts at all times
+    public static float pointMultiplier = 1f;
     public static float speedDamageFactor = .5f; // Scale factor to transform speed to how much damage the car takes colliding with obstacles posted to all scripts at all times 
     public static Vector3 heading; // Forward direction of car at all times
     public static float hitStun = .25f;
@@ -277,6 +278,7 @@ public class CarManager : MonoBehaviour
         carHealth = carMaxHealth;
         carGas = carMaxGas;
         numPoints = 0;
+        pointMultiplier = 1f;
         currentState = CarState.Idle;
         engineThrottle = 0.0f;
 

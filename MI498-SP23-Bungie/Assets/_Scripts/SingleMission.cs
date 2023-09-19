@@ -37,6 +37,9 @@ public abstract class SingleMission : MonoBehaviour
     [Range(0, 1000000)]
     public float SpeedIncreaseDuration = 30f;
 
+    private Coroutine pointMultiplierCoroutine;
+    private bool pointMultiplierActive = false;
+
     protected virtual void Start()
     {
         if (UseTimer)
@@ -83,7 +86,36 @@ public abstract class SingleMission : MonoBehaviour
             UpgradeUnlocks.AddCredits(TokensToAdd);
         }
 
+        if (AddPoints)
+        {
+            CarManager.numPoints += PointsToAdd;
+        }
+
+        if (DoPointMultiplication)
+        {
+            // If a multiplier is currently active, stop the current coroutine
+            if (pointMultiplierActive && pointMultiplierCoroutine != null)
+            {
+                StopCoroutine(pointMultiplierCoroutine);
+            }
+            CarManager.pointMultiplier = PointMultiplier;
+            pointMultiplierActive = true;
+
+            // Start the new coroutine and store its reference
+            pointMultiplierCoroutine = StartCoroutine(ResetPointMultiplierAfterDuration());
+        }
+
         // TODO: Implement the rest of the rewards here
+    }
+
+    private IEnumerator ResetPointMultiplierAfterDuration()
+    {
+        // Wait for the specified duration
+        yield return new WaitForSeconds(PointMultiplierDuration);
+
+        // Reset the multiplier
+        CarManager.pointMultiplier = 1f;
+        pointMultiplierActive = false;
     }
 
 }

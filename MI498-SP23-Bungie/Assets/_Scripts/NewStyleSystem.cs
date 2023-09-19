@@ -247,7 +247,7 @@ public class NewStyleSystem : MonoBehaviour
         }
         public void AddToTotalPoints(int p)
         {
-            totalPoints += p;
+            totalPoints += (int)(p * CarManager.pointMultiplier);
         }
         public float GetTimeLeft()
         {
@@ -416,7 +416,7 @@ public class NewStyleSystem : MonoBehaviour
 
         //realMultiplier = Mathf.Min(multiplier, maxMultiplier);
         timer = multiplierTime;
-        CarManager.numPoints += points;
+        CarManager.numPoints += points * CarManager.pointMultiplier;
     }
     public int AddPointsWithMultiplier(int points)
     {
@@ -425,7 +425,7 @@ public class NewStyleSystem : MonoBehaviour
         realMultiplier = Mathf.FloorToInt(Mathf.Pow(8*multiplier, .3333f));
         //realMultiplier = Mathf.Min(multiplier, maxMultiplier);
         timer = multiplierTime;
-        CarManager.numPoints += points;
+        CarManager.numPoints += points * CarManager.pointMultiplier;
         return points;
     }
     public void EndCombo()
