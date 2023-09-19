@@ -42,6 +42,7 @@ public abstract class SingleMission : MonoBehaviour
 
     private Coroutine speedBuffCoroutine;
     private bool speedBuffActive = false;
+    private float oldBoostDuration;
 
     protected virtual void Start()
     {
@@ -115,6 +116,8 @@ public abstract class SingleMission : MonoBehaviour
                 StopCoroutine(speedBuffCoroutine);
             }
             CarManager.speedBuff = IncreaseToMaxSpeedInMPH;
+            oldBoostDuration = CarManager.Instance.horBoostDuration;
+            CarManager.Instance.horBoostDuration = 1000000000f;
             speedBuffActive = true;
 
             speedBuffCoroutine = StartCoroutine(ResetSpeedBuffAfterDuration());
@@ -139,6 +142,7 @@ public abstract class SingleMission : MonoBehaviour
         // Reset the multiplier
         CarManager.speedBuff = 0f;
         speedBuffActive = false;
+        CarManager.Instance.horBoostDuration = oldBoostDuration;
     }
 
 }
