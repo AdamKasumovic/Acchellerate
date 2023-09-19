@@ -23,6 +23,7 @@ public class CarManager : MonoBehaviour
     public static float carGas; // Gas posted to all scripts at all times
     public static float numPoints = 0; // Total points gathered posted to all scripts at all times
     public static float pointMultiplier = 1f;
+    public static float speedBuff = 0f;
     public static float speedDamageFactor = .5f; // Scale factor to transform speed to how much damage the car takes colliding with obstacles posted to all scripts at all times 
     public static Vector3 heading; // Forward direction of car at all times
     public static float hitStun = .25f;
@@ -279,6 +280,7 @@ public class CarManager : MonoBehaviour
         carGas = carMaxGas;
         numPoints = 0;
         pointMultiplier = 1f;
+        speedBuff = 0f;
         currentState = CarState.Idle;
         engineThrottle = 0.0f;
 
@@ -1082,7 +1084,7 @@ public class CarManager : MonoBehaviour
 
         // Max horizontal speed cap
         Vector3 horizontalVelocity = new(rb.velocity.x, 0, rb.velocity.z);
-        if (horizontalVelocity.magnitude > carMaxSpeed/3.6f)  // 3.6f is conversion rate
+        if (horizontalVelocity.magnitude > (carMaxSpeed + speedBuff)/3.6f)  // 3.6f is conversion rate
         {
             rb.velocity = new Vector3(Mathf.MoveTowards(rb.velocity.x, rb.velocity.normalized.x * carMaxSpeed / 3.6f, 0.5f), rb.velocity.y, Mathf.MoveTowards(rb.velocity.z, rb.velocity.normalized.z * carMaxSpeed / 3.6f, 100*Time.deltaTime/3.6f));
         }

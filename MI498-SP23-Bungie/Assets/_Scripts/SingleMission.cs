@@ -40,6 +40,9 @@ public abstract class SingleMission : MonoBehaviour
     private Coroutine pointMultiplierCoroutine;
     private bool pointMultiplierActive = false;
 
+    private Coroutine speedBuffCoroutine;
+    private bool speedBuffActive = false;
+
     protected virtual void Start()
     {
         if (UseTimer)
@@ -105,7 +108,17 @@ public abstract class SingleMission : MonoBehaviour
             pointMultiplierCoroutine = StartCoroutine(ResetPointMultiplierAfterDuration());
         }
 
-        // TODO: Implement the rest of the rewards here
+        if (DoSpeedBuff)
+        {
+            if (speedBuffActive && speedBuffCoroutine != null)
+            {
+                StopCoroutine(speedBuffCoroutine);
+            }
+            CarManager.speedBuff = IncreaseToMaxSpeedInMPH;
+            speedBuffActive = true;
+
+            speedBuffCoroutine = StartCoroutine(ResetSpeedBuffAfterDuration());
+        }
     }
 
     private IEnumerator ResetPointMultiplierAfterDuration()
@@ -116,6 +129,16 @@ public abstract class SingleMission : MonoBehaviour
         // Reset the multiplier
         CarManager.pointMultiplier = 1f;
         pointMultiplierActive = false;
+    }
+
+    private IEnumerator ResetSpeedBuffAfterDuration()
+    {
+        // Wait for the specified duration
+        yield return new WaitForSeconds(SpeedIncreaseDuration);
+
+        // Reset the multiplier
+        CarManager.speedBuff = 0f;
+        speedBuffActive = false;
     }
 
 }
