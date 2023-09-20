@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 121d339384287874788dd5a663f26f2a
+guid: 4e1f1c28bcd0eac4a94dc385ec0e67ea
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -8,11 +8,6 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Building_Ruins_Pillar00
-    second: {fileID: 2100000, guid: fd024d7d89f03aa4389ba154c079dd02, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Building_Ruins_Pillar00_LP
     second: {fileID: 2100000, guid: fd024d7d89f03aa4389ba154c079dd02, type: 2}
   materials:
     materialImportMode: 2
@@ -44,7 +39,11 @@ ModelImporter:
     clipAnimations: []
     isReadable: 0
   meshes:
-    lODScreenPercentages: []
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
     globalScale: 1
     meshCompression: 0
     addColliders: 0
