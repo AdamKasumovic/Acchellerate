@@ -38,9 +38,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Arch00
   m_Shader: {fileID: -6465566751694194690, guid: 426f640a009e75942928da24b7be635b, type: 3}
-  m_ValidKeywords:
-  - _DISABLE_SSR_TRANSPARENT
+  m_ValidKeywords: []
   m_InvalidKeywords:
+  - _DISABLE_SSR_TRANSPARENT
   - _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -78,7 +78,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Color:
-        m_Texture: {fileID: 2800000, guid: 61ff62e3d93aa4a4a8842b5b4a804d47, type: 3}
+        m_Texture: {fileID: 2800000, guid: d87b93b64d0f9874d8a30b2a9ba7a539, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMap:
@@ -110,11 +110,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetalAmbientDetailSmoothness:
-        m_Texture: {fileID: 2800000, guid: f4dc295284fc0554bb6943ab7b47f1e9, type: 3}
+        m_Texture: {fileID: 2800000, guid: f3c1a4aafc2b2054d8872c3c86ee82ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: 3a7d82a39c8494f4cb45b64baf50676a, type: 3}
+        m_Texture: {fileID: 2800000, guid: ae494f3e85ffb2e4ba99377e8abf0490, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -218,7 +218,7 @@ Material:
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
     - _InvTilingScale: 1
-    - _Invert_Roughness: 0
+    - _Invert_Roughness: 1
     - _Ior: 1.5
     - _IridescenceMask: 1
     - _IridescenceThickness: 1

@@ -101,7 +101,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Color:
-        m_Texture: {fileID: 2800000, guid: b4980b46176cab746a8d0d7ae2fcf31c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 098b848a55f73a148a399fcf30afb3d3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMap:
@@ -149,11 +149,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetalAmbientDetailSmoothness:
-        m_Texture: {fileID: 2800000, guid: d50411c77ae826b4da3e913dc3248cf8, type: 3}
+        m_Texture: {fileID: 2800000, guid: fded46b8bf0cf334387fb2e57bdb3540, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: b4edb03523e660442be0cb24016f8127, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3c3a1e9f578196f4e922b63d9db100e2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -355,7 +355,7 @@ Material:
     - _Inverse_Clipping: 0
     - _Inverse_MatcapMask: 0
     - _Inverse_Z_Axis_BLD: 1
-    - _Invert_Roughness: 0
+    - _Invert_Roughness: 1
     - _Ior: 1.5
     - _IridescenceMask: 1
     - _IridescenceThickness: 1

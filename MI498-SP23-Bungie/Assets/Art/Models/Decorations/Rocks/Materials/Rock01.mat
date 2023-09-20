@@ -110,7 +110,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetalAmbientDetailSmoothness:
-        m_Texture: {fileID: 2800000, guid: 9dd6ff7060c373e4abefd83a8bef8004, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2d7a1b6bff76e7540a0920e315ace125, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
@@ -223,7 +223,7 @@ Material:
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
     - _InvTilingScale: 1
-    - _Invert_Roughness: 0
+    - _Invert_Roughness: 1
     - _Ior: 1.5
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
