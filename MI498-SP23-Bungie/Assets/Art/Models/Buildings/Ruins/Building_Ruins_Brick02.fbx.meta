@@ -3,7 +3,12 @@ guid: fbefa43b52f653243b79e8d0e4aa1e73
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Building_Ruins_Brick02
+    second: {fileID: 2100000, guid: f4dcb22136136ec4daa14801fdbe185a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
