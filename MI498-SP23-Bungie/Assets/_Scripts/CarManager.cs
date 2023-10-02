@@ -785,7 +785,7 @@ public class CarManager : MonoBehaviour
                 //Debug.Log("JUMPED");
                 SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.Jump);
             }
-            else if (UpgradeUnlocks.groundPoundUnlockNum > 0 && jumped && !carController.isGrounded)
+            else if (UpgradeUnlocks.groundPoundUnlockNum > 0 && jumped && !carController.isGrounded)  // Arsenii, this is the ground pound code
             {
                 //Debug.Log("POUNDED");
                 int layerMask = 1 << 0;
