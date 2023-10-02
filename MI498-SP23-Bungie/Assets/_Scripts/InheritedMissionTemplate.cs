@@ -86,5 +86,5 @@ public class InheritedMissionTemplate : SingleMission
         return MissionResult.Complete;
     }
 
-    // Great! Now head over the Missions.cs and add an Updater for your mission type and then trigger it from the appropriate script.
+    // Great! Now head over to Missions.cs and add an Updater for your mission type and then trigger it from the appropriate script.
 }
