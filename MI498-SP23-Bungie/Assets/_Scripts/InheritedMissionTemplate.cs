@@ -50,7 +50,7 @@ public class InheritedMissionTemplate : SingleMission
 
         // You are responsible for ensuring that "MissionName" contains the appopriate text that informs players
         // about the mission progress at all times.
-        MissionName = $"<Replace> ({progress}).{timer}";
+        MissionName = $"<Put succinct instructions for how to complete the mission here> ({progress}).{timer}";
         Debug.Log(MissionName);
     }
 

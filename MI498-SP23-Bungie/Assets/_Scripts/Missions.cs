@@ -139,7 +139,7 @@ public class Missions : MonoBehaviour
 
     // Call this from the appropriate script that knows when the needed event happens like:
     //Missions missionsComponent = Missions.Instance;
-    //missionsComponent.SampleUpdater;
+    //missionsComponent.SampleUpdater(...);
     public void SampleUpdater(bool param1, int param2)
     {
         foreach (SingleMission mission in activeMissions)
