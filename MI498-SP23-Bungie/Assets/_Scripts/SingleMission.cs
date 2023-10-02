@@ -7,6 +7,19 @@ using UnityEngine;
 /// </summary>
 public abstract class SingleMission : MonoBehaviour
 {
+    // Whether the mission fails or completes when the time runs out
+    public enum MissionResult
+    {
+        Fail,
+        Complete
+    }
+
+    // This method is called when the timer expires
+    protected virtual MissionResult OnTimerExpired()
+    {
+        return MissionResult.Fail;
+    }
+
     public string MissionName { get; set; }  // active mission MissionNames should be used for UI
     public bool IsCompleted { get; protected set; }
     public bool IsFailed { get; protected set; }
@@ -59,7 +72,15 @@ public abstract class SingleMission : MonoBehaviour
             timeRemaining -= Time.deltaTime;
             if (timeRemaining <= 0)
             {
-                FailMission();
+                MissionResult result = OnTimerExpired();
+                if (result == MissionResult.Fail)
+                {
+                    FailMission();
+                }
+                else if (result == MissionResult.Complete)
+                {
+                    CompleteMission();
+                }
             }
         }
     }

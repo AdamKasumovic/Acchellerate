@@ -137,6 +137,21 @@ public class Missions : MonoBehaviour
         }
     }
 
+    // Call this from the appropriate script that knows when the needed event happens like:
+    //Missions missionsComponent = Missions.Instance;
+    //missionsComponent.SampleUpdater;
+    public void SampleUpdater(bool param1, int param2)
+    {
+        foreach (SingleMission mission in activeMissions)
+        {
+            if (mission is InheritedMissionTemplate)  // change with your mission type
+            {
+                InheritedMissionTemplate imMission = mission as InheritedMissionTemplate;
+                // do stuff here like FailMission(), CompleteMission(), or Execute()
+            }
+        }
+    }
+
     [System.Serializable]
     public class TriggerMissionEntry
     {
