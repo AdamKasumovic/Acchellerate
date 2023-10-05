@@ -134,6 +134,14 @@ public class Missions : MonoBehaviour
                     killMission.Execute();
                 }
             }
+            else if (mission is NoKillMission)
+            {
+                NoKillMission killMission = mission as NoKillMission;
+                if ((killMission.missionEnemyType == enemyType || killMission.missionEnemyType == EnemyType.any))
+                {
+                    killMission.Execute();
+                }
+            }
         }
     }
 

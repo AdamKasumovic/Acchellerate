@@ -31,6 +31,7 @@ public abstract class SingleMission : MonoBehaviour
     protected float timeRemaining;
 
     public bool IsActive { get; set; } = false;
+    public bool ShowOnUI = true;
 
     [Header("Rewards")]
     public bool DoPointMultiplication = false;
@@ -39,7 +40,7 @@ public abstract class SingleMission : MonoBehaviour
     [Range(0, 1000000)]
     public float PointMultiplierDuration = 30f;
     public bool AddPoints = false;
-    [Range(0, 1000000000000)]
+    [Range(0, 1000000000)]
     public float PointsToAdd = 100000f;
     public bool AddTokens = true;
     [Range(0, 100)]
