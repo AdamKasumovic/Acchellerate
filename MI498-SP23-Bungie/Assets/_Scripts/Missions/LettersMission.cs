@@ -74,7 +74,7 @@ public class LettersMission : SingleMission
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
         MissionName = $"({progress}).{timer}";
-        //Debug.Log(MissionName);
+        Debug.Log(MissionName);
     }
 
     /// <summary>

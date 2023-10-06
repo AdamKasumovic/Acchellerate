@@ -45,6 +45,24 @@ public class Missions : MonoBehaviour
     private void Start()
     {
         ActivateRandomStartMissions();
+        ScheduleNextRandomMission();
+        ActivateRandomStartMissions();
+        ScheduleNextRandomMission();
+        ActivateRandomStartMissions();
+        ScheduleNextRandomMission();
+        ActivateRandomStartMissions();
+        ScheduleNextRandomMission();
+        ActivateRandomStartMissions();
+        ScheduleNextRandomMission();
+        ActivateRandomStartMissions();
+        ScheduleNextRandomMission();
+        ActivateRandomStartMissions();
+        ScheduleNextRandomMission();
+        ActivateRandomStartMissions();
+        ScheduleNextRandomMission();
+        ActivateRandomStartMissions();
+        ScheduleNextRandomMission();
+        ActivateRandomStartMissions();
 
         // Schedule the first random mission
         ScheduleNextRandomMission();
