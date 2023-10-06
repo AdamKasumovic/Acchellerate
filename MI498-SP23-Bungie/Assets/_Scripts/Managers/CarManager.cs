@@ -244,6 +244,8 @@ public class CarManager : MonoBehaviour
     [HideInInspector]
     public float minSpeedForGravityField = 0;
 
+    private Missions missionsComponent;
+
     public static CarManager Instance { get { return _instance; } }
     private void Awake()
     {
@@ -264,6 +266,7 @@ public class CarManager : MonoBehaviour
         vrMode = SceneManager.GetActiveScene().name.Contains("TJ");
         inTutorial = SceneManager.GetActiveScene().name.Contains("Tutorial");
         carController = GetComponent<RCC_CarControllerV3>();
+        missionsComponent = Missions.Instance;
         if (carController == null)
         {
             Debug.LogWarning("Missing Car Controller!");
@@ -653,6 +656,8 @@ public class CarManager : MonoBehaviour
         if (currentState == CarState.TiltingLeft || currentState == CarState.TiltingRight)
         {
             tiltCamera.m_Priority = tiltCameraHighPriority;
+            if (!tiltKillIndicator)
+                missionsComponent.RegisterMove(MoveType.tilt);
             tiltKillIndicator = true;
             if (tiltTimer < maximumTimeTilting)// && northButton && (rightBumper || boost))
                 StartCoroutine(GameManager.instance.DoVibration(0.75f, 0.75f, Time.unscaledDeltaTime));
@@ -683,7 +688,11 @@ public class CarManager : MonoBehaviour
             else if (boost || (UpgradeUnlocks.horizontalBoosts > 0 && (leftBoostPressed || rightBoostPressed) && !(currentState == CarState.TiltingLeft || currentState == CarState.TiltingRight)))
             {
                 if (horBoostTimer >= horBoostDuration)
+                {
                     SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.Boost);
+                    missionsComponent.RegisterMove(MoveType.boost);
+                }
+                    
                 meshTrail.DoFlashTrails();
                 Vector3 direction;
                 float horBoostSpeedMultiplier = 1;
@@ -784,6 +793,7 @@ public class CarManager : MonoBehaviour
                 }
                 //Debug.Log("JUMPED");
                 SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.Jump);
+                missionsComponent.RegisterMove(MoveType.jump);
             }
             else if (UpgradeUnlocks.groundPoundUnlockNum > 0 && jumped && !carController.isGrounded)  // Arsenii, this is the ground pound code
             {
@@ -911,6 +921,7 @@ public class CarManager : MonoBehaviour
             if (!isSpinning)
             {
                 SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.Burnout);
+                missionsComponent.RegisterMove(MoveType.burnout);
             }
             rb.velocity = rb.velocity.normalized * 9.8f;
             if (currentState == CarState.DriftingRight)
@@ -970,6 +981,7 @@ public class CarManager : MonoBehaviour
             frontFlipTimer = 0f;
             wasUpsideDown = false;
             SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.Flip);
+            missionsComponent.RegisterMove(MoveType.flip);
             StartCoroutine(GameManager.instance.DoVibration(0.5f, 0.5f, 0.25f));
         }
 

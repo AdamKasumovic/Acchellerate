@@ -158,6 +158,22 @@ public class Missions : MonoBehaviour
         }
     }
 
+    // Call this when doing a move
+    public void RegisterMove(MoveType moveType)
+    {
+        foreach (SingleMission mission in activeMissions)
+        {
+            if (mission is UseMovesMission)
+            {
+                UseMovesMission useMovesMission = mission as UseMovesMission;
+                if (useMovesMission.missionMoveType == moveType || useMovesMission.missionMoveType == MoveType.any)
+                {
+                    useMovesMission.Execute();
+                }
+            }
+        }
+    }
+
     // Call this from the appropriate script that knows when the needed event happens like:
     //Missions missionsComponent = Missions.Instance;
     //missionsComponent.SampleUpdater(...);
