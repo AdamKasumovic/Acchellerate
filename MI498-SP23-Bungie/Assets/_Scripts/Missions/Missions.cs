@@ -171,6 +171,14 @@ public class Missions : MonoBehaviour
                     useMovesMission.Execute();
                 }
             }
+            else if (mission is NoMoveMission)
+            {
+                NoMoveMission noMoveMission = mission as NoMoveMission;
+                if (noMoveMission.missionMoveType == moveType || noMoveMission.missionMoveType == MoveType.any)
+                {
+                    noMoveMission.Execute();
+                }
+            }
         }
     }
 
