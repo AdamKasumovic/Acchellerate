@@ -40,7 +40,6 @@ public class Missions : MonoBehaviour
     [Header("Trigger Missions")]
     public List<TriggerMissionEntry> triggerMissions;
 
-    [HideInInspector]
     public List<SingleMission> activeMissions = new List<SingleMission>();
 
     private void Start()
@@ -141,6 +140,20 @@ public class Missions : MonoBehaviour
                 {
                     killMission.Execute();
                 }
+            }
+        }
+    }
+
+    // Call this when colliding with a letter object in the environemnt for LettersMission
+    public void RegisterLetter(char letter)
+    {
+        foreach (SingleMission mission in activeMissions)
+        {
+            if (mission is LettersMission)
+            {
+                LettersMission letterMission = mission as LettersMission;
+                letterMission.LetterCollected(letter);
+                letterMission.Execute();
             }
         }
     }

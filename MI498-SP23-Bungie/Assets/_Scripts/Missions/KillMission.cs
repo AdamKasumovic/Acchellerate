@@ -50,7 +50,7 @@ public class KillMission : SingleMission
         string killAction = GetKillAction(missionKillType);
 
         MissionName = $"{killAction} {RequiredKills} {enemyName} ({progress}).{timer}";
-        Debug.Log(MissionName);
+        //Debug.Log(MissionName);
     }
 
     // Update this if new enemies added
