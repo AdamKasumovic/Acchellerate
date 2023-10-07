@@ -45,24 +45,7 @@ public class Missions : MonoBehaviour
     private void Start()
     {
         ActivateRandomStartMissions();
-        ScheduleNextRandomMission();
-        ActivateRandomStartMissions();
-        ScheduleNextRandomMission();
-        ActivateRandomStartMissions();
-        ScheduleNextRandomMission();
-        ActivateRandomStartMissions();
-        ScheduleNextRandomMission();
-        ActivateRandomStartMissions();
-        ScheduleNextRandomMission();
-        ActivateRandomStartMissions();
-        ScheduleNextRandomMission();
-        ActivateRandomStartMissions();
-        ScheduleNextRandomMission();
-        ActivateRandomStartMissions();
-        ScheduleNextRandomMission();
-        ActivateRandomStartMissions();
-        ScheduleNextRandomMission();
-        ActivateRandomStartMissions();
+
 
         // Schedule the first random mission
         ScheduleNextRandomMission();
@@ -158,6 +141,19 @@ public class Missions : MonoBehaviour
                 {
                     killMission.Execute();
                 }
+            }
+        }
+    }
+
+    //call this when colliding with collectable
+    public void RegisterCollect()
+    {
+        foreach (SingleMission mission in activeMissions)
+        {
+            if (mission is SecretCollectableMission)
+            {
+                SecretCollectableMission secretCollectableMission = mission as SecretCollectableMission;
+                secretCollectableMission.Execute();
             }
         }
     }
