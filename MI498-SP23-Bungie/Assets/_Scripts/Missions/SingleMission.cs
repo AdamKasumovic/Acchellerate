@@ -92,11 +92,13 @@ public abstract class SingleMission : MonoBehaviour
                 }
             }
         }
+        // Fade effect of progress highlight
+        progressHighlightValue = Mathf.Max(progressHighlightValue - Time.unscaledDeltaTime*10f/11f, 0f);
     }
 
     public virtual void Execute()
     {
-        progressHighlightValue = 1f;
+        progressHighlightValue = 1.36f;  // this should not be changed by a designer
     }
 
     public virtual void FailMission()

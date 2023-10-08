@@ -1,4 +1,3 @@
-using Gaia;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,6 +9,8 @@ public class MissionList : MonoBehaviour
 
     Missions missionsInstance;
     public TextMeshProUGUI missionListText;
+    public Color defaultColor = Color.white;
+    public Color onProgressColor = Color.yellow;
     
     public void Start()
     {
@@ -36,7 +37,11 @@ public class MissionList : MonoBehaviour
         foreach (var mission in sortedMissions)
         {
             if (mission.ShowOnUI)
-                missionListText.text += mission.MissionName + "\n\n";
+            {
+                Color currentColor = Color.Lerp(defaultColor, onProgressColor, mission.progressHighlightValue);
+                string hexColor = ColorUtility.ToHtmlStringRGB(currentColor);
+                missionListText.text += $"<color=#{hexColor}>" + mission.MissionName + "\n\n" + "</color>";
+            }
         }
     }
 }
