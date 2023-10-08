@@ -109,6 +109,7 @@ public class LettersMission : SingleMission
 
     public override void Execute()
     {
+        base.Execute();
         if (CheckCompletion())
         {
             CompleteMission();

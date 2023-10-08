@@ -56,6 +56,7 @@ public class NoMoveMission : SingleMission
 
     public override void Execute()
     {
+        base.Execute();
         MoveCount++;
         if (MoveCount >= RequiredMoves)
         {

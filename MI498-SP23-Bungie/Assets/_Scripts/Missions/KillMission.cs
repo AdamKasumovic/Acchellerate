@@ -93,6 +93,7 @@ public class KillMission : SingleMission
 
     public override void Execute()
     {
+        base.Execute();
         KillCount++;
         if (KillCount >= RequiredKills)
         {
