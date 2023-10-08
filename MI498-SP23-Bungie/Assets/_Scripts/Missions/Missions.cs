@@ -166,7 +166,7 @@ public class Missions : MonoBehaviour
         }
     }
 
-    // Call this when colliding with a letter object in the environemnt for LettersMission
+    // Call this when colliding with a letter object in the environment for LettersMission
     public void RegisterLetter(char letter)
     {
         foreach (SingleMission mission in activeMissions)

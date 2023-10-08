@@ -34,6 +34,12 @@ public abstract class SingleMission : MonoBehaviour
     public bool IsActive { get; set; } = false;
     public bool ShowOnUI = true;
 
+    // Visual Effects Variables
+    [HideInInspector]
+    // when progress is made, this number (0-1) determines how much the Missions UI text color 
+    // is currently between the highlight color (1) and the default color (0)
+    public float progressHighlightValue = 0;
+
     [Header("Rewards")]
     public bool DoPointMultiplication = false;
     [Range(1, 100)]
@@ -61,6 +67,7 @@ public abstract class SingleMission : MonoBehaviour
 
     protected virtual void Start()
     {
+        progressHighlightValue = 0;
         if (UseTimer)
         {
             timeRemaining = MissionDuration;
@@ -87,7 +94,11 @@ public abstract class SingleMission : MonoBehaviour
         }
     }
 
-    public abstract void Execute();
+    public virtual void Execute()
+    {
+        progressHighlightValue = 1f;
+    }
+
     public virtual void FailMission()
     {
         IsActive = false;

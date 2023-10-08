@@ -59,6 +59,7 @@ public class InheritedMissionTemplate : SingleMission
     // This function indicates progress in the mission. It might just call "CompleteMission" if there's no progress in the mission (just insta win or lose).
     public override void Execute()
     {
+        base.Execute();
         //KillCount++;
         //if (KillCount >= RequiredKills)
         //{

@@ -41,6 +41,7 @@ public class FlyMission : SingleMission
 
     public override void Execute()
     {
+        base.Execute();
         Airtime += Time.deltaTime;
         if (Airtime >= RequiredTime)
         {

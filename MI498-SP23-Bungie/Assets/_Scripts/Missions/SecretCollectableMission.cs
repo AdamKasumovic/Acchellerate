@@ -48,7 +48,7 @@ public class SecretCollectableMission : SingleMission
 
     public override void Execute()
     {
-
+        base.Execute();
         CompleteMission();
 
     }
