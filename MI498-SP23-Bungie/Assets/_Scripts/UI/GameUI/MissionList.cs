@@ -35,7 +35,8 @@ public class MissionList : MonoBehaviour
         // Loop through each active mission and append its name to the text
         foreach (var mission in sortedMissions)
         {
-            missionListText.text += mission.MissionName + "\n\n";
+            if (mission.ShowOnUI)
+                missionListText.text += mission.MissionName + "\n\n";
         }
     }
 }
