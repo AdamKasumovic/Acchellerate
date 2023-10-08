@@ -41,6 +41,8 @@ public class Missions : MonoBehaviour
     public List<TriggerMissionEntry> triggerMissions;
 
     public List<SingleMission> activeMissions = new List<SingleMission>();
+    public List<SingleMission> completedMissions = new List<SingleMission>();
+    public List<SingleMission> failedMissions = new List<SingleMission>();
 
     private void Start()
     {

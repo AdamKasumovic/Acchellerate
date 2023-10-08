@@ -40,6 +40,14 @@ public abstract class SingleMission : MonoBehaviour
     // is currently between the highlight color (1) and the default color (0)
     public float progressHighlightValue = 0;
 
+    [HideInInspector]
+    // This controls the failed missions' opacities
+    public float failHighlightValue = 1;
+
+    [HideInInspector]
+    // This controls the completed missions' opacities
+    public float completeHighlightValue = 1;
+
     [Header("Rewards")]
     public bool DoPointMultiplication = false;
     [Range(1, 100)]
@@ -92,8 +100,12 @@ public abstract class SingleMission : MonoBehaviour
                 }
             }
         }
-        // Fade effect of progress highlight
-        progressHighlightValue = Mathf.Max(progressHighlightValue - Time.unscaledDeltaTime*10f/11f, 0f);
+        // Fade effect of highlights
+        progressHighlightValue = Mathf.Max(progressHighlightValue - Time.deltaTime*10f/11f, 0f);
+        if (IsFailed)
+            failHighlightValue = Mathf.Max(failHighlightValue - Time.deltaTime*10f/11f, 0f);
+        if (IsCompleted)
+            completeHighlightValue = Mathf.Max(completeHighlightValue - Time.deltaTime*10f/11f, 0f);
     }
 
     public virtual void Execute()
@@ -107,6 +119,8 @@ public abstract class SingleMission : MonoBehaviour
         IsFailed = true;
         // Remove completed or failed missions
         Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
+        Missions.Instance.failedMissions.Add(this);
+        failHighlightValue = 10.09f;
     }
     public virtual void CompleteMission()
     {
@@ -117,6 +131,8 @@ public abstract class SingleMission : MonoBehaviour
         
         // Remove completed or failed missions
         Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
+        Missions.Instance.completedMissions.Add(this);
+        completeHighlightValue = 10.09f;
     }
 
     void HandleRewards()

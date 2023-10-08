@@ -11,6 +11,8 @@ public class MissionList : MonoBehaviour
     public TextMeshProUGUI missionListText;
     public Color defaultColor = Color.white;
     public Color onProgressColor = Color.yellow;
+    public Color onFailColor = Color.red;
+    public Color onCompleteColor = Color.green;
     
     public void Start()
     {
@@ -33,6 +35,28 @@ public class MissionList : MonoBehaviour
             .ThenBy(mission => mission.MissionName)
             .ToArray();
 
+        // Loop through each failed mission and append its name to the text
+        foreach (var mission in missionsInstance.failedMissions)
+        {
+            if (mission.ShowOnUI && mission.failHighlightValue > 0)
+            {
+                string hexColor = ColorUtility.ToHtmlStringRGB(onFailColor);
+                missionListText.text += $"<color=#{hexColor}{GetPartialOpacity(mission.failHighlightValue)}>" + mission.MissionName + "</color>";
+                missionListText.text += "\n\n";
+            }
+        }
+
+        // Loop through each completed mission and append its name to the text
+        foreach (var mission in missionsInstance.completedMissions)
+        {
+            if (mission.ShowOnUI && mission.completeHighlightValue > 0)
+            {
+                string hexColor = ColorUtility.ToHtmlStringRGB(onCompleteColor);
+                missionListText.text += $"<color=#{hexColor}{GetPartialOpacity(mission.completeHighlightValue)}>" + mission.MissionName + "</color>";
+                missionListText.text += "\n\n";
+            }
+        }
+
         // Loop through each active mission and append its name to the text
         foreach (var mission in sortedMissions)
         {
@@ -43,5 +67,10 @@ public class MissionList : MonoBehaviour
                 missionListText.text += $"<color=#{hexColor}>" + mission.MissionName + "\n\n" + "</color>";
             }
         }
+    }
+
+    public string GetPartialOpacity(float opacity)
+    {
+        return Mathf.Clamp(Mathf.RoundToInt(opacity * 255), 0, 255).ToString("X2");
     }
 }
