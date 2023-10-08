@@ -93,11 +93,15 @@ public class Missions : MonoBehaviour
 
         int randMissionIndex = Random.Range(0, availableMissions.Count);
         SingleMission mission = availableMissions[randMissionIndex];
-        mission.IsActive = true; // Set the mission as active
-        activeMissions.Add(mission);
 
-        // Add the activated mission to the previouslyActivated list
-        previouslyActivatedRandomMissions.Add(mission);
+        if (!mission.IsActive)
+        {
+            mission.IsActive = true; // Set the mission as active
+            activeMissions.Add(mission);
+
+            // Add the activated mission to the previouslyActivated list
+            previouslyActivatedRandomMissions.Add(mission);
+        }
 
         ScheduleNextRandomMission();
     }
