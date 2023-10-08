@@ -38,7 +38,7 @@ public class SecretCollectableMission : SingleMission
 
         // You are responsible for ensuring that "MissionName" contains the appopriate text that informs players
         // about the mission progress at all times.
-        MissionName = $"Find the secret totem {timer}";
+        MissionName = $"Find the secret totem. {timer}";
         Debug.Log(MissionName);
         }
 
