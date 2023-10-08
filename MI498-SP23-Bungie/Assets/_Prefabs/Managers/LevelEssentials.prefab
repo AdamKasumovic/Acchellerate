@@ -1573,6 +1573,7 @@ MonoBehaviour:
   onProgressColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   onFailColor: {r: 1, g: 0, b: 0, a: 1}
   onCompleteColor: {r: 0, g: 1, b: 0, a: 1}
+  onQueueColor: {r: 1, g: 1, b: 1, a: 0.5019608}
 --- !u!222 &1678958103
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38814,7 +38815,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267426217603}
-  m_LocalRotation: {x: -0.15318029, y: 0.83078533, z: -0.4568921, w: -0.2785339}
+  m_LocalRotation: {x: -0.15318027, y: 0.8307854, z: -0.45689213, w: -0.2785339}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41105,7 +41106,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267854114880}
-  m_LocalRotation: {x: 0.009478506, y: 0.9883373, z: -0.1352979, w: 0.06923951}
+  m_LocalRotation: {x: 0.00947851, y: 0.9883373, z: -0.1352979, w: 0.06923955}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41488,7 +41489,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267931951764}
-  m_LocalRotation: {x: 0.12686905, y: -7.3623954e-25, z: 9.416691e-26, w: 0.9919195}
+  m_LocalRotation: {x: 0.12686905, y: -7.3635753e-25, z: 9.4182005e-26, w: 0.9919195}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43794,7 +43795,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837268289092221}
-  m_LocalRotation: {x: 0.062171824, y: -0.22796881, z: 0.014587943, w: 0.971572}
+  m_LocalRotation: {x: 0.062171817, y: -0.22796878, z: 0.01458794, w: 0.971572}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

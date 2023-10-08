@@ -43,6 +43,7 @@ public class Missions : MonoBehaviour
     public List<SingleMission> activeMissions = new List<SingleMission>();
     public List<SingleMission> completedMissions = new List<SingleMission>();
     public List<SingleMission> failedMissions = new List<SingleMission>();
+    public List<SingleMission> queuedMissions = new List<SingleMission>();
 
     private void Start()
     {
@@ -60,8 +61,8 @@ public class Missions : MonoBehaviour
         {
             int randIndex = Random.Range(0, tempMissions.Count);
             SingleMission tempMission = tempMissions[randIndex];
-            tempMission.IsActive = true; // Set the mission as active
-            activeMissions.Add(tempMission);
+            queuedMissions.Add(tempMission);
+            StartCoroutine(AddToActiveMissions(tempMission, tempMission.BufferTime));
             tempMissions.RemoveAt(randIndex);
         }
     }
@@ -81,7 +82,7 @@ public class Missions : MonoBehaviour
 
     private void ActivateRandomMission()
     {
-        if (randomIntervalMissions.Count == 0 || activeMissions.Count >= maxActiveRandomMissions)
+        if (randomIntervalMissions.Count == 0 || (queuedMissions.Count + activeMissions.Count) >= maxActiveRandomMissions)
         {
             ScheduleNextRandomMission();
             return;
@@ -102,8 +103,8 @@ public class Missions : MonoBehaviour
 
         if (!mission.IsActive)
         {
-            mission.IsActive = true; // Set the mission as active
-            activeMissions.Add(mission);
+            queuedMissions.Add(mission);
+            StartCoroutine(AddToActiveMissions(mission, mission.BufferTime));
 
             // Add the activated mission to the previouslyActivated list
             previouslyActivatedRandomMissions.Add(mission);
@@ -119,11 +120,19 @@ public class Missions : MonoBehaviour
             if (entry.trigger == other)
             {
                 SingleMission triggerMission = entry.mission;
-                triggerMission.IsActive = true; // Set the mission as active
-                activeMissions.Add(triggerMission);
+                queuedMissions.Add(triggerMission);
+                StartCoroutine(AddToActiveMissions(triggerMission, triggerMission.BufferTime));
                 return;
             }
         }
+    }
+
+    IEnumerator AddToActiveMissions(SingleMission mission, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        queuedMissions.Remove(mission);
+        activeMissions.Add(mission);
+        mission.IsActive = true; // Set the mission as active
     }
 
     // ADD UPDATERS BASED ON MISSION TYPES HERE FOLLOWING THIS EXAMPLE:

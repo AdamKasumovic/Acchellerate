@@ -27,6 +27,8 @@ public abstract class SingleMission : MonoBehaviour
     [Header("Timer Settings")]
     public bool UseTimer = false;
     public float MissionDuration = 0;  // Duration in seconds
+    [Tooltip("How long should the mission be queued before it becomes active? This gives players a chance to react to missions that might be easy to fail if they popped up suddenly.")]
+    public float BufferTime = 3f;
 
     [HideInInspector]
     public float timeRemaining;

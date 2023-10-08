@@ -13,6 +13,7 @@ public class MissionList : MonoBehaviour
     public Color onProgressColor = Color.yellow;
     public Color onFailColor = Color.red;
     public Color onCompleteColor = Color.green;
+    public Color onQueueColor = Color.white;
     
     public void Start()
     {
@@ -64,6 +65,22 @@ public class MissionList : MonoBehaviour
             {
                 Color currentColor = Color.Lerp(defaultColor, onProgressColor, mission.progressHighlightValue);
                 string hexColor = ColorUtility.ToHtmlStringRGB(currentColor);
+                missionListText.text += $"<color=#{hexColor}>" + mission.MissionName + "\n\n" + "</color>";
+            }
+        }
+
+        if (missionsInstance.queuedMissions.Count > 0)
+        {
+            string hexColor = ColorUtility.ToHtmlStringRGBA(onQueueColor);
+            missionListText.text += $"<color=#{hexColor}>Up Next:</color>\n";
+        }
+
+        // Loop through each queued mission and append its name to the text
+        foreach (var mission in missionsInstance.queuedMissions)
+        {
+            if (mission.ShowOnUI)
+            {
+                string hexColor = ColorUtility.ToHtmlStringRGBA(onQueueColor);
                 missionListText.text += $"<color=#{hexColor}>" + mission.MissionName + "\n\n" + "</color>";
             }
         }
