@@ -28,7 +28,8 @@ public abstract class SingleMission : MonoBehaviour
     public bool UseTimer = false;
     public float MissionDuration = 0;  // Duration in seconds
 
-    protected float timeRemaining;
+    [HideInInspector]
+    public float timeRemaining;
 
     public bool IsActive { get; set; } = false;
     public bool ShowOnUI = true;

@@ -79,16 +79,20 @@ public class Missions : MonoBehaviour
 
     private void ActivateRandomMission()
     {
-        if (randomIntervalMissions.Count == 0 || activeMissions.Count >= maxActiveRandomMissions) return;
+        if (randomIntervalMissions.Count == 0 || activeMissions.Count >= maxActiveRandomMissions)
+        {
+            ScheduleNextRandomMission();
+            return;
+        }
 
         // Get missions that have not been previously activated
         List<SingleMission> availableMissions = randomIntervalMissions.Except(previouslyActivatedRandomMissions).ToList();
 
-        // If all missions have been previously activated, clear the list and use all missions
+        // If all missions have been previously activated, clear the list and use all missions (causes bugs right now)
         if (availableMissions.Count == 0)
         {
-            previouslyActivatedRandomMissions.Clear();
-            availableMissions = new List<SingleMission>(randomIntervalMissions);
+            //previouslyActivatedRandomMissions.Clear();
+            //availableMissions = new List<SingleMission>(randomIntervalMissions);
         }
 
         int randMissionIndex = Random.Range(0, availableMissions.Count);

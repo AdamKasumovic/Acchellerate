@@ -27,11 +27,12 @@ public class LettersMission : SingleMission
     {
         List<Transform> ts = new List<Transform>();
 
-        foreach (Transform t in _t)
+        int childCount = _t.childCount;
+        Transform[] children = new Transform[childCount];
+
+        for (int i = 0; i < childCount; i++)
         {
-            ts.Add(t);
-            if (t.childCount > 0)
-                ts.AddRange(GetAllChilds(t));
+            ts.Add(_t.GetChild(i));
         }
 
         return ts;
@@ -70,10 +71,10 @@ public class LettersMission : SingleMission
             ToggleWorldLetters();
         }
 
-        string progress = $"{collectedLetters}/{missionWord}";
+        string progress = $"{collectedLetters.Count}/{missionWord.Length}";
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        MissionName = $"({progress}).{timer}";
+        MissionName = $"Find all letters of the word: {missionWord} ({progress}).{timer}";
         Debug.Log(MissionName);
     }
 
