@@ -195,6 +195,20 @@ public class Missions : MonoBehaviour
             }
         }
     }
+    public void RegisterHeadlights(bool headlights)
+    {
+        foreach (SingleMission mission in activeMissions)
+        {
+            if (mission is HeadlightsOffMission)
+            {
+                if(!headlights)
+                {
+                    HeadlightsOffMission headlightsOffMission = mission as HeadlightsOffMission;
+                    headlightsOffMission.Execute();
+                }
+            }
+        }
+    }
 
     // Call this when doing a move
     public void RegisterMove(MoveType moveType)

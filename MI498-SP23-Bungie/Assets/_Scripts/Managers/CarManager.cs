@@ -505,6 +505,7 @@ public class CarManager : MonoBehaviour
     void OnHeadlights(InputValue input)
     {
         headlights = input.isPressed && !autoDriving;
+        missionsComponent.RegisterHeadlights(headlights);
     }
 
     void SetPressedInputs()
