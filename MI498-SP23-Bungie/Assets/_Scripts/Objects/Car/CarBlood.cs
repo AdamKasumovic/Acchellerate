@@ -19,7 +19,7 @@ public class CarBlood : MonoBehaviour
         {
             if (NewStyleSystem.instance != null)
             {
-                float fadeFactor = Mathf.Clamp01((float)NewStyleSystem.instance.realMultiplier / (float)killsForMaxBlood);
+                float fadeFactor = Mathf.Clamp01((float)(NewStyleSystem.instance.realMultiplier-1) / (float)(killsForMaxBlood-1));
               float currentVelocity = 0;
                dp.fadeFactor = Mathf.SmoothDamp(dp.fadeFactor, fadeFactor, ref currentVelocity, 0.01f, 1f);
             }
