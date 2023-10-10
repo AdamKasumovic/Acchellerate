@@ -4,19 +4,11 @@ using UnityEngine;
 
 public class HeadlightsOffMission : SingleMission
 {
-    public bool wereHeadlightsTurnedOff { get; private set; }
-
-    protected override void Start()
-    {
-        base.Start();
-        wereHeadlightsTurnedOff = false;
-    }
-
     protected override void Update()
     {
         base.Update();
 
-        string progress = $"Figure out how to turn headlights off";
+        string progress = $"Figure out how to turn headlights on/off";
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
         MissionName = $"{progress}.{timer}";
@@ -25,11 +17,7 @@ public class HeadlightsOffMission : SingleMission
     public override void Execute()
     {
         base.Execute();
-        wereHeadlightsTurnedOff = true;
-        if(wereHeadlightsTurnedOff)
-        {
-            CompleteMission();
-        }
+        CompleteMission();
     }
 
     public override void FailMission()

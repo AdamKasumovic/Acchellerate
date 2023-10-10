@@ -99,9 +99,12 @@ public class Missions : MonoBehaviour
         }
 
         int randMissionIndex = Random.Range(0, availableMissions.Count);
-        SingleMission mission = availableMissions[randMissionIndex];
-
-        if (!mission.IsActive)
+        SingleMission mission;
+        if (availableMissions.Count > 0)
+            mission = availableMissions[randMissionIndex];
+        else
+            mission = null;
+        if (mission != null && !mission.IsActive)
         {
             queuedMissions.Add(mission);
             StartCoroutine(AddToActiveMissions(mission, mission.BufferTime));
@@ -142,7 +145,9 @@ public class Missions : MonoBehaviour
     //missionsComponent.RegisterKill(EnemyType.regular, KillType.frontFlip);
     public void RegisterKill(EnemyType enemyType, KillType killType)
     {
-        foreach (SingleMission mission in activeMissions)
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
         {
             if (mission is KillMission)
             {
@@ -172,7 +177,9 @@ public class Missions : MonoBehaviour
     //call this when colliding with collectable
     public void RegisterCollect()
     {
-        foreach (SingleMission mission in activeMissions)
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
         {
             if (mission is SecretCollectableMission)
             {
@@ -185,7 +192,9 @@ public class Missions : MonoBehaviour
     // Call this when colliding with a letter object in the environment for LettersMission
     public void RegisterLetter(char letter)
     {
-        foreach (SingleMission mission in activeMissions)
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
         {
             if (mission is LettersMission)
             {
@@ -195,25 +204,29 @@ public class Missions : MonoBehaviour
             }
         }
     }
-    public void RegisterHeadlights(bool headlights)
+
+    // Call this when turning headlights on or off
+    public void RegisterHeadlights()
     {
-        foreach (SingleMission mission in activeMissions)
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
         {
             if (mission is HeadlightsOffMission)
             {
-                if(!headlights)
-                {
-                    HeadlightsOffMission headlightsOffMission = mission as HeadlightsOffMission;
-                    headlightsOffMission.Execute();
-                }
+                HeadlightsOffMission headlightsOffMission = mission as HeadlightsOffMission;
+                headlightsOffMission.Execute();
             }
+            // else if (mission is <the other headlights mission>) ...
         }
     }
 
     // Call this when doing a move
     public void RegisterMove(MoveType moveType)
     {
-        foreach (SingleMission mission in activeMissions)
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
         {
             if (mission is UseMovesMission)
             {
@@ -239,7 +252,9 @@ public class Missions : MonoBehaviour
     //missionsComponent.SampleUpdater(...);
     public void SampleUpdater(bool param1, int param2)
     {
-        foreach (SingleMission mission in activeMissions)
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
         {
             if (mission is InheritedMissionTemplate)  // change with your mission type
             {

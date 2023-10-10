@@ -505,7 +505,6 @@ public class CarManager : MonoBehaviour
     void OnHeadlights(InputValue input)
     {
         headlights = input.isPressed && !autoDriving;
-        missionsComponent.RegisterHeadlights(headlights);
     }
 
     void SetPressedInputs()
@@ -523,6 +522,7 @@ public class CarManager : MonoBehaviour
         {
             headlightLeft.enabled = !headlightLeft.enabled;
             headlightRight.enabled = !headlightRight.enabled;
+            missionsComponent.RegisterHeadlights();
         }
     }
     void LogInputs()
