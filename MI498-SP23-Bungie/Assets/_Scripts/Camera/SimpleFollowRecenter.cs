@@ -18,7 +18,7 @@ public class SimpleFollowRecenter : CinemachineExtension
         if (target == null)
             return;
 
-        if (Recenter && CarManager.Instance != null && CarManager.Instance.carController.isGrounded)
+        if (Recenter && CarManager.Instance != null && CarManager.Instance.carController != null && CarManager.Instance.carController.isGrounded)
         {
             // How far away from centered are we?
             Vector3 up = vcam.State.ReferenceUp;
