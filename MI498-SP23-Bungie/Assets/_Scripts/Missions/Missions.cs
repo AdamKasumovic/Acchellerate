@@ -163,6 +163,15 @@ public class Missions : MonoBehaviour
             }
         }
     }
+    //Calls when the player kills with a move
+    public void MovesRegisterKill(KillType killType)
+    {
+        foreach (SingleMission mission in activeMissions)
+        {
+            KillsWithEveryMoveMission killsWithEveryMoveMission = mission as KillsWithEveryMoveMission;
+            killsWithEveryMoveMission.AddKill(killType);
+        }
+    }
 
     //call this when colliding with collectable
     public void RegisterCollect()
