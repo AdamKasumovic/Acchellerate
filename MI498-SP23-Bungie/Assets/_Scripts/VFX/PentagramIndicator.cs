@@ -35,6 +35,6 @@ public class PentagramIndicator : MonoBehaviour
 
     private void Update()
     {
-        pentagramDecal.SetActive(CarManager.Instance.jumped && !CarManager.Instance.groundPoundKillIndicator);
+        pentagramDecal.SetActive(!CarManager.Instance.carController.isGrounded);
     }
 }
