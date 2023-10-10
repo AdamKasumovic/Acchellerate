@@ -27,30 +27,41 @@ public class KillsWithEveryMoveMission : SingleMission
     protected override void Update()
     {
         base.Update();
-
-        string progress = $"Kill Count: (Front Flip {frontFlipKillCount}, Ground Pound {groundPoundKillCount}, Tilt {tiltKillCount}," +
-            $" Strafe {strafeKillCount}, Burnout {burnoutKillCount}) /{RequiredKills}";
+	// TODO: Replace this with spritesheet sprites once Ricky gets them in!
+        string progress = $"<sprite> {frontFlipKillCount}, <sprite> {groundPoundKillCount}, <sprite> {tiltKillCount}," +
+            $" <sprite> {strafeKillCount}, <sprite> {burnoutKillCount}";
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        MissionName = $"({progress}).{timer}";
-            Debug.Log(MissionName);
+        MissionName = $"Kill {RequiredKills} with every move ({progress}).{timer}";
     }
-
-
 
     public void AddKill(KillType killType)
     {
-        if (killType == KillType.frontFlip)
+        if (killType == KillType.frontFlip && frontFlipKillCount < RequiredKills)
+        {
             frontFlipKillCount++;
-        else if (killType == KillType.tilt)
+            Execute();
+        }
+        else if (killType == KillType.tilt && tiltKillCount < RequiredKills)
+        {
             tiltKillCount++;
-        else if (killType == KillType.groundPound)
+            Execute();
+        }
+        else if (killType == KillType.groundPound && groundPoundKillCount < RequiredKills)
+        {
             groundPoundKillCount++;
-        else if (killType == KillType.strafe)
+            Execute();
+        }
+        else if (killType == KillType.strafe && strafeKillCount < RequiredKills)
+        {
             strafeKillCount++;
-        else if (killType == KillType.burnout)
+            Execute();
+        }
+        else if (killType == KillType.burnout && burnoutKillCount < RequiredKills)
+        {
             burnoutKillCount++;
-        Execute();
+            Execute();
+        }
     }
 
     public override void Execute()

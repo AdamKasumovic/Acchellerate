@@ -101,38 +101,19 @@ public class EnemyStats : MonoBehaviour
 
             Missions missionsComponent = Missions.Instance;
             if (frontFlipKill)
-            {
                 missionsComponent.RegisterKill(thisEnemyType, KillType.frontFlip);
-                missionsComponent.MovesRegisterKill(KillType.frontFlip);
-            }
             if (tiltKill)
-            {
                 missionsComponent.RegisterKill(thisEnemyType, KillType.tilt);
-                missionsComponent.MovesRegisterKill(KillType.tilt);
-            }
             if (groundPoundKill)
-            {
                 missionsComponent.RegisterKill(thisEnemyType, KillType.groundPound);
-                missionsComponent.MovesRegisterKill(KillType.groundPound);
-            }
             if (strafeKill)
-            {
                 missionsComponent.RegisterKill(thisEnemyType, KillType.strafe);
-                missionsComponent.MovesRegisterKill(KillType.strafe);
-            }
             if (burnoutKill)
-            {
                 missionsComponent.RegisterKill(thisEnemyType, KillType.burnout);
-                missionsComponent.MovesRegisterKill(KillType.burnout);
-            }
             if (driftKill)
-            {
                 missionsComponent.RegisterKill(thisEnemyType, KillType.drift);
-            }
             if (!(frontFlipKill || tiltKill || groundPoundKill || strafeKill || burnoutKill || driftKill))
-            {
                 missionsComponent.RegisterKill(thisEnemyType, KillType.driving);
-            }
 
             //CarManager.numPoints += pointReward;
             // PUT THINGS THAT SHOULD BE DISABLED ON DEATH HERE

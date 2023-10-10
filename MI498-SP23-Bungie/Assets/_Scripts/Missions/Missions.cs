@@ -161,15 +161,11 @@ public class Missions : MonoBehaviour
                     killMission.Execute();
                 }
             }
-        }
-    }
-    //Calls when the player kills with a move
-    public void MovesRegisterKill(KillType killType)
-    {
-        foreach (SingleMission mission in activeMissions)
-        {
-            KillsWithEveryMoveMission killsWithEveryMoveMission = mission as KillsWithEveryMoveMission;
-            killsWithEveryMoveMission.AddKill(killType);
+            else if (mission is KillsWithEveryMoveMission)
+            {
+                KillsWithEveryMoveMission killMission = mission as KillsWithEveryMoveMission;
+                killMission.AddKill(killType);
+            }
         }
     }
 
