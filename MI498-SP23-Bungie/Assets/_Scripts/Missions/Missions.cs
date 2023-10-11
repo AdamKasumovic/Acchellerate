@@ -189,6 +189,35 @@ public class Missions : MonoBehaviour
         }
     }
 
+    public void RegisterGreadLetter(int greadID)
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is GradeWithoutGasMission)
+            {
+                GradeWithoutGasMission gradeWithoutGasMission = mission as GradeWithoutGasMission;
+                gradeWithoutGasMission.NewGreadLetter(greadID);
+                gradeWithoutGasMission.Execute();
+            }
+        }
+    }
+
+    public void RegisterGasPickup()
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is GradeWithoutGasMission)
+            {
+                GradeWithoutGasMission gradeWithoutGasMission = mission as GradeWithoutGasMission;
+                gradeWithoutGasMission.FailMission();
+            }
+        }
+    }
+
     // Call this when colliding with a letter object in the environment for LettersMission
     public void RegisterLetter(char letter)
     {

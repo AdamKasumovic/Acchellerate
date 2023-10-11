@@ -14,10 +14,13 @@ public class GradeDisplay : MonoBehaviour
     float maxTime = 1;
     Vector3 maxScale = 3*Vector3.one;
     Vector3 normScale = Vector3.one;
+    private Missions missionsComponent;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        missionsComponent = Missions.Instance;
         images = GetComponentsInChildren<Image>();
         gradeLetter = GetComponent<TextMeshProUGUI>();
         for (int i = 0; i < images.Length; i++)
@@ -39,6 +42,7 @@ public class GradeDisplay : MonoBehaviour
                 images[i].enabled = false;
             }
             images[gradeIdx].enabled = true;
+            missionsComponent.RegisterGreadLetter(gradeIdx);
             timer = maxTime;
         }
         if(timer > 0)
