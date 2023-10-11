@@ -217,7 +217,11 @@ public class Missions : MonoBehaviour
                 HeadlightsOffMission headlightsOffMission = mission as HeadlightsOffMission;
                 headlightsOffMission.Execute();
             }
-            // else if (mission is <the other headlights mission>) ...
+            else if (mission is HeadlightsMashingMission)
+            {
+                HeadlightsMashingMission headlightsMashingMission = mission as HeadlightsMashingMission;
+                headlightsMashingMission.Execute();
+            }
         }
     }
 
