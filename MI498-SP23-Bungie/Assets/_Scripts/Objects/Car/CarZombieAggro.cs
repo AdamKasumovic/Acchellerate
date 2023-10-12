@@ -21,6 +21,7 @@ public class CarZombieAggro : MonoBehaviour
         if (navmesh != null)
         {
             other.gameObject.GetComponent<EnemyNavmesh>().SetCarTarget(transform.parent.gameObject);
+            
             SfxManager.instance.PlayRandomSoundAtPoint(SfxManager.SfxCategory.ZombieAggro, other.gameObject.transform.position);
             navmesh.inTornado = CarManager.Instance.tornado;
             //navmesh.animator.SetTrigger("Notice");

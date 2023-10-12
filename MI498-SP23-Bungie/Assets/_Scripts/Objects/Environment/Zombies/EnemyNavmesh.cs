@@ -72,7 +72,13 @@ public class EnemyNavmesh : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _agent.speed = wanderingSpeed;
-        _agent.isStopped = true;
+       
+        NavMeshHit hit;
+        if (_agent.isActiveAndEnabled && NavMesh.SamplePosition(_agent.transform.position, out hit, 1.0f, NavMesh.AllAreas))
+        {
+            _agent.isStopped = true;
+        }
+
         _agent.stoppingDistance = stoppingDistance;
         
         _stats = GetComponent<EnemyStats>();
@@ -88,6 +94,8 @@ public class EnemyNavmesh : MonoBehaviour
 
     void Update()
     {
+
+        // Makes Zombies hit the griddy if carmanager boolean is set to True
         if (CarManager.Instance.griddy )
         {
             if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Griddy"))
@@ -95,6 +103,7 @@ public class EnemyNavmesh : MonoBehaviour
                 animator.SetTrigger("Griddy");
             }
         }
+
         else if (!isFlying)
         {
             bool isAttacking = animator.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || animator.GetCurrentAnimatorStateInfo(0).IsName("Attack2Cycle");
@@ -238,8 +247,12 @@ public class EnemyNavmesh : MonoBehaviour
     {
         _entityTarget = newTarget;
         _agent.stoppingDistance = /*isZombie ? zombieStoppingDistance : */stoppingDistance;
-        _agent.destination = _entityTarget.transform.position;
-        _agent.isStopped = false;
+        NavMeshHit hit;
+        if(_agent.isActiveAndEnabled && NavMesh.SamplePosition(_agent.transform.position, out hit, 1.0f, NavMesh.AllAreas))
+        {
+            _agent.destination = _entityTarget.transform.position; // ERROR LINE
+            _agent.isStopped = false; // ERROR LINE
+        }
         _tryWander = false;
         _agent.speed = speed;
     }
@@ -250,7 +263,11 @@ public class EnemyNavmesh : MonoBehaviour
     {
         _entityTarget = null;
         _tryWander = true;
-        _agent.isStopped = true;
+        NavMeshHit hit;
+        if (_agent.isActiveAndEnabled && NavMesh.SamplePosition(_agent.transform.position, out hit, 1.0f, NavMesh.AllAreas))
+        {
+            _agent.isStopped = true; // ERROR LINE
+        }
         _agent.speed = wanderingSpeed;
     }
 
