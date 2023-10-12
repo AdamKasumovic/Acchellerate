@@ -75,7 +75,7 @@ public class LettersMission : SingleMission
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
         MissionName = $"Find all letters of the word: {missionWord} ({progress}).{timer}";
-        Debug.Log(MissionName);
+        //Debug.Log(MissionName);
     }
 
     /// <summary>

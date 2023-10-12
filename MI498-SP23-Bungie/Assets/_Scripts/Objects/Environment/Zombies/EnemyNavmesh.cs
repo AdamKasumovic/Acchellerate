@@ -19,7 +19,7 @@ public class EnemyNavmesh : MonoBehaviour
     public float zombieStoppingDistance = 3f;*/
 
     [Tooltip("The amount of time a zombie needs to wait before wandering to a new spot.")]
-    public float zombieCooldownTime = 5f;
+    private float zombieCooldownTime = 0.2f;
 
     private GameObject _entityTarget;
 
