@@ -23,28 +23,35 @@ public class LettersMission : SingleMission
 
     List<Transform> spawns;
 
-    List<Transform> GetAllChilds(Transform _t)
+    protected override void Update()
     {
-        List<Transform> ts = new List<Transform>();
-
-        int childCount = _t.childCount;
-        Transform[] children = new Transform[childCount];
-
-        for (int i = 0; i < childCount; i++)
+        base.Update();
+        if (IsActive && !missionActivated)
         {
-            ts.Add(_t.GetChild(i));
+            missionActivated = true;
+            ChooseMissionWord();
+            if(chosenMissionIndex == -1)
+            {
+                return;
+            }
+            ToggleWorldLetters();
         }
+        // Failsafe. If this is not setup properly, prevent inspector from flooding with errors
+        if (chosenMissionIndex != -1)
+        {
+            string progress = $"{collectedLetters.Count}/{missionWord.Length}";
+            string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        return ts;
+            MissionName = $"Find all letters of the word: {missionWord} ({progress}).{timer}";
+            //Debug.Log(MissionName);
+        }
     }
 
-    protected override void Start()
+    /// <summary>
+    /// Function to select mission word and set in scene
+    /// </summary>
+    private void ChooseMissionWord()
     {
-        base.Start();
-
-        // new mission, clear collected letters
-        collectedLetters.Clear();
-
         chosenMissionIndex = Random.Range(0, missionWords.Count - 1);
 
         if (letterSpawnPointsParents.Count - 1 < chosenMissionIndex)
@@ -60,22 +67,6 @@ public class LettersMission : SingleMission
         // grab spawn locations for this mission word
         GameObject spawnLocationsParent = letterSpawnPointsParents[chosenMissionIndex];
         spawns = GetAllChilds(spawnLocationsParent.transform);
-    }
-    
-    protected override void Update()
-    {
-        base.Update();
-        if (IsActive && !missionActivated)
-        {
-            missionActivated = true;
-            ToggleWorldLetters();
-        }
-
-        string progress = $"{collectedLetters.Count}/{missionWord.Length}";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
-
-        MissionName = $"Find all letters of the word: {missionWord} ({progress}).{timer}";
-        //Debug.Log(MissionName);
     }
 
     /// <summary>

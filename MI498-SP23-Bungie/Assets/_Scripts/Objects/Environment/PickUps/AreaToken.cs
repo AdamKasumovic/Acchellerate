@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Letters : MonoBehaviour
+public class AreaToken : MonoBehaviour
 {
-
-    public char myChar { get; set; }
+    public string areaName;
 
     private void OnTriggerEnter(Collider other)
     {
         gameObject.SetActive(false);
-        Missions.Instance.RegisterLetter(myChar);
-        //Debug.Log("Char Collected");
+        Missions.Instance.RegisterArea(areaName);
+        Debug.Log($"Area {areaName} visited");
     }
 }

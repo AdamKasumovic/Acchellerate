@@ -174,7 +174,7 @@ public class Missions : MonoBehaviour
         }
     }
 
-    //call this when colliding with collectable
+    //call this when colliding with a secret collectable
     public void RegisterCollect()
     {
         // Create a copy of the activeMissions list
@@ -230,6 +230,20 @@ public class Missions : MonoBehaviour
                 LettersMission letterMission = mission as LettersMission;
                 letterMission.LetterCollected(letter);
                 letterMission.Execute();
+            }
+        }
+    }
+
+    public void RegisterArea(string areaName)
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is AreaVisitMission)
+            {
+                AreaVisitMission areaMission = mission as AreaVisitMission;
+                areaMission.AreaTokenCollected(areaName);
             }
         }
     }

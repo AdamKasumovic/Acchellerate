@@ -7,6 +7,23 @@ using UnityEngine;
 /// </summary>
 public abstract class SingleMission : MonoBehaviour
 {
+    // Common Function Used to Get All Children of a Transform.
+    // Used on start to find all tokens for certain missions in a scene
+    public List<Transform> GetAllChilds(Transform _t)
+    {
+        List<Transform> ts = new List<Transform>();
+
+        int childCount = _t.childCount;
+        Transform[] children = new Transform[childCount];
+
+        for (int i = 0; i < childCount; i++)
+        {
+            ts.Add(_t.GetChild(i));
+        }
+
+        return ts;
+    }
+
     // Whether the mission fails or completes when the time runs out
     public enum MissionResult
     {
