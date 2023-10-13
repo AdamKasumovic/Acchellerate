@@ -254,6 +254,19 @@ public class Missions : MonoBehaviour
         }
     }
 
+    public void RegisterHeight()
+    {
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is HeightMission)
+            {
+                HeightMission heightMission = mission as HeightMission;
+                heightMission.Execute();
+            }
+        }
+    }
+
     // Call this when doing a move
     public void RegisterMove(MoveType moveType)
     {

@@ -12,6 +12,7 @@ public class SecretCollectable : MonoBehaviour
         {
             trigger = true;
             Missions.Instance.RegisterCollect();
+            Missions.Instance.RegisterHeight();
         }
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 /// <summary>
 /// SingleMission that requires the player to find a hidden collectable
 /// You have to provide a list of possible spawn points in editor for it to spawn from
+/// And add the collectablePrefab to the script
 /// </summary>
 public class SecretCollectableMission : SingleMission
 { 
@@ -26,21 +27,24 @@ public class SecretCollectableMission : SingleMission
     }
 
     protected override void Update()
-        {   
+    {   
         base.Update();
 
-        string progress = collectable.GetComponent<SecretCollectable>().trigger ? $"." : "Not Found Yet.";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";  // this works already, probably leave it alone. Note that it gives the empty string if there's no timer for the mission.
-    
+        if (IsActive)
+        {
+            string progress = collectable.GetComponent<SecretCollectable>().trigger ? $"." : "Not Found Yet.";
+            string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";  // this works already, probably leave it alone. Note that it gives the empty string if there's no timer for the mission.
 
-    
 
 
-        // You are responsible for ensuring that "MissionName" contains the appopriate text that informs players
-        // about the mission progress at all times.
-        MissionName = $"Find the secret totem. {timer}";
-        Debug.Log(MissionName);
+
+
+            // You are responsible for ensuring that "MissionName" contains the appopriate text that informs players
+            // about the mission progress at all times.
+            MissionName = $"Find the secret totem {timer}";
         }
+        Debug.Log(MissionName);
+    }
 
 
 
