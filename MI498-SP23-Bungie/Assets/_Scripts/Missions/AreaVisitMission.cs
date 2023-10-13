@@ -11,6 +11,7 @@ public class AreaVisitMission : SingleMission
 
     private int chosenMissionIndex = -1;
     bool missionActivated = false;
+    bool areaChosen = false;
 
     protected override void Start()
     {
@@ -28,14 +29,19 @@ public class AreaVisitMission : SingleMission
         if (IsActive && !missionActivated)
         {
             missionActivated = true;
-            ChooseArea();
             TurnOnAreaToken();
+        }
+
+        if (!areaChosen)
+        {
+            ChooseArea();
+            areaChosen = true;
         }
 
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
         MissionName = $"Visit Area: {areaTokens[chosenMissionIndex].areaName}.{timer}";
-        Debug.Log(MissionName);
+        //Debug.Log(MissionName);
     }
 
     /// <summary>

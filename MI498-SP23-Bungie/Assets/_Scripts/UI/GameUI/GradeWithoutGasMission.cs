@@ -28,12 +28,12 @@ public class GradeWithoutGasMission : SingleMission
     {
         base.Update();
 
-        string greade = GetGradeLetter(missionGradeLetter);
-        string currentGreade = GetGradeLetter(CurrentGradeLetter);
-        string progress = $"Reach {greade} rank without collecting any gas cans, current rank is: {currentGreade}";
+        string grade = GetGradeLetter(missionGradeLetter);
+        string currentGrade = GetGradeLetter(CurrentGradeLetter);
+        string progress = $"Reach {grade} rank without collecting any gas cans";
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        MissionName = $"({progress}).{timer}";
+        MissionName = $"{progress}.{timer}";
     }
 
     private string GetGradeLetter(GradeLetter type)
