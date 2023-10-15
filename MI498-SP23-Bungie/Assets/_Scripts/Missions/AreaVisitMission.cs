@@ -40,7 +40,8 @@ public class AreaVisitMission : SingleMission
 
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        MissionName = $"Visit Area: {areaTokens[chosenMissionIndex].areaName}.{timer}";
+        if (chosenMissionIndex >= 0 && chosenMissionIndex < areaTokens.Count)
+            MissionName = $"Visit Area: {areaTokens[chosenMissionIndex].areaName}.{timer}";
         //Debug.Log(MissionName);
     }
 
