@@ -171,6 +171,15 @@ public class Missions : MonoBehaviour
                 KillsWithEveryMoveMission killMission = mission as KillsWithEveryMoveMission;
                 killMission.AddKill(killType);
             }
+            else if (mission is SingleMoveKillMission)
+            {
+                SingleMoveKillMission killMission = mission as SingleMoveKillMission;
+                if ((killMission.missionEnemyType == enemyType || killMission.missionEnemyType == EnemyType.any) &&
+                    (killMission.missionKillType == killType || killMission.missionKillType == KillType.any))
+                {
+                    killMission.Execute();
+                }
+            }
         }
     }
 
