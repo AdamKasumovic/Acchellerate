@@ -136,6 +136,7 @@ public abstract class SingleMission : MonoBehaviour
     {
         IsActive = false;
         IsFailed = true;
+        SfxManager.instance.PlaySound(SfxManager.SfxCategory.MissionFail);
         // Remove completed or failed missions
         Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
         Missions.Instance.failedMissions.Add(this);
@@ -147,7 +148,7 @@ public abstract class SingleMission : MonoBehaviour
         IsCompleted = true;
         
         HandleRewards();
-        
+        SfxManager.instance.PlaySound(SfxManager.SfxCategory.MissionSuccess);
         // Remove completed or failed missions
         Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
         Missions.Instance.completedMissions.Add(this);
