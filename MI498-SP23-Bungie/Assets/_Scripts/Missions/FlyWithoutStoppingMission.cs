@@ -32,7 +32,7 @@ public class FlyWithoutStoppingMission : SingleMission
         string progress = $"{Airtime:0.0}s/{RequiredTime:0.0}s";
         string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        MissionName = $"Fly for {RequiredTime:0.0} total seconds ({progress}).{timer}";
+        MissionName = $"Don't touch the ground for {RequiredTime:0.0} seconds ({progress}).{timer}";
     }
 
     public override void Execute()
