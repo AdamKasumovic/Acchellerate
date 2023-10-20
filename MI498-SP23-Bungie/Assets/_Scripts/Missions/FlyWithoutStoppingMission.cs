@@ -23,7 +23,7 @@ public class FlyWithoutStoppingMission : SingleMission
     protected override void Update()
     {
         base.Update();
-        if(!IsCompleted && !IsFailed)
+        if(IsActive)
             if (!carController.isGrounded)
                 Execute();
             else

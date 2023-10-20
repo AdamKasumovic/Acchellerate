@@ -198,6 +198,19 @@ public class Missions : MonoBehaviour
         }
     }
 
+    public void RegisterColliderExit()
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is RankWithinRadiusMission)
+            {
+                RankWithinRadiusMission rankWithinRadiusMission = mission as RankWithinRadiusMission;
+                rankWithinRadiusMission.FailMission();
+            }
+        }
+    }
     public void RegisterGreadLetter(int greadID)
     {
         // Create a copy of the activeMissions list
@@ -209,6 +222,12 @@ public class Missions : MonoBehaviour
                 GradeWithoutGasMission gradeWithoutGasMission = mission as GradeWithoutGasMission;
                 gradeWithoutGasMission.NewGreadLetter(greadID);
                 gradeWithoutGasMission.Execute();
+            }
+            if (mission is RankWithinRadiusMission)
+            {
+                RankWithinRadiusMission rankWithinRadiusMission = mission as RankWithinRadiusMission;
+                rankWithinRadiusMission.NewGreadLetter(greadID);
+                rankWithinRadiusMission.Execute();
             }
         }
     }

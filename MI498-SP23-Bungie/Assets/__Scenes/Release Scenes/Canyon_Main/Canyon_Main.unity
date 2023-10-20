@@ -60789,16 +60789,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1783937225}
   - component: {fileID: 1783937226}
-  - component: {fileID: 1783937236}
-  - component: {fileID: 1783937235}
-  - component: {fileID: 1783937227}
-  - component: {fileID: 1783937228}
-  - component: {fileID: 1783937229}
-  - component: {fileID: 1783937230}
-  - component: {fileID: 1783937231}
-  - component: {fileID: 1783937232}
+  - component: {fileID: 1783937237}
   - component: {fileID: 1783937233}
-  - component: {fileID: 1783937234}
   m_Layer: 0
   m_Name: MissionsObject - Put Your Missions in Possible Start Missions to Test
   m_TagString: Untagged
@@ -60835,19 +60827,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   possibleStartMissions:
   - {fileID: 1418510961}
-  - {fileID: 1783937227}
-  - {fileID: 1783937231}
-  - {fileID: 1783937232}
   - {fileID: 1783937233}
-  - {fileID: 1783937234}
   - {fileID: 1418510962}
-  - {fileID: 1783937235}
-  - {fileID: 1783937236}
+  - {fileID: 1783937237}
   numberOfStartMissionsToActivate: 10
   randomIntervalMissions:
-  - {fileID: 1783937228}
-  - {fileID: 1783937229}
-  - {fileID: 1783937230}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   minInterval: 2
   maxInterval: 2
   maxActiveRandomMissions: 4
@@ -60856,200 +60843,6 @@ MonoBehaviour:
   completedMissions: []
   failedMissions: []
   queuedMissions: []
---- !u!114 &1783937227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783937224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad09124ce3e099448f71a18c9018446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseTimer: 1
-  MissionDuration: 31
-  BufferTime: 10
-  timeRemaining: 0
-  ShowOnUI: 1
-  progressHighlightValue: 0
-  failHighlightValue: 1
-  completeHighlightValue: 1
-  DoPointMultiplication: 0
-  PointMultiplier: 2
-  PointMultiplierDuration: 30
-  AddPoints: 0
-  PointsToAdd: 100000
-  AddTokens: 1
-  TokensToAdd: 1
-  DoSpeedBuff: 0
-  IncreaseToMaxSpeedInMPH: 60
-  SpeedIncreaseDuration: 30
-  RequiredKills: 10
-  missionEnemyType: 0
-  missionKillType: 6
---- !u!114 &1783937228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783937224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad09124ce3e099448f71a18c9018446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseTimer: 1
-  MissionDuration: 32
-  BufferTime: 10
-  timeRemaining: 0
-  ShowOnUI: 1
-  progressHighlightValue: 0
-  failHighlightValue: 1
-  completeHighlightValue: 1
-  DoPointMultiplication: 0
-  PointMultiplier: 2
-  PointMultiplierDuration: 30
-  AddPoints: 0
-  PointsToAdd: 100000
-  AddTokens: 1
-  TokensToAdd: 1
-  DoSpeedBuff: 0
-  IncreaseToMaxSpeedInMPH: 60
-  SpeedIncreaseDuration: 30
-  RequiredKills: 5
-  missionEnemyType: 0
-  missionKillType: 1
---- !u!114 &1783937229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783937224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad09124ce3e099448f71a18c9018446, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseTimer: 1
-  MissionDuration: 5
-  BufferTime: 10
-  timeRemaining: 0
-  ShowOnUI: 1
-  progressHighlightValue: 0
-  failHighlightValue: 1
-  completeHighlightValue: 1
-  DoPointMultiplication: 0
-  PointMultiplier: 2
-  PointMultiplierDuration: 30
-  AddPoints: 0
-  PointsToAdd: 100000
-  AddTokens: 1
-  TokensToAdd: 1
-  DoSpeedBuff: 0
-  IncreaseToMaxSpeedInMPH: 60
-  SpeedIncreaseDuration: 30
-  RequiredKills: 5
-  missionEnemyType: 0
-  missionKillType: 1
---- !u!114 &1783937230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783937224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2916bcaf1bdaf174e920e6803151b1f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseTimer: 0
-  MissionDuration: 0
-  BufferTime: 10
-  timeRemaining: 0
-  ShowOnUI: 1
-  progressHighlightValue: 0
-  failHighlightValue: 1
-  completeHighlightValue: 1
-  DoPointMultiplication: 0
-  PointMultiplier: 2
-  PointMultiplierDuration: 30
-  AddPoints: 0
-  PointsToAdd: 100000
-  AddTokens: 1
-  TokensToAdd: 1
-  DoSpeedBuff: 0
-  IncreaseToMaxSpeedInMPH: 60
-  SpeedIncreaseDuration: 30
-  missionWords:
-  - TEST
-  letterSpawnPointsParents:
-  - {fileID: 269268549}
---- !u!114 &1783937231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783937224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5060a599d8223d744b4dff6455c3adc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseTimer: 1
-  MissionDuration: 120
-  BufferTime: 3
-  timeRemaining: 0
-  ShowOnUI: 1
-  progressHighlightValue: 0
-  failHighlightValue: 1
-  completeHighlightValue: 1
-  DoPointMultiplication: 0
-  PointMultiplier: 2
-  PointMultiplierDuration: 30
-  AddPoints: 1
-  PointsToAdd: 100000
-  AddTokens: 0
-  TokensToAdd: 1
-  DoSpeedBuff: 1
-  IncreaseToMaxSpeedInMPH: 60
-  SpeedIncreaseDuration: 30
-  RequiredKills: 5
---- !u!114 &1783937232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783937224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5830b6e0b4b015441b87f1a50cdbdadd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseTimer: 1
-  MissionDuration: 10
-  BufferTime: 3
-  timeRemaining: 0
-  ShowOnUI: 1
-  progressHighlightValue: 0
-  failHighlightValue: 1
-  completeHighlightValue: 1
-  DoPointMultiplication: 1
-  PointMultiplier: 100
-  PointMultiplierDuration: 30
-  AddPoints: 0
-  PointsToAdd: 100000
-  AddTokens: 1
-  TokensToAdd: 1
-  DoSpeedBuff: 0
-  IncreaseToMaxSpeedInMPH: 60
-  SpeedIncreaseDuration: 30
 --- !u!114 &1783937233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61081,7 +60874,7 @@ MonoBehaviour:
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
   timesToMashHeadlights: 100
---- !u!114 &1783937234
+--- !u!114 &1783937237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61090,11 +60883,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783937224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d7de32c8c0a804488afa3a5775c1539, type: 3}
+  m_Script: {fileID: 11500000, guid: fe5bb2d1297aaaa4aa462924f569053a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UseTimer: 1
-  MissionDuration: 100
+  MissionDuration: 120
   BufferTime: 3
   timeRemaining: 0
   ShowOnUI: 1
@@ -61111,69 +60904,9 @@ MonoBehaviour:
   DoSpeedBuff: 0
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
-  missionGradeLetter: 3
---- !u!114 &1783937235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783937224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54cd8e622b1ae434a9993df9056988ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseTimer: 1
-  MissionDuration: 30
-  BufferTime: 3
-  timeRemaining: 0
-  ShowOnUI: 1
-  progressHighlightValue: 0
-  failHighlightValue: 1
-  completeHighlightValue: 1
-  DoPointMultiplication: 0
-  PointMultiplier: 2
-  PointMultiplierDuration: 30
-  AddPoints: 0
-  PointsToAdd: 100000
-  AddTokens: 1
-  TokensToAdd: 1
-  DoSpeedBuff: 0
-  IncreaseToMaxSpeedInMPH: 60
-  SpeedIncreaseDuration: 30
-  RequiredTime: 5
---- !u!114 &1783937236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783937224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ca6ec78ec25b934abaeb9efcd6681b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseTimer: 1
-  MissionDuration: 30
-  BufferTime: 3
-  timeRemaining: 0
-  ShowOnUI: 1
-  progressHighlightValue: 0
-  failHighlightValue: 1
-  completeHighlightValue: 1
-  DoPointMultiplication: 0
-  PointMultiplier: 2
-  PointMultiplierDuration: 30
-  AddPoints: 0
-  PointsToAdd: 100000
-  AddTokens: 1
-  TokensToAdd: 1
-  DoSpeedBuff: 0
-  IncreaseToMaxSpeedInMPH: 60
-  SpeedIncreaseDuration: 30
-  RequiredTime: 5
+  missionGradeLetter: 2
+  radius: 75
+  sphereRadius: {fileID: 1588820270124484104, guid: 022b8bf8639c63c439cc3831dfcf5f4e, type: 3}
 --- !u!1001 &1786247944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71025,24 +70758,36 @@ PrefabInstance:
       value: -28.133722
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.5598807
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 238.38876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.970818
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0730024
+      value: 0.07300239
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.22779317
+      value: -0.22779316
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.017129313
+      value: 0.017129311
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266664966116, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.27561757
+      value: -0.2756175
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266664966116, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.15836748
+      value: -0.15836744
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266664966116, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.z
@@ -71157,16 +70902,28 @@ PrefabInstance:
       value: -0.45689213
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267453692120, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9680567
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927837267453692120, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.10407111
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927837267453692120, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.22680604
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927837267453692120, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.024382824
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267526318946, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.27040163
+      value: -0.27040172
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267526318946, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.1671174
+      value: -0.16711743
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267526318946, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -71174,7 +70931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267526318946, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.4984626
+      value: -0.49846256
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267562898598, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71189,16 +70946,20 @@ PrefabInstance:
       value: -0.22059439
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.970818
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.07300239
+      value: 0.07300238
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.22779317
+      value: -0.22779316
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.017129317
+      value: 0.017129311
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267854114894, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71237,8 +70998,12 @@ PrefabInstance:
       value: -0.22059439
       objectReference: {fileID: 0}
     - target: {fileID: 4927837268289092219, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.971572
+      objectReference: {fileID: 0}
+    - target: {fileID: 4927837268289092219, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.062171854
+      value: 0.06217185
       objectReference: {fileID: 0}
     - target: {fileID: 4927837268289092219, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -71246,7 +71011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837268289092219, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.014587953
+      value: 0.014587952
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
