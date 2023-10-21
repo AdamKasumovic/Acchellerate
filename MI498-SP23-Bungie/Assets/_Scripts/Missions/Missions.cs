@@ -275,7 +275,19 @@ public class Missions : MonoBehaviour
             }
         }
     }
-
+    public void RegisterCrash()
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is NoCrashMission)
+            {
+                NoCrashMission noCrashMission = mission as NoCrashMission;
+                noCrashMission.Execute();
+            }
+        }
+    }
     public void RegisterMissionCompletion()
     {
         // Create a copy of the activeMissions list

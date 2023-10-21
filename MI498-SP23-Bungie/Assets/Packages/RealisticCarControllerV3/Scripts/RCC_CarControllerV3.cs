@@ -1921,7 +1921,7 @@ public class RCC_CarControllerV3 : RCC_Core {
             OnRCCPlayerCollision(this, collision);
 
         if (((1 << collision.gameObject.layer) & damage.damageFilter) != 0) {
-
+            Missions.Instance.RegisterCrash();
             CarManager.Instance.gotHitRecently = true;
             if (useDamage) {
 
