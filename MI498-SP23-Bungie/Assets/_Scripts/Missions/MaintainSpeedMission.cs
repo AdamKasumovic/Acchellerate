@@ -6,7 +6,7 @@ public class MaintainSpeedMission : SingleMission
 {
     public int CurrentSpeed { get; private set; }
 
-    [Header("Kill Mission Settings")]
+    [Header("Maintain Speed Mission Settings")]
     public int RequiredMinSpeed = 10;
 
     protected override void Start()
@@ -49,12 +49,12 @@ public class MaintainSpeedMission : SingleMission
     public override void FailMission()
     {
         base.FailMission();  // MUST CALL THIS!
-        Debug.Log("Kill Mission Failed!");
+        Debug.Log("Maintain Speed Mission Failed!");
     }
 
     public override void CompleteMission()
     {
         base.CompleteMission();  // MUST CALL THIS!
-        Debug.Log("Kill Mission Completed!");
+        Debug.Log("Maintain Speed Mission Completed!");
     }
 }

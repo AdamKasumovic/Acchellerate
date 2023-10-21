@@ -276,6 +276,20 @@ public class Missions : MonoBehaviour
         }
     }
 
+    public void RegisterMissionCompletion()
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is CompleteMissionsMission)
+            {
+                CompleteMissionsMission completeMissionsMission = mission as CompleteMissionsMission;
+                completeMissionsMission.Execute();
+            }
+        }
+    }
+
     // Call this when turning headlights on or off
     public void RegisterHeadlights()
     {

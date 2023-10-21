@@ -152,6 +152,7 @@ public abstract class SingleMission : MonoBehaviour
         // Remove completed or failed missions
         Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
         Missions.Instance.completedMissions.Add(this);
+        Missions.Instance.RegisterMissionCompletion();
         completeHighlightValue = 10.09f;
     }
 
