@@ -23,13 +23,21 @@ public class LettersMission : SingleMission
 
     List<Transform> spawns;
 
+    void Start()
+    {
+        ChooseMissionWord();
+        string progress = $"{collectedLetters.Count}/{missionWord.Length}";
+        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+
+        MissionName = $"Find all letters of the word: {missionWord} ({progress}).{timer}";
+    }
+
     protected override void Update()
     {
         base.Update();
         if (IsActive && !missionActivated)
         {
             missionActivated = true;
-            ChooseMissionWord();
             if(chosenMissionIndex == -1)
             {
                 return;
