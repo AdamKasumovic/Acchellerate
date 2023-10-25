@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class MissionList : MonoBehaviour
 {
@@ -14,8 +15,13 @@ public class MissionList : MonoBehaviour
     public Color onFailColor = Color.red;
     public Color onCompleteColor = Color.green;
     public Color onQueueColor = Color.white;
-    
-    public void Start()
+    public RectTransform backgroundRect;
+    public float padding = 10f; // Adjust this value for padding
+    public float verticalOffset = 5f; // Adjust this value to move the box up/down
+    public float heightAdjustment = 5f;
+
+
+    private void Start()
     {
         missionsInstance = Missions.Instance;
     }
@@ -23,6 +29,7 @@ public class MissionList : MonoBehaviour
     private void Update()
     {
         UpdateMissionList();
+        UpdateBackground();
     }
 
     private void UpdateMissionList()
@@ -89,5 +96,23 @@ public class MissionList : MonoBehaviour
     public string GetPartialOpacity(float opacity)
     {
         return Mathf.Clamp(Mathf.RoundToInt(opacity * 255), 0, 255).ToString("X2");
+    }
+
+    private void UpdateBackground()
+    {
+        if (missionListText != null && backgroundRect != null)
+        {
+            // Get the height of the text
+            float textHeight = missionListText.preferredHeight;
+
+            // Adjust for the scale of the RectTransform
+            textHeight *= backgroundRect.localScale.y;
+
+            // Set the height of the background rect
+            backgroundRect.sizeDelta = new Vector2(backgroundRect.sizeDelta.x, textHeight / backgroundRect.localScale.y + padding + heightAdjustment);
+
+            // Adjust the position to align with the top left
+            backgroundRect.anchoredPosition = new Vector2(backgroundRect.anchoredPosition.x, -textHeight / 2 - padding / 2 + verticalOffset);
+        }
     }
 }
