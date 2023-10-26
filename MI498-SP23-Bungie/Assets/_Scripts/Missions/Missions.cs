@@ -286,6 +286,11 @@ public class Missions : MonoBehaviour
                 NoCrashMission noCrashMission = mission as NoCrashMission;
                 noCrashMission.Execute();
             }
+            if (mission is NoCrashForgivingMission)
+            {
+                NoCrashForgivingMission noCrashForgivingMission = mission as NoCrashForgivingMission;
+                noCrashForgivingMission.Execute();
+            }
         }
     }
     public void RegisterMissionCompletion()
