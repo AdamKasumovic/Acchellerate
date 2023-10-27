@@ -378,7 +378,7 @@ public class CarManager : MonoBehaviour
         UpgradeUnlocks.flipCooldown = 2;
         UpgradeUnlocks.burnoutCooldown = 2;
         UpgradeUnlocks.tiltCooldown = 2;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Start();
     }
 
     float horizontalTilt = 0f;
@@ -553,6 +553,18 @@ public class CarManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F6))
         {
             UnlockAllUpgrades();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Minus))
+        {
+            UpgradeUnlocks.ResetUpgradesPermanently();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Equals))
+        {
+            UpgradeUnlocks.MaxUpgradesPermanently();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         if (autoDriving)

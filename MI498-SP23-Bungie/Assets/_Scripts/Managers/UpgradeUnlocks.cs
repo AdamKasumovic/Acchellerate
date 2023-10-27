@@ -136,4 +136,38 @@ public class UpgradeUnlocks : MonoBehaviour
         PlayerPrefs.SetInt("credits", credits + numToAdd);
         QueryCredits();
     }
+
+    public static void MaxUpgradesPermanently()
+    {
+        PlayerPrefs.SetInt("groundPoundUnlockNum", 99);
+        PlayerPrefs.SetInt("boostUnlockNum", 99);
+        PlayerPrefs.SetInt("airControl", 99);
+        PlayerPrefs.SetInt("horizontalBoosts", 99);
+        PlayerPrefs.SetInt("barrelRolls", 99);
+        PlayerPrefs.SetInt("tiltDuration", 99);
+        PlayerPrefs.SetInt("burnoutDuration", 99);
+        PlayerPrefs.SetInt("jumpCooldown", 99);
+        PlayerPrefs.SetInt("boostCooldown", 99);
+        PlayerPrefs.SetInt("flipCooldown", 99);
+        PlayerPrefs.SetInt("burnoutCooldown", 99);
+        PlayerPrefs.SetInt("tiltCooldown", 99);
+        QueryUpgrades();
+    }
+
+    public static void ResetUpgradesPermanently()
+    {
+        PlayerPrefs.SetInt("groundPoundUnlockNum", 0);
+        PlayerPrefs.SetInt("boostUnlockNum", 0);
+        PlayerPrefs.SetInt("airControl", 0);
+        PlayerPrefs.SetInt("horizontalBoosts", 0);
+        PlayerPrefs.SetInt("barrelRolls", 0);
+        PlayerPrefs.SetInt("tiltDuration", 0);
+        PlayerPrefs.SetInt("burnoutDuration", 0);
+        PlayerPrefs.SetInt("jumpCooldown", 0);
+        PlayerPrefs.SetInt("boostCooldown", 0);
+        PlayerPrefs.SetInt("flipCooldown", 0);
+        PlayerPrefs.SetInt("burnoutCooldown", 0);
+        PlayerPrefs.SetInt("tiltCooldown", 0);
+        QueryUpgrades();
+    }
 }
