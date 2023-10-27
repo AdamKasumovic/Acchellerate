@@ -118,7 +118,7 @@ public class SfxManager : MonoBehaviour
 
     private IEnumerator Start()
     {
-        HashSet<string> countdownScenes = new HashSet<string> { "TutorialLevel", "Canyon_Main", "Canyon_CircleTrack", "Canyon_Arches", "Farm_Main" };  // scenes that should have countdowns
+        HashSet<string> countdownScenes = new HashSet<string> { "TutorialLevel", "Canyon_Main", "Canyon_CircleTrack", "Canyon_Arches", "Farm_Main", "Canyon_OpenWorld" };  // scenes that should have countdowns
         if (sceneName == "MainMenu")
         {
             Debug.Log("Main Menu SFXManager");
