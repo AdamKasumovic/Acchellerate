@@ -39,7 +39,7 @@ public class UseMovesMission : SingleMission
         string moveAction = GetMoveAction(missionMoveType);
 
         MissionName = $"{moveAction} {RequiredMoves} times ({progress}).{timer}";
-        Debug.Log(MissionName);
+        //Debug.Log(MissionName);
     }
 
     private string GetMoveAction(MoveType type)
