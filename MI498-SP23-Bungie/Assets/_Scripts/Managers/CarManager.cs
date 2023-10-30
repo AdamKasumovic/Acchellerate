@@ -892,7 +892,7 @@ public class CarManager : MonoBehaviour
         // END VERTICAL BOOST STUFF
 
         // SPIN STUFF -- the state should be "drifting"
-        if (!autoSpinActivated && carSpeed >= maximumSpeedForSpinning && Mathf.Abs(carController.steerInput) > 0.7 && carController.isGrounded && (currentState == CarState.DriftingLeft || currentState == CarState.DriftingRight) && spinCooldownTimer >= spinCooldown)
+        if (!autoSpinActivated && carSpeed >= maximumSpeedForSpinning && Mathf.Abs(carController.steerInput) > 0.7 && carController.isGrounded && spinCooldownTimer >= spinCooldown)
         {
             if (carController.handbrakeInput > 0 && !wasDriftPressed)
             {
@@ -927,7 +927,7 @@ public class CarManager : MonoBehaviour
 
         wasDriftPressed = carController.handbrakeInput > 0;
 
-        if (GameManager.instance.gameState == GameManager.GameStates.play && (currentState == CarState.DriftingLeft || currentState == CarState.DriftingRight) && ((autoSpinning && (autoSpinActivated || (isSpinning && carController.handbrakeInput > 0)) && spinDurationTimer < spinDuration && spinCooldownTimer >= spinCooldown && airTime <= spinCancelAirTime) 
+        if (GameManager.instance.gameState == GameManager.GameStates.play && ((autoSpinning && (autoSpinActivated || (isSpinning && carController.handbrakeInput > 0)) && spinDurationTimer < spinDuration && spinCooldownTimer >= spinCooldown && airTime <= spinCancelAirTime) 
             || (carSpeed <= maximumSpeedForSpinning && spinDurationTimer < spinDuration && spinCooldownTimer >= spinCooldown && airTime <= spinCancelAirTime &&
             (((currentState == CarState.DriftingLeft || isSpinning) && false) || ((currentState == CarState.DriftingRight || isSpinning) && false)))))  // falses were formerly Fire9 inputs if we want to bring back the old way of doing burnouts
         {
