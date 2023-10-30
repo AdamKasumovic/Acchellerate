@@ -19,6 +19,11 @@ public class Spawner : MonoBehaviour
     [Tooltip("The prefabs to spawn")]
     public GameObject[] spawnPrefab;
     public float[] probabilities;
+    [Tooltip("Whether or not to use a polygon gameobject (gameobject with the polygon vertices as children) to denote the spawn area (a collider is used by default)")]
+    public bool doPolygonSpawning = false;
+    [Tooltip("The gameobject whose children denote vertices if doing polygon spawning")]
+    public GameObject polygon;
+    private List<Vector2> polygonPoints = new List<Vector2>();
 
     [Tooltip("The amount of time between spawns")]
     public float spawnTime = 1f;
@@ -60,6 +65,14 @@ public class Spawner : MonoBehaviour
         for(int i = 0; i < spawnPrefab.Length; i++)
         {
             _stats.Add(spawnPrefab[i].GetComponent<EnemyStats>());
+        }
+
+        if (doPolygonSpawning)
+        {
+            foreach (Transform child in polygon.transform)
+            {
+                polygonPoints.Add(new Vector2(child.position.x, child.position.z));
+            }
         }
 
         for(int i = 0; i < spawnLimit; i++)
@@ -146,11 +159,20 @@ public class Spawner : MonoBehaviour
         
         do
         {
-            pointToTry = new Vector3(
-                Random.Range(collider.bounds.min.x, collider.bounds.max.x),
-                transform.position.y,
-                Random.Range(collider.bounds.min.z, collider.bounds.max.z)
-            );
+            if (!doPolygonSpawning)
+            {
+                pointToTry = new Vector3(
+                    Random.Range(collider.bounds.min.x, collider.bounds.max.x),
+                    transform.position.y,
+                    Random.Range(collider.bounds.min.z, collider.bounds.max.z)
+                );
+            }
+            else
+            {
+                Vector2 pointToTry2D = PolygonUtility.SamplePointsInsidePolygon(polygonPoints, 1)[0];
+                pointToTry = new Vector3(pointToTry2D.x, polygon.transform.GetChild(0).position.y, pointToTry2D.y);
+            }
+            
             CapsuleCollider prefabCollider = selected.GetComponent<CapsuleCollider>(); 
             hits = Physics.SphereCastAll(pointToTry, prefabCollider.radius, Vector3.up,
                 prefabCollider.height, spawnDetectLayerMask);
