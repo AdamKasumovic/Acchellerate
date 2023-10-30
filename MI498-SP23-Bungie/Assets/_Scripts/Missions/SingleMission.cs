@@ -41,6 +41,8 @@ public abstract class SingleMission : MonoBehaviour
     public bool IsCompleted { get; protected set; }
     public bool IsFailed { get; protected set; }
 
+    public string SpriteInsideBoxMarkdown { get; private set; }  // For the mission UI--checkbox, X, exclamation point, or empty depending on mission state
+
     [Header("Timer Settings")]
     public bool UseTimer = false;
     public float MissionDuration = 0;  // Duration in seconds
@@ -122,10 +124,60 @@ public abstract class SingleMission : MonoBehaviour
         // Fade effect of highlights
         progressHighlightValue = Mathf.Max(progressHighlightValue - Time.deltaTime*10f/11f, 0f);
         if (IsFailed)
-            failHighlightValue = Mathf.Max(failHighlightValue - Time.deltaTime*10f/11f, 0f);
-        if (IsCompleted)
-            completeHighlightValue = Mathf.Max(completeHighlightValue - Time.deltaTime*10f/11f, 0f);
+        {
+            SpriteInsideBoxMarkdown = "<sprite index=5>";
+        }       
+        else if (IsCompleted)
+        {
+            SpriteInsideBoxMarkdown = "<sprite index=4>";
+        }
+        else if (IsActive)
+        {
+            SpriteInsideBoxMarkdown = "<sprite index=6>";
+        }
+        else
+        {
+            SpriteInsideBoxMarkdown = "";
+        }
+            
+
+
     }
+
+    public void StartFailHighlight(float period, float totalTime, float fadeOutDuration)
+    {
+        StartCoroutine(HighlightCoroutine(period, totalTime, fadeOutDuration, v => failHighlightValue = v));
+    }
+
+    public void StartCompleteHighlight(float period, float totalTime, float fadeOutDuration)
+    {
+        StartCoroutine(HighlightCoroutine(period, totalTime, fadeOutDuration, v => completeHighlightValue = v));
+    }
+
+    private IEnumerator HighlightCoroutine(float period, float totalTime, float fadeOutDuration, System.Action<float> setValue)
+    {
+        float time = 0;
+        while (time < totalTime)
+        {
+            float value = Mathf.PingPong(time / period, 0.75f) + 0.25f;
+            setValue(value);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        // Start fade out from current value
+        float startValue = Mathf.PingPong(time / period, 0.75f) + 0.25f;
+        float fadeStartTime = Time.time;
+        while (Time.time < fadeStartTime + fadeOutDuration)
+        {
+            float value = Mathf.Lerp(startValue, 0f, (Time.time - fadeStartTime) / fadeOutDuration);
+            setValue(value);
+            yield return null;
+        }
+
+        setValue(0f);
+    }
+
 
     public virtual void Execute()
     {
@@ -140,7 +192,7 @@ public abstract class SingleMission : MonoBehaviour
         // Remove completed or failed missions
         Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
         Missions.Instance.failedMissions.Add(this);
-        failHighlightValue = 10.09f;
+        StartFailHighlight(0.5f, 5f, 0.67f);
     }
     public virtual void CompleteMission()
     {
@@ -153,7 +205,7 @@ public abstract class SingleMission : MonoBehaviour
         Missions.Instance.activeMissions.RemoveAll(mission => mission.IsCompleted || mission.IsFailed);
         Missions.Instance.completedMissions.Add(this);
         Missions.Instance.RegisterMissionCompletion();
-        completeHighlightValue = 10.09f;
+        StartCompleteHighlight(0.5f, 5f, 0.67f);
     }
 
     void HandleRewards()

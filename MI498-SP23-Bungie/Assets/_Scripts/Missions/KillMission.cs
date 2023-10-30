@@ -44,12 +44,15 @@ public class KillMission : SingleMission
     {
         base.Update();
 
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
         string progress = $"{KillCount}/{RequiredKills}";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string timer = UseTimer ? $"<sprite index=2{tintString}> Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
         string enemyName = GetEnemyName(missionEnemyType);
         string killAction = GetKillAction(missionKillType);
+        string progressHex = Mathf.RoundToInt(Mathf.Clamp01( KillCount/ RequiredKills) * 255).ToString("X2");
+        string secondLine = IsActive ? $"\n\n    <sprite index=7{tintString}><color=#FFFFFF{progressHex}><sprite index=0 tint=1><sprite index=1 tint=1></color>Kills ({progress}) {timer}" : "";
 
-        MissionName = $"{killAction} {RequiredKills} {enemyName} ({progress}).{timer}";
+        MissionName = $"<sprite index=3{tintString}> {SpriteInsideBoxMarkdown}{killAction} {RequiredKills} {enemyName}!{secondLine}";
         //Debug.Log(MissionName);
     }
 
