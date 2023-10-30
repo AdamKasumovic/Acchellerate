@@ -892,7 +892,7 @@ public class CarManager : MonoBehaviour
         // END VERTICAL BOOST STUFF
 
         // SPIN STUFF -- the state should be "drifting"
-        if (!autoSpinActivated && carSpeed >= maximumSpeedForSpinning && Mathf.Abs(carController.steerInput) > 0.7 && carController.isGrounded && spinCooldownTimer >= spinCooldown)
+        if (!autoSpinActivated && carSpeed <= maximumSpeedForSpinning && Mathf.Abs(carController.steerInput) > 0.7 && carController.isGrounded && spinCooldownTimer >= spinCooldown)
         {
             if (carController.handbrakeInput > 0 && !wasDriftPressed)
             {
@@ -1122,7 +1122,7 @@ public class CarManager : MonoBehaviour
     private void FixedUpdate()
     {
         // Handle airborne car rotation when not boosting
-        if (!carController.isGrounded && !(boost && horBoostTimer > 0 && !boostRefreshing))
+        if (!carController.isGrounded && !(boost && horBoostTimer > 0 && !boostRefreshing && !tornado))
         {
             float horizontalInput = horizontal;
             float verticalInput = vertical;
@@ -1131,7 +1131,7 @@ public class CarManager : MonoBehaviour
             rb.AddTorque(-airborneRollSpeed * horizontalInput * transform.forward + airbornePitchSpeed * verticalInput * transform.right, ForceMode.Acceleration);
 
         }
-        else if (!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing) // Handle it when the car is boosting
+        else if (!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing && !tornado) // Handle it when the car is boosting
         {
             if (supermanCamera.m_Priority != supermanCameraHighPriority)
                 rb.angularVelocity = Vector3.zero;
@@ -1155,7 +1155,7 @@ public class CarManager : MonoBehaviour
             rb.AddTorque(airborneRollSpeed*0.75f * horizontalInput * transform.up, ForceMode.Acceleration);
             supermanCamera.m_Priority = supermanCameraHighPriority;
         }
-        if (!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing))
+        if (!(!carController.isGrounded && boost && horBoostTimer > 0 && !boostRefreshing && !tornado))
         {
             supermanCamera.m_Priority = supermanCameraLowPriority;
         }
