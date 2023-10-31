@@ -1405,4 +1405,10 @@ public class CarManager : MonoBehaviour
         //Draw a cube where the OverlapBox is (positioned where your GameObject is as well as a size)
         Gizmos.DrawWireCube(transform.position - transform.forward*0.1f + transform.up*0.25f, new Vector3(4.5f, 3f, 8f));
     }
+
+    public float checkHealth()
+    {
+        return carHealth;
+    }
+
 }

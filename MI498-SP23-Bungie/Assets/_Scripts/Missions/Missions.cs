@@ -198,6 +198,21 @@ public class Missions : MonoBehaviour
         }
     }
 
+    public void RegisterNoDamage()
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is NoDamageMission)
+            {
+                NoDamageMission noDamageMission = mission as NoDamageMission;
+                noDamageMission.Execute();
+            }
+        }
+    }
+
+
     public void RegisterColliderExit()
     {
         // Create a copy of the activeMissions list
