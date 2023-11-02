@@ -5,6 +5,7 @@ using Cinemachine;
 using UnityEngine.VFX;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using Gaia;
 
 public class CarManager : MonoBehaviour
 {
@@ -246,6 +247,17 @@ public class CarManager : MonoBehaviour
 
     private Missions missionsComponent;
 
+    private float waterLevel = 0.0f; // Set this to the y-coordinate of your water surface
+    [Header("Water Physics")]
+    public float buoyancyFactor = 1.0f; // Adjust this to change how much the car floats
+    public float submergedDrag = 3f; // Increased drag when underwater
+    public float submergedAngularDrag = 1f; // Increased angular drag when underwater
+    public float waterDensity = 1f; // You can tweak this for different "thickness" of water
+
+    private float originalDrag;
+    private float originalAngularDrag;
+    private bool isSubmerged = false;
+
     public static CarManager Instance { get { return _instance; } }
     private void Awake()
     {
@@ -276,6 +288,13 @@ public class CarManager : MonoBehaviour
         {
             Debug.LogWarning("Missing Car Rigidbody!");
         }
+
+        waterLevel = GaiaUnderwaterEffects.Instance.m_seaLevel;
+
+        // Store the original drag values
+        originalDrag = rb.drag;
+        originalAngularDrag = rb.angularDrag;
+
         vertBoostCooldown = 3f;
         frontFlipCooldown = 3f;
         spinCooldown = 3f;
@@ -668,7 +687,8 @@ public class CarManager : MonoBehaviour
         }
         if (currentState == CarState.TiltingLeft || currentState == CarState.TiltingRight)
         {
-            tiltCamera.m_Priority = tiltCameraHighPriority;
+            if (transform.position.y >= waterLevel)
+                tiltCamera.m_Priority = tiltCameraHighPriority;
             if (!tiltKillIndicator)
                 missionsComponent.RegisterMove(MoveType.tilt);
             tiltKillIndicator = true;
@@ -946,7 +966,8 @@ public class CarManager : MonoBehaviour
                 rb.angularVelocity = -transform.up * spinSpeed; 
             }
             spinDurationTimer += Time.deltaTime;
-            donutCamera.m_Priority = donutCameraHighPriority;
+            if (transform.position.y >= waterLevel)
+                donutCamera.m_Priority = donutCameraHighPriority;
             isSpinning = true;
             StartCoroutine(GameManager.instance.DoVibration(1, 1, Time.unscaledDeltaTime));
 
@@ -1092,7 +1113,7 @@ public class CarManager : MonoBehaviour
         wasAirborne = !carController.isGrounded;
 
         if (carTouchedGround)
-            airborneCamera.m_Priority = airTime > 0 ? airborneCameraHighPriority : airborneCameraLowPriority;
+            airborneCamera.m_Priority = (airTime > 0 && transform.position.y >= waterLevel) ? airborneCameraHighPriority : airborneCameraLowPriority;
 
         //Debug.Log(shockRadius);
 
@@ -1121,6 +1142,28 @@ public class CarManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Vector3 carPosition = transform.position;
+
+        // Check if the car is below water level
+        if (carPosition.y < waterLevel)
+        {
+            isSubmerged = true;
+            // Apply buoyancy
+            float displacementMultiplier = Mathf.Clamp01((waterLevel - carPosition.y) / transform.localScale.y) * buoyancyFactor;
+            rb.AddForce(new Vector3(0f, Mathf.Abs(Physics.gravity.y) * displacementMultiplier, 0f), ForceMode.Acceleration);
+
+            // Increase drag
+            rb.drag = submergedDrag * waterDensity;
+            rb.angularDrag = submergedAngularDrag * waterDensity;
+        }
+        else if (isSubmerged)
+        {
+            // If the car was submerged and now isn't, reset the drag values
+            isSubmerged = false;
+            rb.drag = originalDrag;
+            rb.angularDrag = originalAngularDrag;
+        }
+
         // Handle airborne car rotation when not boosting
         if (!carController.isGrounded && !(boost && horBoostTimer > 0 && !boostRefreshing && !tornado))
         {

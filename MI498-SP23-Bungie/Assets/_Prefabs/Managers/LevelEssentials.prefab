@@ -32861,7 +32861,6 @@ GameObject:
   - component: {fileID: 4927837266227250439}
   - component: {fileID: 4927837266227250433}
   - component: {fileID: 1728896869114093049}
-  - component: {fileID: 864111819}
   - component: {fileID: 864111820}
   - component: {fileID: 1091161667}
   m_Layer: 0
@@ -32900,7 +32899,7 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
+  m_SensorSize: {x: 70.41, y: 52.63}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
   m_NormalizedViewPortRect:
@@ -33019,66 +33018,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8d4457bf24d27498cca7f2495bef9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &864111819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4927837266227250438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 4927837266227250432}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 2147483647
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 1
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 1
-  m_ShowCustomSorter: 1
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!114 &864111820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35079,7 +35018,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837266664966118}
-  m_LocalRotation: {x: 0.49818233, y: 0.008238227, z: -0.0047336137, w: 0.86702025}
+  m_LocalRotation: {x: 0.49818233, y: 0.00823822, z: -0.0047336095, w: 0.8670203}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -36665,7 +36604,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267033885736}
-  m_LocalRotation: {x: 0.0031546515, y: 0.9961068, z: -0.078471296, w: 0.040044833}
+  m_LocalRotation: {x: 0.0031546524, y: 0.9961068, z: -0.078471296, w: 0.04004484}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -37880,7 +37819,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267327386424}
-  m_LocalRotation: {x: 0.10149994, y: 0.000000017117522, z: -0.0000000017464468, w: 0.99483556}
+  m_LocalRotation: {x: 0.10149994, y: -0.00000001711752, z: 0.0000000017464465, w: 0.99483556}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38330,7 +38269,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267426217603}
-  m_LocalRotation: {x: 0.48186472, y: 0.0083253505, z: -0.0045785434, w: 0.8761941}
+  m_LocalRotation: {x: 0.48186472, y: 0.008325393, z: -0.0045785666, w: 0.8761941}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38407,7 +38346,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267453692122}
-  m_LocalRotation: {x: 0.13547026, y: 0.04800303, z: -0.0065713497, w: 0.98959607}
+  m_LocalRotation: {x: 0.13547027, y: 0.048003044, z: -0.0065713516, w: 0.98959607}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -40621,7 +40560,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267854114880}
-  m_LocalRotation: {x: 0.005448089, y: 0.98996, z: -0.13552007, w: 0.039797727}
+  m_LocalRotation: {x: 0.005448086, y: 0.98996, z: -0.13552006, w: 0.039797716}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41004,7 +40943,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267931951764}
-  m_LocalRotation: {x: 0.12686902, y: -0.0000000085336715, z: 0.0000000010914782, w: 0.9919195}
+  m_LocalRotation: {x: 0.12686902, y: 0.000000008533673, z: -0.0000000010914786, w: 0.9919195}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41754,6 +41693,10 @@ MonoBehaviour:
   endTunnel: {fileID: 0}
   insideGravityField: 0
   minSpeedForGravityField: 0
+  buoyancyFactor: 0.69
+  submergedDrag: 3
+  submergedAngularDrag: 1
+  waterDensity: 0.42
   boost: 0
   boostRefreshing: 0
   horBoostSpeedAirborne: 78
