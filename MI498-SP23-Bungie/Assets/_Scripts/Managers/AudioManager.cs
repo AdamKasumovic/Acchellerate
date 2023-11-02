@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
         }
 
         track = GetComponentInChildren<AkState>();
-        Debug.Log($"Track: {track.data}");
+        //Debug.Log($"Track: {track.data}");
     }
 
     private void Update()
@@ -89,15 +89,15 @@ public class AudioManager : MonoBehaviour
     {
         uint stateInt;
         AkSoundEngine.GetState("MusicState", out stateInt);
-        Debug.Log($"Current State: {state}");
+        //Debug.Log($"Current State: {state}");
         AkSoundEngine.SetState("MusicState", state);
         AkSoundEngine.GetState("MusicState", out stateInt);
-        Debug.Log($"New State: {state}");
+        //Debug.Log($"New State: {state}");
     }
 
     public void SetEvent(string newEvent)
     {
-        Debug.Log($"GameObject with AkAmbient: {gameObject.GetComponentInChildren<AkEvent>().gameObject.name}");
+        //Debug.Log($"GameObject with AkAmbient: {gameObject.GetComponentInChildren<AkEvent>().gameObject.name}");
         AkSoundEngine.PostEvent(newEvent, gameObject.GetComponentInChildren<AkAmbient>().gameObject);
     }
 
@@ -114,30 +114,30 @@ public class AudioManager : MonoBehaviour
 
     public void PlayComboDroppedVoiceLine(int comboCount)
     {
-        Debug.Log("Playing Combo Dropped voice line with count: {comboCount}");
+        //Debug.Log("Playing Combo Dropped voice line with count: {comboCount}");
         if (Enumerable.Range(11,25).Contains(comboCount))
         {
-            Debug.Log("Playing D Rank Voice Line");
+            //Debug.Log("Playing D Rank Voice Line");
             SfxManager.instance.ChanceToPlaySoundAtRandom(SfxManager.SfxCategory.AnnouncerDropComboDRank, 1, AudioManager.instance.announcerSource);
         }
         else if (Enumerable.Range(26,40).Contains(comboCount))
         {
-            Debug.Log("Playing C Rank Voice Line");
+            //Debug.Log("Playing C Rank Voice Line");
             SfxManager.instance.ChanceToPlaySoundAtRandom(SfxManager.SfxCategory.AnnouncerDropComboCRank, 1, AudioManager.instance.announcerSource);
         }
         else if (Enumerable.Range(41, 60).Contains(comboCount))
         {
-            Debug.Log("Playing D Rank Voice Line");
+            //Debug.Log("Playing D Rank Voice Line");
             SfxManager.instance.ChanceToPlaySoundAtRandom(SfxManager.SfxCategory.AnnouncerDropComboBRank, 1, AudioManager.instance.announcerSource);
         }
         else if (Enumerable.Range(61, 100).Contains(comboCount))
         {
-            Debug.Log("Playing D Rank Voice Line");
+            //Debug.Log("Playing D Rank Voice Line");
             SfxManager.instance.ChanceToPlaySoundAtRandom(SfxManager.SfxCategory.AnnouncerDropComboARank, 1, AudioManager.instance.announcerSource);
         }
         else if (comboCount > 100)
         {
-            Debug.Log("Playing D Rank Voice Line");
+            //Debug.Log("Playing D Rank Voice Line");
             SfxManager.instance.ChanceToPlaySoundAtRandom(SfxManager.SfxCategory.AnnouncerDropComboZRank, 1, AudioManager.instance.announcerSource);
         }
     }

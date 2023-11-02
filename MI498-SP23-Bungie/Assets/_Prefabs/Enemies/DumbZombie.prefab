@@ -121,7 +121,6 @@ MonoBehaviour:
   speed: 5
   wanderingSpeed: 0.5
   stoppingDistance: 1.7
-  zombieCooldownTime: 5
   animator: {fileID: 780777223669445763}
   stepBackMultiplier: 0.5
   insideKillboxTriggerAmt: 0
@@ -233,7 +232,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966862792917212896}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8019343610562873905, guid: a97addf01f8029040bb6ea53d3c8e62d, type: 2}
   m_audioClip: {fileID: 0}

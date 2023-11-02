@@ -94,7 +94,7 @@ public class SfxManager : MonoBehaviour
         else if (instance != this)
         {
             //Destroy(gameObject);
-            //Debug.LogError("Multiple SFXManagers in scene");
+            ////Debug.LogError("Multiple SFXManagers in scene");
         }
         
         foreach (SfxMap map in maps)
@@ -110,7 +110,7 @@ public class SfxManager : MonoBehaviour
 
         if (_audioSource == null)
         {
-            Debug.LogError("No AudioSource attached to GameManager.");
+            //Debug.LogError("No AudioSource attached to GameManager.");
         }
 
         sceneName = SceneManager.GetActiveScene().name;
@@ -121,7 +121,7 @@ public class SfxManager : MonoBehaviour
         HashSet<string> countdownScenes = new HashSet<string> { "TutorialLevel", "Canyon_Main", "Canyon_CircleTrack", "Canyon_Arches", "Farm_Main", "Canyon_OpenWorld" };  // scenes that should have countdowns
         if (sceneName == "MainMenu")
         {
-            Debug.Log("Main Menu SFXManager");
+            //Debug.Log("Main Menu SFXManager");
             VolumeSettings mainMenuVolumeSettings = GetComponentInParent<VolumeSettings>();
             mainMenuVolumeSettings.ChangeMusicVolume(PlayerPrefs.GetFloat("MusicVolume", 0.25f));
             mainMenuVolumeSettings.ChangeSFXVolume(PlayerPrefs.GetFloat("SFXVolume", 0.25f));
@@ -134,11 +134,11 @@ public class SfxManager : MonoBehaviour
         }
         else if (countdownScenes.Contains(sceneName))
         { 
-            Debug.Log("Main Level SFXManager");
+            //Debug.Log("Main Level SFXManager");
             AudioManager.instance.SetState("Default");
             // Calculate/Retrieve the track number and then set the state using the audio manager.
             int trackNumber = Random.Range(2, 3);
-            Debug.Log(trackNumber);
+            //Debug.Log(trackNumber);
             countingDown = true;
             Time.timeScale = 0;
             // Play "3" SFX here
@@ -169,8 +169,8 @@ public class SfxManager : MonoBehaviour
         }
         else if (sceneName == "ShopLevel")
         {
-            Debug.Log("Shop");
-            Debug.Log($"AK Ambient: {AudioManager.instance.gameObject.GetComponentInChildren<AkAmbient>().gameObject}");
+            //Debug.Log("Shop");
+            //Debug.Log($"AK Ambient: {AudioManager.instance.gameObject.GetComponentInChildren<AkAmbient>().gameObject}");
             AkSoundEngine.PostEvent("MusicEvent", AudioManager.instance.gameObject.GetComponentInChildren<AkAmbient>().gameObject);
             AudioManager.instance.SetState("Shop");
         }
@@ -185,8 +185,8 @@ public class SfxManager : MonoBehaviour
         {
             if (sceneName == "ShopLevel")
             {
-                Debug.Log("Shop");
-                Debug.Log($"AK Ambient: {AudioManager.instance.gameObject.GetComponentInChildren<AkAmbient>().gameObject}");
+                //Debug.Log("Shop");
+                //Debug.Log($"AK Ambient: {AudioManager.instance.gameObject.GetComponentInChildren<AkAmbient>().gameObject}");
                 AkSoundEngine.PostEvent("MusicEvent", AudioManager.instance.gameObject.GetComponentInChildren<AkAmbient>().gameObject);
                 AudioManager.instance.SetState("Shop");
             }
@@ -256,7 +256,7 @@ public class SfxManager : MonoBehaviour
     public void PlayRandomSoundAtPoint( SfxCategory category, Vector3 position, AudioSource source = null)
     {
         AudioSource sourceToUse = source != null ? source : _audioSource;
-        //Debug.Log($"SFX Dictionary: {_sfxDictionary}");
+        ////Debug.Log($"SFX Dictionary: {_sfxDictionary}");
         int upperBound = _sfxDictionary[category].Count - 1;
         PlaySoundAtPoint(category, position, Random.Range(0, upperBound), sourceToUse);
     }
@@ -265,8 +265,8 @@ public class SfxManager : MonoBehaviour
     public AudioClip PlaySound(SfxCategory category, int index = 0, AudioSource source = null, bool randomPitch = false)
     {
         AudioSource sourceToUse = source != null ? source : _audioSource;
-        //Debug.Log($"Source game object: {sourceToUse.gameObject}");
-        //Debug.Log($"Source mixer: {sourceToUse.outputAudioMixerGroup}");
+        ////Debug.Log($"Source game object: {sourceToUse.gameObject}");
+        ////Debug.Log($"Source mixer: {sourceToUse.outputAudioMixerGroup}");
         // Get rid of this later if it screws something up. 
         if (_cooldownDictionary[category] == false)
         {
@@ -276,18 +276,19 @@ public class SfxManager : MonoBehaviour
                 if (randomPitch)
                 {
                     sourceToUse.pitch = Random.Range(1, 3);
-                    //Debug.Log("Pitch: " + sourceToUse.pitch);
+                    ////Debug.Log("Pitch: " + sourceToUse.pitch);
                 }
                 else
                 {
                     // Reset the pitch if it is set to something else
                     sourceToUse.pitch = 1;
                 }
-                sourceToUse.PlayOneShot(_sfxDictionary[category][index]);
+                if (sourceToUse != null && sourceToUse.enabled)
+                    sourceToUse.PlayOneShot(_sfxDictionary[category][index]);
                 sourceToUse.pitch = 1;
                 if (debugSound)
                 {
-                    Debug.Log("Played sound effect: " + _sfxDictionary[category][index]);
+                    //Debug.Log("Played sound effect: " + _sfxDictionary[category][index]);
                 }
                 StartCoroutine(CooldownCoroutine(category));
 
@@ -312,7 +313,7 @@ public class SfxManager : MonoBehaviour
                 sourceToUse.PlayOneShot(_sfxDictionary[category][index]);
                 if (debugSound)
                 {
-                    Debug.Log("Played sound effect: " + _sfxDictionary[category][index]);
+                    //Debug.Log("Played sound effect: " + _sfxDictionary[category][index]);
                 }
 
                 StartCoroutine(CooldownCoroutine(category));
@@ -327,7 +328,7 @@ public class SfxManager : MonoBehaviour
         sourceToUse.Stop();
         if (debugSound)
         {
-            Debug.Log("Stopped sound effect: " + _sfxDictionary[category][index]);
+            //Debug.Log("Stopped sound effect: " + _sfxDictionary[category][index]);
         }
     }
 
@@ -338,7 +339,7 @@ public class SfxManager : MonoBehaviour
         bool isPlaying = _sfxDictionary.ContainsKey(category) && _sfxDictionary[category].Count > index
                                                               && sourceToUse.isPlaying &&
                                                               _sfxDictionary[category].Contains(sourceToUse.clip);
-        Debug.Log($"{category} is playing: {isPlaying}");
+        //Debug.Log($"{category} is playing: {isPlaying}");
         return isPlaying;
     }
 
