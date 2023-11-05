@@ -735,9 +735,15 @@ public class CarManager : MonoBehaviour
                     direction = transform.forward * (reverse ? -1 : 1);
                 }
                 else if (leftBoostPressed)
+                {
                     direction = -transform.right;
+                    FreezeZRotationTemporarily();
+                }  
                 else
+                {
                     direction = transform.right;
+                    FreezeZRotationTemporarily();
+                }   
 
                 if (carController.isGrounded && ((reverse && Vector3.Dot(rb.velocity, transform.forward) > 0) || (!reverse && Vector3.Dot(rb.velocity, transform.forward) < 0)))
                     rb.velocity = Vector3.zero;
@@ -1438,6 +1444,26 @@ public class CarManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         Time.timeScale = 1;
         Time.fixedDeltaTime = 0.02F;
+    }
+
+    public void FreezeZRotationTemporarily()
+    {
+        StartCoroutine(FreezeZRotationCoroutine());
+    }
+
+    private IEnumerator FreezeZRotationCoroutine()
+    {
+        // Save the current constraints
+        RigidbodyConstraints originalConstraints = rb.constraints;
+
+        // Add constraint to freeze Z rotation
+        rb.constraints |= RigidbodyConstraints.FreezeRotationZ;
+
+        // Wait for 0.5 seconds
+        yield return new WaitForSeconds(0.5f);
+
+        // Restore the original constraints
+        rb.constraints = originalConstraints;
     }
 
     //Draw the Box Overlap as a gizmo to show where it currently is testing. Click the Gizmos button to see this
