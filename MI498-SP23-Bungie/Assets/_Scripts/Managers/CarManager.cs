@@ -843,7 +843,7 @@ public class CarManager : MonoBehaviour
                 groundPoundKillIndicator = true;
                 Physics.IgnoreLayerCollision(8, 17);
                 Physics.IgnoreLayerCollision(9, 17);
-                transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + (Vector3.Dot(transform.up, Vector3.up) >= 0 ? 0 : 180), 0);
+                transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
                 StartCoroutine(GameManager.instance.DoVibration(0.5f, 0.5f, 0.25f));
             }
         }
