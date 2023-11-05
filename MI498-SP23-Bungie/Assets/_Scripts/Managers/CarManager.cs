@@ -645,7 +645,7 @@ public class CarManager : MonoBehaviour
             currentState = CarState.Idle;
         }
         // TILT STUFF
-        if (GameManager.instance.gameState == GameManager.GameStates.play && (!GasStationManager.inGasStation && (horizontalTilt > 0.7) && carController.isGrounded && carSpeed >= minimumSpeedForTilting && currentState == CarState.Forward && tiltTimer < maximumTimeTilting && canTilt))
+        if (GameManager.instance.gameState == GameManager.GameStates.play && (!GasStationManager.inGasStation && (horizontalTilt > 0.7) && airTime <= 0.5f && carSpeed >= minimumSpeedForTilting && currentState == CarState.Forward && tiltTimer < maximumTimeTilting && canTilt))
         {
             animator.SetBool("BalancingRight", true);
             animator.SetBool("BalancingLeft", false);
@@ -654,7 +654,7 @@ public class CarManager : MonoBehaviour
                 currentState = CarState.TiltingRight;
             tiltTimer += Time.deltaTime;
         }
-        else if (GameManager.instance.gameState == GameManager.GameStates.play && (!GasStationManager.inGasStation && (horizontalTilt < -0.7) && carController.isGrounded && carSpeed >= minimumSpeedForTilting && currentState == CarState.Forward && tiltTimer < maximumTimeTilting && canTilt))
+        else if (GameManager.instance.gameState == GameManager.GameStates.play && (!GasStationManager.inGasStation && (horizontalTilt < -0.7) && airTime <= 0.5f && carSpeed >= minimumSpeedForTilting && currentState == CarState.Forward && tiltTimer < maximumTimeTilting && canTilt))
         {
             animator.SetBool("BalancingRight", false);
             animator.SetBool("BalancingLeft", true);
