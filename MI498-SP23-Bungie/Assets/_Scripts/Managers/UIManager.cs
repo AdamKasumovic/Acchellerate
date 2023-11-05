@@ -122,6 +122,7 @@ public class UIManager : MonoBehaviour
 
     public void SetAllActivePages(bool active)
     {
+        bool first = true;
         // Make sure that each respective page as well as the list itself isn't null.
         // Then set all pages to the specified variable
         if (pages != null)
@@ -130,7 +131,13 @@ public class UIManager : MonoBehaviour
             {
                 if (page != null)
                 {
-                    page.gameObject.SetActive(active);
+                    if (first && GameManager.instance.gameState != GameManager.GameStates.win && GameManager.instance.gameState != GameManager.GameStates.lose)
+                    {
+                        page.gameObject.SetActive(true);
+                        first = false;
+                    } 
+                    else
+                        page.gameObject.SetActive(active);
                 }
             }
         }
