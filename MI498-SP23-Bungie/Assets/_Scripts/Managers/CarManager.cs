@@ -1435,6 +1435,8 @@ public class CarManager : MonoBehaviour
         rb.angularDrag = oldAngularDrag;
         if (carController.throttleInput > 0.7)
             rb.velocity += transform.forward * horBoostStrength;
+        else if (carController.brakeInput > 0.7)
+            rb.velocity -= transform.forward * horBoostStrength;
     }
 
     IEnumerator TornadoSlow()
