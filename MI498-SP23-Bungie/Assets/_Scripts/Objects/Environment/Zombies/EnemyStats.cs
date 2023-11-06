@@ -127,7 +127,7 @@ public class EnemyStats : MonoBehaviour
             //StartCoroutine(GameManager.instance.DoVibration(0.5f, 0.5f, 0.25f));
             CameraShaker.Instance.ShakeCamera(2, 0.1f);
 
-            gameObject.transform.GetChild(0).GetComponent<ZombieRagdollHandler>().EnableRagdoll(true,true, CarManager.Instance.shouldGib && !CarManager.Instance.groundPoundKillIndicator);
+            gameObject.transform.GetChild(0).GetComponent<ZombieRagdollHandler>().EnableRagdoll(true,true, (CarManager.Instance.shouldGib || (CarManager.Instance.boost && !CarManager.Instance.boostRefreshing)) && !CarManager.Instance.groundPoundKillIndicator);
             return pointReward;
         }
         return 0;
