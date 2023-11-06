@@ -115,34 +115,34 @@ public class ZombieKillbox : MonoBehaviour
             return;
         }
         var stats = obstacle.GetComponent<EnemyStats>();
-        Vector3 force = Vector3.zero;
+        //Vector3 force = Vector3.zero;
 
-        if (CarManager.Instance.boost)
-        {
-            if (CarManager.Instance.reverse)
-            {
-                force.z -= 10;
-            }
-            else
-            {
-                force.z += 10;
-            }
-        }
-        if (CarManager.Instance.rightBoost)
-        {
-            force.x += 3;
-        }
-        if (CarManager.Instance.leftBoost)
-        {
-            force.x -= 3;
-        }
-        int direction = CarManager.Instance.reverse ? -1 : 1;
-        Vector3 dir = new Vector3(Mathf.Sin(Mathf.Deg2Rad * CarManager.steering), 0, Mathf.Cos(Mathf.Deg2Rad * CarManager.steering)) * direction;
+        //if (CarManager.Instance.boost)
+        //{
+        //    if (CarManager.Instance.reverse)
+        //    {
+        //        force.z -= 10;
+        //    }
+        //    else
+        //    {
+        //        force.z += 10;
+        //    }
+        //}
+        //if (CarManager.Instance.rightBoost)
+        //{
+        //    force.x += 3;
+        //}
+        //if (CarManager.Instance.leftBoost)
+        //{
+        //    force.x -= 3;
+        //}
+        //int direction = CarManager.Instance.reverse ? -1 : 1;
+        //Vector3 dir = new Vector3(Mathf.Sin(Mathf.Deg2Rad * CarManager.steering), 0, Mathf.Cos(Mathf.Deg2Rad * CarManager.steering)) * direction;
 
-        force += dir;
-        force *= -1;
-        Vector3 localizedOtherPos = transform.InverseTransformPoint(other.gameObject.transform.position);
-        float scaling = Vector3.Dot(force,(localizedOtherPos - CarManager.Instance.gameObject.transform.position).normalized);
+        //force += dir;
+        //force *= -1;
+        //Vector3 localizedOtherPos = transform.InverseTransformPoint(other.gameObject.transform.position);
+        //float scaling = Vector3.Dot(force,(localizedOtherPos - CarManager.Instance.gameObject.transform.position).normalized);
         /*
         if (CarManager.engineThrottle >= .9)
         {
@@ -177,9 +177,13 @@ public class ZombieKillbox : MonoBehaviour
             }
         }
         */
-        if(CarManager.engineThrottle > .2f)
+        if(CarManager.Instance.boost && !CarManager.Instance.boostRefreshing)
         {
-            stats.Push(scaling);
+            stats.Damage(999);
+        }
+        else if(CarManager.Instance.carController.throttleInput > .2f)
+        {
+            stats.Push(999);
         }
     }
     private void OnTriggerExit(Collider other)
