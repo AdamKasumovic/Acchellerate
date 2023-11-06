@@ -114,7 +114,12 @@ public class ZombieKillbox : MonoBehaviour
         {
             return;
         }
+        var navmesh = obstacle.GetComponent<EnemyNavmesh>();
+        if (navmesh != null)
+            navmesh.insideKillboxTriggerAmt++;
         var stats = obstacle.GetComponent<EnemyStats>();
+        var enemytransform = obstacle.transform;
+        var cartransform = transform.parent.parent.parent;
         //Vector3 force = Vector3.zero;
 
         //if (CarManager.Instance.boost)
@@ -177,9 +182,53 @@ public class ZombieKillbox : MonoBehaviour
             }
         }
         */
-        if(CarManager.Instance.boost && !CarManager.Instance.boostRefreshing)
+        if (CarManager.Instance.boost && !CarManager.Instance.boostRefreshing)
         {
-            stats.Damage(999);
+            //the obstacle is a zombie
+            if (stats != null)
+            {
+                int points = mHandler.ZombieHit(other, cartransform.InverseTransformDirection(transform.TransformDirection(mainDirection)), stats, currentlyStopped);
+                if (points > 0)
+                {
+                    bool slomo;
+                    //StyleSystem.instance.AddPoints(CarManager.currentState, face);
+                    if (!navmesh.isFlying)
+                    {
+                        slomo = NewStyleSystem.instance.AddCarKill();
+                    }
+                    else
+                    {
+                        int hvpoints = NewStyleSystem.instance.AddPointsWithMultiplier(highValueKillPoints);
+                        StyleTextbox.instance.AddRewardInfoAndHandleTimeout($"RARE ZOMBIE KILL", hvpoints, 2, 0, true);
+                        slomo = true;
+                    }
+                    GameObject dvfx = Instantiate(deathVFX, enemytransform.position, Quaternion.LookRotation(obstacle.transform.position - cartransform.position)); //Instantiate VFX particle for physical hit
+                                                                                                                                                                    //dvfx.GetComponent<VisualEffect>().SetVector3("Direction", Vector3.up* (obstacle.transform.position - cartransform.position).magnitude + -(obstacle.transform.position - cartransform.position)); // Set Visual effect direction.
+                                                                                                                                                                    ////Debug.LogWarning(cartransform.GetComponent<Rigidbody>().velocity.magnitude);
+                                                                                                                                                                    //dvfx.GetComponent<VisualEffect>().SetFloat("Speed", cartransform.GetComponent<Rigidbody>().velocity.magnitude); // Set velocity magnitude as factor of car speed.
+
+                    if (stats.spawner.restore)
+                        stats.spawner.numEnemiesSpawned--;
+                    if (!currentlyStopped && slomo)
+                    {
+                        StartCoroutine(HitStopCoroutine());
+                    }
+                    else
+                    {
+                        SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.Splat);
+                    }
+
+                    EnemyNavmesh enemyNavmesh = obstacle.GetComponent<EnemyNavmesh>();
+                    if (enemyNavmesh != null && enemyNavmesh.isSwole)
+                    {
+                        SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.SwoleZombieDeath, enemyNavmesh.audioSource);
+                    }
+                    else
+                    {
+                        SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.ZombieDeath, enemyNavmesh.audioSource);
+                    }
+                }
+            }
         }
         else if(CarManager.Instance.carController.throttleInput > .2f)
         {

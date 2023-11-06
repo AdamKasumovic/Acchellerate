@@ -77,8 +77,14 @@ public class MultipleCarTriggerHandler : MonoBehaviour
         Vector3 hitDir = -1.0f * (linearHitboxEffectiveness * Vector3.Normalize(rb.velocity));
         float calculatedDamage = totalEffectiveness * velocityToDamageFactor * spinning;
         int killed = 0;
-        if (calculatedDamage > 2)
+        if (calculatedDamage > 2 || (CarManager.Instance.boost && !CarManager.Instance.boostRefreshing))
+        {
+            if (CarManager.Instance.boost && !CarManager.Instance.boostRefreshing)
+                calculatedDamage = 999;
+            
             killed = enemy.Damage(calculatedDamage);
+        }
+            
         if (enemy.isSwole)
         {
             enemy.Push(5 * Vector3.Dot((localizedOtherPos - CarManager.Instance.gameObject.transform.position).normalized, hitDir), true);
