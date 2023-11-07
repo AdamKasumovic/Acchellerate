@@ -86,6 +86,14 @@ public abstract class SingleMission : MonoBehaviour
     public float IncreaseToMaxSpeedInMPH = 60f;
     [Range(0, 1000000)]
     public float SpeedIncreaseDuration = 30f;
+    public bool JumpBoostReward = false;
+    [Range(0, 1000)]
+    public float JumpBoostStrength = 100, JumpBoostDuration = 10;
+    
+
+
+   
+
 
     private Coroutine pointMultiplierCoroutine;
     private bool pointMultiplierActive = false;
@@ -93,6 +101,10 @@ public abstract class SingleMission : MonoBehaviour
     private Coroutine speedBuffCoroutine;
     private bool speedBuffActive = false;
     private float oldBoostDuration;
+
+    private Coroutine jumpBoostCoroutine;
+    private bool jumpBoostActive = false;
+    private float JumpOriginal;
 
     protected virtual void Start()
     {
@@ -247,6 +259,20 @@ public abstract class SingleMission : MonoBehaviour
 
             speedBuffCoroutine = StartCoroutine(ResetSpeedBuffAfterDuration());
         }
+        if (JumpBoostReward)
+        {
+            if(jumpBoostActive && jumpBoostCoroutine != null)
+            {
+                StopCoroutine(jumpBoostCoroutine);
+                CarManager.Instance.vertBoostStrength = JumpOriginal;
+            }
+            JumpOriginal = CarManager.Instance.vertBoostStrength;
+            CarManager.Instance.vertBoostStrength = JumpBoostStrength;
+            jumpBoostActive = true;
+
+            jumpBoostCoroutine = StartCoroutine(ResetJumpBoostAfterDuration());
+        }
+
     }
 
     private IEnumerator ResetPointMultiplierAfterDuration()
@@ -268,6 +294,14 @@ public abstract class SingleMission : MonoBehaviour
         CarManager.speedBuff = 0f;
         speedBuffActive = false;
         CarManager.Instance.horBoostDuration = oldBoostDuration;
+    }
+
+    private IEnumerator ResetJumpBoostAfterDuration()
+    {
+        yield return new WaitForSeconds(JumpBoostDuration);
+
+        CarManager.Instance.vertBoostStrength = JumpOriginal;
+        jumpBoostActive = false;
     }
 
 }
