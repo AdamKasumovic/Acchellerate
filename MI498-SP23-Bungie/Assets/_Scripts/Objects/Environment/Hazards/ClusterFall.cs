@@ -5,6 +5,7 @@ using UnityEngine;
 public class ClusterFall : MonoBehaviour
 {
     private PhysicsOnCarCollision[] m_Colliders;
+    Missions missions;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,11 @@ public class ClusterFall : MonoBehaviour
     }
     public void TriggerCollapse()
     {
+        if(missions == null)
+        {
+            missions = Missions.Instance;
+            Missions.Instance.RegisterDestruction();
+        }
         foreach (var collider in m_Colliders)
         {
             collider.MakeKinematic();

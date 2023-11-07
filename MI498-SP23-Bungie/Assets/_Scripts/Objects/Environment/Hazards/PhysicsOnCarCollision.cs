@@ -8,10 +8,11 @@ public class PhysicsOnCarCollision : MonoBehaviour
     public float optionalForce = 2f;
     public ClusterFall cf;
     public bool stopColliding = true;
+    Missions mission;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -23,13 +24,18 @@ public class PhysicsOnCarCollision : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == vulnerableTag)
-        {
-            if(cf != null)
+        {   
+            if (cf != null)
             {
                 cf.TriggerCollapse();
             }
             else 
-            { 
+            {
+                if(mission == null)
+                {
+                    mission = Missions.Instance;
+                    Missions.Instance.RegisterDestruction();
+                }
                 MakeKinematic();
             }
             //other.GetComponent<Rigidbody>().AddForce((other.transform.position-transform.parent.parent.position).normalized * 2f, ForceMode.Impulse);

@@ -197,7 +197,19 @@ public class Missions : MonoBehaviour
             }
         }
     }
-
+    public void RegisterDestruction()
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is DestroyDestructibleObjectsMission)
+            {
+                DestroyDestructibleObjectsMission destroyDestructibleObjectsMission = mission as DestroyDestructibleObjectsMission;
+                destroyDestructibleObjectsMission.Execute();
+            }
+        }
+    }
     public void RegisterNoDamage()
     {
         // Create a copy of the activeMissions list
