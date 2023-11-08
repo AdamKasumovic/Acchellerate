@@ -102,6 +102,7 @@ public class EnemyNavmesh : MonoBehaviour
             {
                 animator.SetTrigger("Griddy");
             }
+            _agent.speed = 0;
         }
 
         else if (!isFlying)

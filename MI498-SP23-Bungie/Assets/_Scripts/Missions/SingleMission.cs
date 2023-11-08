@@ -89,6 +89,7 @@ public abstract class SingleMission : MonoBehaviour
     public bool JumpBoostReward = false;
     [Range(0, 1000)]
     public float JumpBoostStrength = 100, JumpBoostDuration = 10;
+    public bool GriddyReward = false;
     
 
 
@@ -105,6 +106,9 @@ public abstract class SingleMission : MonoBehaviour
     private Coroutine jumpBoostCoroutine;
     private bool jumpBoostActive = false;
     private float JumpOriginal;
+
+    private Coroutine griddyCoroutine;
+    private bool griddyActive = false;
 
     protected virtual void Start()
     {
@@ -272,6 +276,18 @@ public abstract class SingleMission : MonoBehaviour
 
             jumpBoostCoroutine = StartCoroutine(ResetJumpBoostAfterDuration());
         }
+        if (GriddyReward)
+        {
+            if(griddyActive && griddyCoroutine != null)
+            {
+                StopCoroutine(griddyCoroutine);
+                CarManager.Instance.griddy = false;
+            }
+            CarManager.Instance.griddy = true;
+            griddyActive = true;
+            griddyCoroutine = StartCoroutine(ZombieGriddyDuration());
+        }
+
 
     }
 
@@ -302,6 +318,14 @@ public abstract class SingleMission : MonoBehaviour
 
         CarManager.Instance.vertBoostStrength = JumpOriginal;
         jumpBoostActive = false;
+    }
+
+    private IEnumerator ZombieGriddyDuration()
+    {
+        //wait for duration of animation
+        yield return new WaitForSeconds(12.66f);
+        CarManager.Instance.griddy = false;
+        griddyActive = false;
     }
 
 }
