@@ -133,8 +133,8 @@ namespace Gaia
         #region Private Variables
 
         private int m_indexNumber = 0;
-        [SerializeField]
-        private AudioSource m_audioSource;
+        [HideInInspector]
+        public AudioSource m_audioSource;
         [SerializeField]
         private AudioSource m_audioSourceUnderwater;
         private ParticleSystem m_underwaterParticleSystem;

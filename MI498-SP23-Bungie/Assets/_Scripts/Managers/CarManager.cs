@@ -257,6 +257,12 @@ public class CarManager : MonoBehaviour
     private float originalDrag;
     private float originalAngularDrag;
     private bool isSubmerged = false;
+    private AudioSource waterSource;
+    private AudioClip waterIn;
+    private AudioClip waterOut;
+    private float waterVolume;
+    [Range(0,1)]
+    public float carWaterVolumeComparedToCamera = 0.42f;
 
     public static CarManager Instance { get { return _instance; } }
     private void Awake()
@@ -288,8 +294,12 @@ public class CarManager : MonoBehaviour
         {
             Debug.LogWarning("Missing Car Rigidbody!");
         }
-
-        waterLevel = GaiaUnderwaterEffects.Instance.m_seaLevel;
+        GaiaUnderwaterEffects gaiaUWFX = GaiaUnderwaterEffects.Instance;
+        waterLevel = gaiaUWFX.m_seaLevel;
+        waterSource = gaiaUWFX.m_audioSource;
+        waterIn = gaiaUWFX.m_submergeSoundFXDown;
+        waterOut = gaiaUWFX.m_submergeSoundFXUp;
+        waterVolume = gaiaUWFX.m_playbackVolume * carWaterVolumeComparedToCamera;
 
         // Store the original drag values
         originalDrag = rb.drag;
@@ -1153,6 +1163,8 @@ public class CarManager : MonoBehaviour
         // Check if the car is below water level
         if (carPosition.y < waterLevel)
         {
+            if (!isSubmerged)
+                waterSource.PlayOneShot(waterIn, waterVolume);
             isSubmerged = true;
             // Apply buoyancy
             float displacementMultiplier = Mathf.Clamp01((waterLevel - carPosition.y) / transform.localScale.y) * buoyancyFactor;
@@ -1168,6 +1180,7 @@ public class CarManager : MonoBehaviour
             isSubmerged = false;
             rb.drag = originalDrag;
             rb.angularDrag = originalAngularDrag;
+            waterSource.PlayOneShot(waterOut, waterVolume); 
         }
 
         // Handle airborne car rotation when not boosting
