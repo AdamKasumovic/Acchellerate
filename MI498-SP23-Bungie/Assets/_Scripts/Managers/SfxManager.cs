@@ -53,7 +53,8 @@ public class SfxManager : MonoBehaviour
         SwoleZombieDeath,
         LowFuel,
         MissionSuccess,
-        MissionFail
+        MissionFail,
+        GasCanRefill
     }
 
     public static SfxManager instance;

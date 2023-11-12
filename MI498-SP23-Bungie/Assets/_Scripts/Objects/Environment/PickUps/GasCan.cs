@@ -35,6 +35,7 @@ public class GasCan : MonoBehaviour
             parent.timeCollected = Time.time;
             Destroy(gameObject);
             parent.collected = true;
+            SfxManager.instance.PlaySound(SfxManager.SfxCategory.GasCanRefill);
         }
 
 

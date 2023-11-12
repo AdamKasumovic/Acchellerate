@@ -260,6 +260,7 @@ public abstract class SingleMission : MonoBehaviour
             oldBoostDuration = CarManager.Instance.horBoostDuration;
             CarManager.Instance.horBoostDuration = 1000000000f;
             speedBuffActive = true;
+            AkSoundEngine.SetState("TrackState", "SpeedPowerup");
 
             speedBuffCoroutine = StartCoroutine(ResetSpeedBuffAfterDuration());
         }
@@ -310,6 +311,7 @@ public abstract class SingleMission : MonoBehaviour
         CarManager.speedBuff = 0f;
         speedBuffActive = false;
         CarManager.Instance.horBoostDuration = oldBoostDuration;
+        AkSoundEngine.SetState("TrackState", AudioManager.instance.track.data.ToString());
     }
 
     private IEnumerator ResetJumpBoostAfterDuration()

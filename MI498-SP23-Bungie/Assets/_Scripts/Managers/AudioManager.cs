@@ -6,6 +6,8 @@ using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using Gaia;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -32,7 +34,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource announcerSource;
 
-    private AkState track;
+    [HideInInspector] public AkState track;
     
     private void Awake()
     {
@@ -51,6 +53,11 @@ public class AudioManager : MonoBehaviour
         {
             StyleStateUpdate();
         }
+    }
+
+    private void SetAudioMixerEffects()
+    {
+        
     }
 
     public void StyleStateUpdate()
@@ -73,7 +80,8 @@ public class AudioManager : MonoBehaviour
         if (GameManager.instance.gameState.Equals(GameManager.GameStates.win) && !hasChangedOnWin)
         {
             SetState(grade.styleDisplayName + "LevelComplete");
-            AkSoundEngine.SetState("TrackState", track.data + "LevelComplete");
+            string endTrackName = CarManager.speedBuff != 0f ? "SpeedPowerup" : track.data.ToString();
+            AkSoundEngine.SetState("TrackState", endTrackName + "LevelComplete");
             hasChangedOnWin = true;
             StartCoroutine(OnLevelCompleteCoroutine());
         }

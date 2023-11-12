@@ -19,48 +19,48 @@ State	ID	Name	State Group			Notes
 	3604647259	MainMenu	MusicState			
 	3649428758	ZRankLevelComplete	MusicState			
 	3689082510	BRankLevelComplete	MusicState			
-	147420	Track2	TrackState			
 	147423	Track1	TrackState			
 	251412225	Shop	TrackState			
 	748895195	None	TrackState			
-	2033074619	Track2LevelComplete	TrackState			
+	1119708609	SpeedPowerupLevelComplete	TrackState			
 	2754944934	Track1LevelComplete	TrackState			
 	3604647259	MainMenu	TrackState			
+	3824330762	SpeedPowerup	TrackState			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	29505701	BRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\A Rank		
+	29505701	BRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\A Rank		
 	46292174	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\A Rank		
-	53701953	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\A Rank		
-	58679217	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\Z Rank		
+	53701953	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\A Rank		
+	58679217	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\Z Rank		
 	77008201	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\Z Rank		
-	117638810	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\C Rank		
+	117638810	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\C Rank		
 	121071014	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\Z Rank		
-	132686731	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\B Rank		
-	139009171	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\Z Rank		
+	132686731	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\B Rank		
+	139009171	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\Z Rank		
 	165293562	CRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\B Rank		
-	180048501	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\Z Rank		
+	180048501	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\Z Rank		
 	180785975	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\A Rank		
-	182337406	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\Z Rank		
+	182337406	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\Z Rank		
 	185870412	BRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		
-	190252969	BRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\Z Rank		
-	199983774	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\A Rank		
-	214143861	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\B Rank		
+	190252969	BRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\Z Rank		
+	199983774	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\A Rank		
+	214143861	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\B Rank		
 	226803535	CRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		
 	240502288	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		
-	251115902	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\B Rank		
+	251115902	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\B Rank		
 	290889248	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\B Rank		
 	298522292	ARankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		
 	372624166	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\A Rank		
-	381210908	CRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\B Rank		
-	382255735	ARankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\Z Rank		
-	389362804	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\Z Rank		
+	381210908	CRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\B Rank		
+	382255735	ARankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\Z Rank		
+	389362804	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\Z Rank		
 	403959770	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\Z Rank		
 	443948954	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\B Rank		
 	454959007	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\C Rank		
 	460889261	ARank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		
-	478328946	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\A Rank		
-	494855127	CRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\Z Rank		
-	510439546	CRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\A Rank		
+	478328946	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\A Rank		
+	494855127	CRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\Z Rank		
+	510439546	CRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\A Rank		
 	523712961	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\B Rank		
 	551326733	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\B Rank		
 	552905918	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\B Rank		
@@ -69,50 +69,50 @@ Custom State	ID	Name	State Group	Owner		Notes
 	575918231	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		
 	576848822	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\C Rank		
 	613799873	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		
-	615701351	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\A Rank		
-	648520962	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\A Rank		
-	693585803	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\Z Rank		
-	719577514	ARank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\Z Rank		
-	737806260	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\B Rank		
+	615701351	BRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\A Rank		
+	648520962	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\A Rank		
+	693585803	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\Z Rank		
+	719577514	ARank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\Z Rank		
+	737806260	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\B Rank		
 	761614109	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\A Rank		
 	831372938	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		
-	846716644	ARank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\Z Rank		
+	846716644	ARank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\Z Rank		
 	892637400	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\C Rank		
-	904567520	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\A Rank		
+	904567520	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\A Rank		
 	915980575	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\A Rank		
-	962790247	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\B Rank		
+	962790247	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\B Rank		
 	974530691	CRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\A Rank		
-	989589696	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\C Rank		
-	1015363457	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\C Rank		
-	1024973926	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\Z Rank		
+	989589696	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\C Rank		
+	1015363457	DefaultLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\C Rank		
+	1024973926	CRank	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\Z Rank		
 	1049510554	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\A Rank		
 	1055222654	BRankLevelComplete	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\A Rank		
-	1065803677	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\A Rank		
+	1065803677	Default	MusicState	\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\A Rank		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2415836739	Volume			\Default Work Unit\Volume	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	91991997	A Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete A Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\A Rank		1245052
-	199979841	D Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 D Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\D Rank		12316072
-	224804180	C Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 C Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\C Rank		11289744
-	235877040	B Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 B Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\B Rank		12316072
-	258938728	A Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 A Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\A Rank		11289744
-	283333686	A Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete A Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\A Rank		1362232
-	292928007	A Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 A Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\A Rank		12316072
-	339065431	C Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete C Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\C Rank		1059464
-	340410571	B Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete B Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\B Rank		1059464
-	382958651	B Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 B Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\B Rank		11289744
-	387177178	B Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete B Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\B Rank		864104
-	431964494	Z Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 Z Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\Z Rank		11289744
-	453463643	C Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 C Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\C Rank		12316072
-	527839406	New Music Track	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Salvation_in_Nowhere_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Shop\New Music Segment\New Music Track		5450920
-	535474979	Z Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 Z Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2\Track2\Z Rank		12316072
-	589526469	D Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 D Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\D Rank		11289744
-	779528907	Z Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete Z Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		1165120
-	844227655	C Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete C Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\C Rank		770892
-	913614350	New Music Track	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Title Screen With Radio Filter_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\MainMenu\New Music Segment\New Music Track		7816020
-	957625946	D Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete D Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\D Rank		921232
-	989431019	D Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete D Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\D Rank		1059464
-	1023498291	Z Rank	C:\Users\Aidan\MI498-SP23-Bungie (1)\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete Z Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track2LevelComplete\Track2LevelComplete\Z Rank		1373256
+	91991997	A Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete A Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\A Rank		1245052
+	199979841	D Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 D Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\D Rank		12316072
+	224804180	C Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 C Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\C Rank		11289744
+	235877040	B Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 B Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\B Rank		12316072
+	258938728	A Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 A Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\A Rank		11289744
+	283333686	A Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete A Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\A Rank		1362232
+	292928007	A Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 A Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\A Rank		12316072
+	339065431	C Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete C Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\C Rank		1059464
+	340410571	B Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete B Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\B Rank		1059464
+	382958651	B Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 B Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\B Rank		11289744
+	387177178	B Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete B Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\B Rank		864104
+	431964494	Z Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 Z Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\Z Rank		11289744
+	453463643	C Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 C Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\C Rank		12316072
+	527839406	New Music Track	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Salvation_in_Nowhere_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Shop\New Music Segment\New Music Track		0
+	535474979	Z Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 2 Z Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerup\Track2\Z Rank		12316072
+	589526469	D Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Loop 1 D Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1\Track1\D Rank		11289744
+	779528907	Z Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete Z Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\Z Rank		1165120
+	844227655	C Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete C Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\C Rank		770892
+	913614350	New Music Track	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Title Screen With Radio Filter_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\MainMenu\New Music Segment\New Music Track		7816020
+	957625946	D Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete D Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\D Rank		921232
+	989431019	D Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 1 Complete D Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\Track1LevelComplete\Track1LevelComplete\D Rank		1059464
+	1023498291	Z Rank	C:\Users\Aidan\Documents\GitHub\Acchellerate\MI498-SP23-Bungie\MI498-SP23-Bungie_WwiseProject\.cache\Mac\SFX\Acchellerate Level 2 Complete Z Rank_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BackgroundMusicState\SpeedPowerupLevelComplete\Track2LevelComplete\Z Rank		1373256
 

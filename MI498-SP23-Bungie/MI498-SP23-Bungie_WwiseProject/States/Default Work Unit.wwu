@@ -35,9 +35,9 @@
 					<ChildrenList>
 						<State Name="None" ID="{90C46B03-913C-4FCF-88FE-446A98A6FAE2}"/>
 						<State Name="Track1" ID="{663553DE-C4E9-45CE-A4BB-A4F6B44FD8E3}"/>
-						<State Name="Track2" ID="{CEE9F259-BFDE-416E-A6EA-6F02B007F41A}"/>
+						<State Name="SpeedPowerup" ID="{CEE9F259-BFDE-416E-A6EA-6F02B007F41A}"/>
 						<State Name="Track1LevelComplete" ID="{9E7E811B-183D-4A73-A5E5-56BAADA8400C}"/>
-						<State Name="Track2LevelComplete" ID="{F6B4E973-224A-4AE8-88A5-CA402D2F47B8}"/>
+						<State Name="SpeedPowerupLevelComplete" ID="{F6B4E973-224A-4AE8-88A5-CA402D2F47B8}"/>
 						<State Name="MainMenu" ID="{E794E764-83D1-42D2-9F06-D185D627136B}"/>
 						<State Name="Shop" ID="{D0437BE4-63F7-4336-B061-FAC9CF588060}"/>
 					</ChildrenList>

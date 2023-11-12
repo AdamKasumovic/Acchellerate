@@ -14,7 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID MUSICEVENT = 3341137194U;
-        static const AkUniqueID VICTORYMUSICEVENT = 2738305854U;
     } // namespace EVENTS
 
     namespace STATES
@@ -41,20 +40,21 @@ namespace AK
             } // namespace STATE
         } // namespace MUSICSTATE
 
-        namespace VICTORYMUSICSTATE
+        namespace TRACKSTATE
         {
-            static const AkUniqueID GROUP = 1688184833U;
+            static const AkUniqueID GROUP = 3401398945U;
 
             namespace STATE
             {
-                static const AkUniqueID ARANK = 1216448900U;
-                static const AkUniqueID BRANK = 153585799U;
-                static const AkUniqueID CRANK = 2729331502U;
-                static const AkUniqueID DEFAULT = 782826392U;
+                static const AkUniqueID MAINMENU = 3604647259U;
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID ZRANK = 3195934671U;
+                static const AkUniqueID SHOP = 251412225U;
+                static const AkUniqueID SPEEDPOWERUP = 3824330762U;
+                static const AkUniqueID SPEEDPOWERUPLEVELCOMPLETE = 1119708609U;
+                static const AkUniqueID TRACK1 = 147423U;
+                static const AkUniqueID TRACK1LEVELCOMPLETE = 2754944934U;
             } // namespace STATE
-        } // namespace VICTORYMUSICSTATE
+        } // namespace TRACKSTATE
 
     } // namespace STATES
 

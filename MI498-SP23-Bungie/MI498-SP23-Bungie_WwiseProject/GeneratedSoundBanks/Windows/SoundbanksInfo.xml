@@ -45,13 +45,13 @@
 				</StateGroup>
 				<StateGroup Id="3401398945" Name="TrackState">
 					<States>
-						<State Id="147420" Name="Track2"/>
 						<State Id="147423" Name="Track1"/>
 						<State Id="251412225" Name="Shop"/>
 						<State Id="748895195" Name="None"/>
-						<State Id="2033074619" Name="Track2LevelComplete"/>
+						<State Id="1119708609" Name="SpeedPowerupLevelComplete"/>
 						<State Id="2754944934" Name="Track1LevelComplete"/>
 						<State Id="3604647259" Name="MainMenu"/>
+						<State Id="3824330762" Name="SpeedPowerup"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -65,7 +65,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{432F65CE-ED3F-2939-6729-2D28618CF60F}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{49B625DE-66BB-BA4D-BE76-300071C8AF6E}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -172,7 +172,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="3401398945" Id="147420"/>
+							<SwitchValue GroupType="State" GroupId="3401398945" Id="3824330762"/>
 							<MediaRefs>
 								<MediaRef Id="199979841"/>
 								<MediaRef Id="235877040"/>
@@ -192,7 +192,7 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="3401398945" Id="2033074619"/>
+							<SwitchValue GroupType="State" GroupId="3401398945" Id="1119708609"/>
 							<MediaRefs>
 								<MediaRef Id="283333686"/>
 								<MediaRef Id="387177178"/>
@@ -222,17 +222,17 @@
 			<StateGroups>
 				<StateGroup Id="3401398945" Name="TrackState">
 					<States>
-						<State Id="147420" Name="Track2"/>
 						<State Id="147423" Name="Track1"/>
 						<State Id="251412225" Name="Shop"/>
 						<State Id="748895195" Name="None"/>
-						<State Id="2033074619" Name="Track2LevelComplete"/>
+						<State Id="1119708609" Name="SpeedPowerupLevelComplete"/>
 						<State Id="2754944934" Name="Track1LevelComplete"/>
 						<State Id="3604647259" Name="MainMenu"/>
+						<State Id="3824330762" Name="SpeedPowerup"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0C45D067-3508-F8B0-4282-106371ADCD7C}</FileHash>
+	<FileHash>{0D0F53CB-96C5-3426-9269-DFB6AD9CB078}</FileHash>
 </SoundBanksInfo>
