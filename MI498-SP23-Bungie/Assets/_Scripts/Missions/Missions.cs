@@ -393,6 +393,36 @@ public class Missions : MonoBehaviour
         }
     }
 
+    public void RegisterFlip(FlipType flipType,int numflips)
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is FlipsMission)
+            {
+                FlipsMission flipsMission = mission as FlipsMission;
+                if (flipsMission.IsActive)
+                    flipsMission.AddFlips(flipType, numflips);
+            }
+        }
+    }
+    public void RegisterFlipForgiving(FlipType flipType)
+    {
+        // Create a copy of the activeMissions list
+        List<SingleMission> missionsCopy = new List<SingleMission>(activeMissions);
+        foreach (SingleMission mission in missionsCopy)
+        {
+            if (mission is FlipsForgivingMission)
+            {
+                FlipsForgivingMission flipsForgivingMission = mission as FlipsForgivingMission;
+                if (flipsForgivingMission.IsActive)
+                {
+                    flipsForgivingMission.AddFlip(flipType);
+                }
+            }
+        }
+    }
     // Call this from the appropriate script that knows when the needed event happens like:
     //Missions missionsComponent = Missions.Instance;
     //missionsComponent.SampleUpdater(...);

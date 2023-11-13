@@ -143,14 +143,14 @@ public class CarManager : MonoBehaviour
     private bool wasAirborne = false;
     private Vector3 initialRotation;
     [HideInInspector]
-    public float totalRotation = 0f;  // You *may* want this, Aaron, this is the signed angle traveled while airborne (for example, hasFlipped = true and totalRotation >= (720-leniency) means two flips!)
+    public float totalRotation = 0f;  // Used to calculate numFlips
     private float lastEulerZ;
     public int flipPointMultiplier = 1;
     public int airtimePointMultiplier = 100;
     public float minimumAirtimeForPoints = 5f;
     private Vector3 initialRotationX;
     [HideInInspector]
-    public float totalRotationX = 0f;  // You *may* want this, Aaron, this is the signed angle traveled while airborne (for example, hasFlipped = true and totalRotation >= (720-leniency) means two flips!)
+    public float totalRotationX = 0f;  // Used to calculate numFlipsX
     private float lastEulerX;
     public int flipPointMultiplierX = 1;
     public int airtimePointMultiplierX = 100;
@@ -160,11 +160,9 @@ public class CarManager : MonoBehaviour
     public float angleTraveledToFlip = 315f;  // leniency is 45 degrees
 
     [HideInInspector]
-    // True if car has rotated angleTraveledToFlip much whilst airborne, currently set to false on landing, but that can be changed to be set false after being used in style points calculations
-    public bool hasFlipped = false;  // You also want this, Aaron
+    public int numFlips = 0;
     [HideInInspector]
-    public bool hasFlippedX = false;
-
+    public int numFlipsX = 0;
     // Use "isSpinning" to check for kills while doing a burnout/donuts, Aaron
     [HideInInspector]
     public bool frontFlipKillIndicator = false;  // Use to tell if a kill was caused by a front flip, Aaron
@@ -1065,8 +1063,18 @@ public class CarManager : MonoBehaviour
         // Airborne timer
         if (!carController.isGrounded)
         {
+            
             airTime += Time.deltaTime;
-
+            if (Mathf.Abs(totalRotationX) >= (numFlips +1) *360)
+            {
+                missionsComponent.RegisterFlipForgiving(FlipType.side);
+                numFlips++;
+            }
+            if (Mathf.Abs(totalRotation) >= (numFlipsX + 1) * 360)
+            {
+                missionsComponent.RegisterFlipForgiving(FlipType.front);
+                numFlipsX++;
+            }
             // The number of wrong answers to this problem on the Unity forums is amazing
             // A lot of people would kill for this solution xD
             if (!wasAirborne)
@@ -1087,12 +1095,6 @@ public class CarManager : MonoBehaviour
                 initialRotation = transform.up;
                 lastEulerZ = transform.localEulerAngles.z;
 
-                if (Mathf.Abs(totalRotation) >= angleTraveledToFlip && !hasFlipped)
-                {
-                    hasFlipped = true;
-                    //Debug.Log("Did a flip!");
-                }
-
                 // transform.localEulerAngles.x is annoying
                 var angle = transform.localEulerAngles.x;
                 if (Vector3.Dot(Vector3.up, transform.up) < 0)
@@ -1108,22 +1110,16 @@ public class CarManager : MonoBehaviour
                 totalRotationX += signOfAngleX * newAngleX;
                 initialRotationX = transform.forward;
                 lastEulerX = angle;
-
-                if (Mathf.Abs(totalRotationX) >= angleTraveledToFlip && !hasFlippedX)
-                {
-                    hasFlippedX = true;
-                    //Debug.Log("Did a flip!");
-                }
             }
         }
         else
         {
-            airTime = 0f;
-            hasFlipped = false;  // Aaron, you may want to move this line to after you use the flipped status for style
-            hasFlippedX = false;
+            numFlips = 0;
+            numFlipsX = 0;
+            airTime = 0f;;
         }
 
-        //Debug.Log(hasFlipped);
+        //Debug.Log(numFlips);
 
         wasGrounded = carController.isGrounded;
         wasAirborne = !carController.isGrounded;
@@ -1283,7 +1279,7 @@ public class CarManager : MonoBehaviour
             float flipTorqueMagnitude = upsideDownFactor * flipTorque;
 
             // Determine the direction of most rotation and apply the flip torque
-            //if (Mathf.Abs(localAngularVelocity.x) > Mathf.Abs(localAngularVelocity.z) && !hasFlippedX)
+            //if (Mathf.Abs(localAngularVelocity.x) > Mathf.Abs(localAngularVelocity.z) && numFlips <= 0)
             //{
             //    // The car is rotating more around the right axis
             //    Vector3 flipTorqueDirection = localAngularVelocity.x > 0 ? transform.right : -transform.right;
@@ -1302,24 +1298,19 @@ public class CarManager : MonoBehaviour
     {
         if (carController.isGrounded && wasAirborne)
         {
-            //Debug.Log(totalRotation);
-            if (hasFlipped && !(float.IsPositiveInfinity(totalRotation)  || float.IsNegativeInfinity(totalRotation) || float.IsNaN(totalRotation)))
+            if (numFlips > 0 && !(float.IsPositiveInfinity(totalRotation)  || float.IsNegativeInfinity(totalRotation) || float.IsNaN(totalRotation)))
             {
-                int numFlips = ((int)Mathf.Abs(totalRotation) / 360) + (Mathf.Abs(totalRotation) % 360 > angleTraveledToFlip ? 1 : 0);
-                if(numFlips > 0)
-                {
-                    int pts = NewStyleSystem.instance.AddPointsWithMultiplier(numFlips * flipPointMultiplier);
-                    StyleTextbox.instance.AddRewardInfoAndHandleTimeout($"Barrel Roll x{numFlips}", pts, 3f);
-                }
+                numFlips += (Mathf.Abs(totalRotation) % 360 > angleTraveledToFlip ? 1 : 0);
+                missionsComponent.RegisterFlip(FlipType.front, numFlips);
+                int pts = NewStyleSystem.instance.AddPointsWithMultiplier(numFlips * flipPointMultiplier);
+                StyleTextbox.instance.AddRewardInfoAndHandleTimeout($"Barrel Roll x{numFlips}", pts, 3f);
             }
-            if (hasFlippedX && !(float.IsPositiveInfinity(totalRotationX) || float.IsNegativeInfinity(totalRotationX) || float.IsNaN(totalRotationX)))
+            if (numFlipsX > 0 && !(float.IsPositiveInfinity(totalRotationX) || float.IsNegativeInfinity(totalRotationX) || float.IsNaN(totalRotationX)))
             {
-                int numFlips = ((int)Mathf.Abs(totalRotationX) / 360) + (Mathf.Abs(totalRotationX) % 360 > angleTraveledToFlip ? 1 : 0);
-                if (numFlips > 0)
-                {
-                    int pts = NewStyleSystem.instance.AddPointsWithMultiplier(numFlips * flipPointMultiplier);
-                    StyleTextbox.instance.AddRewardInfoAndHandleTimeout($"Flip x{numFlips}", pts, 3f);
-                }
+                missionsComponent.RegisterFlip(FlipType.side, numFlipsX);
+                numFlipsX += (Mathf.Abs(totalRotationX) % 360 > angleTraveledToFlip ? 1 : 0);
+                int pts = NewStyleSystem.instance.AddPointsWithMultiplier(numFlipsX * flipPointMultiplier);
+                StyleTextbox.instance.AddRewardInfoAndHandleTimeout($"Flip x{numFlipsX}", pts, 3f);
             }
             if (airTime > minimumAirtimeForPoints)
             {
