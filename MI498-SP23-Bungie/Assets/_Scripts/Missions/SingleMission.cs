@@ -90,6 +90,9 @@ public abstract class SingleMission : MonoBehaviour
     [Range(0, 1000)]
     public float JumpBoostStrength = 100, JumpBoostDuration = 10;
     public bool GriddyReward = false;
+    public bool NoCooldownsReward = false;
+    [Range(0, 100)]
+    public float NoCooldownsLength = 5;
     
 
 
@@ -109,6 +112,10 @@ public abstract class SingleMission : MonoBehaviour
 
     private Coroutine griddyCoroutine;
     private bool griddyActive = false;
+
+    private Coroutine noCooldownsCoroutine;
+    private bool noCooldownsActive = false;
+    private List<float> cooldownStorage = new List<float>();
 
     protected virtual void Start()
     {
@@ -288,6 +295,51 @@ public abstract class SingleMission : MonoBehaviour
             griddyCoroutine = StartCoroutine(ZombieGriddyDuration());
         }
 
+        if (NoCooldownsReward)
+        {
+            if(noCooldownsActive && noCooldownsCoroutine != null)
+            {
+                StopCoroutine(noCooldownsCoroutine);
+                foreach(float f in cooldownStorage)
+                {
+                    if(CarManager.Instance.frontFlipCooldown == 0)
+                    {
+                        CarManager.Instance.frontFlipCooldown = f;
+                    }
+                    else if (CarManager.Instance.spinCooldown == 0)
+                    {
+                        CarManager.Instance.spinCooldown = f;
+                    }
+                    else if (CarManager.Instance.tiltCooldown == 0)
+                    {
+                        CarManager.Instance.tiltCooldown = f;
+                    }
+                    else if(CarManager.Instance.vertBoostCooldown == 0)
+                    {
+                        CarManager.Instance.vertBoostCooldown = f;
+                    }
+                    else if (CarManager.Instance.horBoostRecharge == 0)
+                    {
+                        CarManager.Instance.horBoostRecharge = f;
+                    }
+                }
+                cooldownStorage.Clear();
+            }
+            cooldownStorage.Add(CarManager.Instance.frontFlipCooldown);
+            cooldownStorage.Add(CarManager.Instance.spinCooldown);
+            cooldownStorage.Add(CarManager.Instance.tiltCooldown);
+            cooldownStorage.Add(CarManager.Instance.vertBoostCooldown);
+            cooldownStorage.Add(CarManager.Instance.horBoostRecharge);
+            CarManager.Instance.frontFlipCooldown = 0;
+            CarManager.Instance.spinCooldown = 0;
+            CarManager.Instance.tiltCooldown = 0;
+            CarManager.Instance.vertBoostCooldown = 0;
+            CarManager.Instance.horBoostRecharge = 0;
+            noCooldownsActive = true;
+            noCooldownsCoroutine = StartCoroutine(noCooldownsCoroutineDuration());
+
+        }
+
 
     }
 
@@ -326,6 +378,36 @@ public abstract class SingleMission : MonoBehaviour
         yield return new WaitForSeconds(12.66f);
         CarManager.Instance.griddy = false;
         griddyActive = false;
+    }
+
+    private IEnumerator noCooldownsCoroutineDuration()
+    {
+        yield return new WaitForSeconds(NoCooldownsLength);
+        foreach (float f in cooldownStorage)
+        {
+            if (CarManager.Instance.frontFlipCooldown == 0)
+            {
+                CarManager.Instance.frontFlipCooldown = f;
+            }
+            else if (CarManager.Instance.spinCooldown == 0)
+            {
+                CarManager.Instance.spinCooldown = f;
+            }
+            else if (CarManager.Instance.tiltCooldown == 0)
+            {
+                CarManager.Instance.tiltCooldown = f;
+            }
+            else if (CarManager.Instance.vertBoostCooldown == 0)
+            {
+                CarManager.Instance.vertBoostCooldown = f;
+            }
+            else if (CarManager.Instance.horBoostRecharge == 0)
+            {
+                CarManager.Instance.horBoostRecharge = f;
+            }
+        }
+        cooldownStorage.Clear();
+        noCooldownsActive = false;
     }
 
 }
