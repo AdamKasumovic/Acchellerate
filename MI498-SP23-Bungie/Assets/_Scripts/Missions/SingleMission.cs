@@ -86,6 +86,10 @@ public abstract class SingleMission : MonoBehaviour
     public float IncreaseToMaxSpeedInMPH = 60f;
     [Range(0, 1000000)]
     public float SpeedIncreaseDuration = 30f;
+    public bool SlowerZombiesReward = false;
+    [Range(0, 2)]
+    public float ZombiesSpeedMultiplier = 0.8f;
+    public float SlowerZombiesDuration = 10;
     public bool JumpBoostReward = false;
     [Range(0, 1000)]
     public float JumpBoostStrength = 100, JumpBoostDuration = 10;
@@ -105,6 +109,10 @@ public abstract class SingleMission : MonoBehaviour
     private Coroutine speedBuffCoroutine;
     private bool speedBuffActive = false;
     private float oldBoostDuration;
+
+
+    private Coroutine zombiesSpeedCoroutine;
+    private bool slowerZombiesActive = false;
 
     private Coroutine jumpBoostCoroutine;
     private bool jumpBoostActive = false;
@@ -270,6 +278,17 @@ public abstract class SingleMission : MonoBehaviour
 
             speedBuffCoroutine = StartCoroutine(ResetSpeedBuffAfterDuration());
         }
+        if (SlowerZombiesReward)
+        {
+            if (slowerZombiesActive && zombiesSpeedCoroutine != null)
+            {
+                StopCoroutine(zombiesSpeedCoroutine);
+            }
+            ZombieSpeedController.Instance.speedMultiplier = ZombiesSpeedMultiplier;
+            slowerZombiesActive = true;
+
+            zombiesSpeedCoroutine = StartCoroutine(ResetSlowerZombiesAfterDuration());
+        }
         if (JumpBoostReward)
         {
             if(jumpBoostActive && jumpBoostCoroutine != null)
@@ -362,6 +381,14 @@ public abstract class SingleMission : MonoBehaviour
         CarManager.speedBuff = 0f;
         speedBuffActive = false;
         CarManager.Instance.horBoostDuration = oldBoostDuration;
+    }
+
+    private IEnumerator ResetSlowerZombiesAfterDuration()
+    {
+        yield return new WaitForSeconds(SlowerZombiesDuration);
+
+        ZombieSpeedController.Instance.speedMultiplier = 1;
+        slowerZombiesActive = false;
     }
 
     private IEnumerator ResetJumpBoostAfterDuration()

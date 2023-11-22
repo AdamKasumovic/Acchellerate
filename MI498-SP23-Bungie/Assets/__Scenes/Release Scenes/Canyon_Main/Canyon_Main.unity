@@ -51835,10 +51835,15 @@ MonoBehaviour:
   DoSpeedBuff: 0
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
+  SlowerZombiesReward: 0
+  ZombiesSpeedMultiplier: 0.8
+  SlowerZombiesDuration: 10
   JumpBoostReward: 0
   JumpBoostStrength: 100
   JumpBoostDuration: 10
   GriddyReward: 0
+  NoCooldownsReward: 0
+  NoCooldownsLength: 5
   RequiredKills: 10
   missionEnemyType: 2
   missionKillType: 7
@@ -51872,10 +51877,15 @@ MonoBehaviour:
   DoSpeedBuff: 0
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
+  SlowerZombiesReward: 0
+  ZombiesSpeedMultiplier: 0.8
+  SlowerZombiesDuration: 10
   JumpBoostReward: 0
   JumpBoostStrength: 100
   JumpBoostDuration: 10
   GriddyReward: 0
+  NoCooldownsReward: 0
+  NoCooldownsLength: 5
   areaTokensParent: {fileID: 2117719542}
 --- !u!1001 &1419815740
 PrefabInstance:
@@ -60841,9 +60851,6 @@ MonoBehaviour:
   - {fileID: 1418510961}
   - {fileID: 1783937233}
   - {fileID: 1418510962}
-  - {fileID: 1783937237}
-  - {fileID: 1783937240}
-  - {fileID: 1783937241}
   - {fileID: 1783937242}
   numberOfStartMissionsToActivate: 10
   randomIntervalMissions:
@@ -60888,10 +60895,15 @@ MonoBehaviour:
   DoSpeedBuff: 0
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
+  SlowerZombiesReward: 0
+  ZombiesSpeedMultiplier: 0.8
+  SlowerZombiesDuration: 10
   JumpBoostReward: 0
   JumpBoostStrength: 100
   JumpBoostDuration: 10
   GriddyReward: 0
+  NoCooldownsReward: 0
+  NoCooldownsLength: 5
   timesToMashHeadlights: 100
 --- !u!114 &1783937237
 MonoBehaviour:
@@ -60923,10 +60935,15 @@ MonoBehaviour:
   DoSpeedBuff: 0
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
+  SlowerZombiesReward: 0
+  ZombiesSpeedMultiplier: 0.8
+  SlowerZombiesDuration: 10
   JumpBoostReward: 0
   JumpBoostStrength: 100
   JumpBoostDuration: 10
   GriddyReward: 0
+  NoCooldownsReward: 0
+  NoCooldownsLength: 5
   missionGradeLetter: 2
   radius: 85
   sphereRadius: {fileID: 1588820270124484104, guid: 022b8bf8639c63c439cc3831dfcf5f4e, type: 3}
@@ -60960,10 +60977,15 @@ MonoBehaviour:
   DoSpeedBuff: 0
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
+  SlowerZombiesReward: 0
+  ZombiesSpeedMultiplier: 0.8
+  SlowerZombiesDuration: 10
   JumpBoostReward: 0
   JumpBoostStrength: 100
   JumpBoostDuration: 10
   GriddyReward: 0
+  NoCooldownsReward: 0
+  NoCooldownsLength: 5
   RequiredTime: 20
   RequiredCrashsToFail: 1
 --- !u!114 &1783937240
@@ -60996,10 +61018,15 @@ MonoBehaviour:
   DoSpeedBuff: 0
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
+  SlowerZombiesReward: 0
+  ZombiesSpeedMultiplier: 0.8
+  SlowerZombiesDuration: 10
   JumpBoostReward: 0
   JumpBoostStrength: 100
   JumpBoostDuration: 10
   GriddyReward: 0
+  NoCooldownsReward: 0
+  NoCooldownsLength: 5
   RequiredTime: 10
   RequiredMinSpeed: 10
 --- !u!114 &1783937241
@@ -61032,10 +61059,15 @@ MonoBehaviour:
   DoSpeedBuff: 0
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
+  SlowerZombiesReward: 0
+  ZombiesSpeedMultiplier: 0.8
+  SlowerZombiesDuration: 10
   JumpBoostReward: 0
   JumpBoostStrength: 100
   JumpBoostDuration: 10
   GriddyReward: 0
+  NoCooldownsReward: 0
+  NoCooldownsLength: 5
   RequiredObjectDestroys: 20
 --- !u!114 &1783937242
 MonoBehaviour:
@@ -61046,11 +61078,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1783937224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cef72093581aea84991c7d7f24aa7e48, type: 3}
+  m_Script: {fileID: 11500000, guid: 5830b6e0b4b015441b87f1a50cdbdadd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseTimer: 1
-  MissionDuration: 120
+  UseTimer: 0
+  MissionDuration: 0
   BufferTime: 3
   timeRemaining: 0
   ShowOnUI: 1
@@ -61067,12 +61099,15 @@ MonoBehaviour:
   DoSpeedBuff: 0
   IncreaseToMaxSpeedInMPH: 60
   SpeedIncreaseDuration: 30
+  SlowerZombiesReward: 1
+  ZombiesSpeedMultiplier: 0.1
+  SlowerZombiesDuration: 10
   JumpBoostReward: 0
   JumpBoostStrength: 100
   JumpBoostDuration: 10
   GriddyReward: 0
-  flipType: 0
-  RequiredFlips: 10
+  NoCooldownsReward: 0
+  NoCooldownsLength: 5
 --- !u!1001 &1786247944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70973,11 +71008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.05336758
+      value: 0.053367566
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.005612297
+      value: 0.0056122956
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266227250432, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -71029,11 +71064,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266664966116, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.17383125
+      value: 0.17383124
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266664966116, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.09988187
+      value: 0.099881865
       objectReference: {fileID: 0}
     - target: {fileID: 4927837266664966116, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -71293,11 +71328,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267453692120, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.053166028
+      value: 0.05316602
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267453692120, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.007278135
+      value: 0.0072781323
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267453692120, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -71305,7 +71340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267453692120, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.13543408
+      value: -0.13543406
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267526318946, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalPosition.x
@@ -71389,11 +71424,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.053367585
+      value: 0.053367577
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.005612297
+      value: 0.005612296
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267852075409, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
@@ -71417,19 +71452,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267854114894, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.10992186
+      value: 0.10992189
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267854114894, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.015047689
+      value: 0.015047694
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267854114894, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.98464304
+      value: 0.984643
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267854114894, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.13479213
+      value: -0.13479212
       objectReference: {fileID: 0}
     - target: {fileID: 4927837267931951762, guid: 77f8bfdd49083734ba9d4124445c8185, type: 3}
       propertyPath: m_LocalPosition.x
