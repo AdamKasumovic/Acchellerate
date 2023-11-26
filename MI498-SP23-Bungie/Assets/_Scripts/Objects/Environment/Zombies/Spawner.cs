@@ -89,6 +89,10 @@ public class Spawner : MonoBehaviour
         {
             SpawnUpdate();
         }
+        if (NukeManager.Instance.nukeActive)
+        {
+            numEnemiesSpawned = 0;
+        }
     }
 
     void SpawnUpdate()
