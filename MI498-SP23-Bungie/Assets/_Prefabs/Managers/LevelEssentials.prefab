@@ -1993,7 +1993,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37302538437034359}
-  m_LocalRotation: {x: 0.09326526, y: -0.000000017658627, z: 0.0000000016541464, w: 0.9956413}
+  m_LocalRotation: {x: 0.09326526, y: 0.000000017658627, z: -0.0000000016541464, w: 0.9956413}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -35545,7 +35545,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837266688049930}
-  m_LocalRotation: {x: 0.17592236, y: 0.012552779, z: -0.0022434893, w: 0.9843215}
+  m_LocalRotation: {x: 0.17592236, y: 0.012552732, z: -0.0022434809, w: 0.9843215}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38270,7 +38270,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267327386424}
-  m_LocalRotation: {x: 0.10149994, y: 0.000000017117522, z: -0.0000000017464468, w: 0.99483556}
+  m_LocalRotation: {x: 0.10149994, y: -0.00000001711752, z: 0.0000000017464465, w: 0.99483556}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41394,7 +41394,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837267931951764}
-  m_LocalRotation: {x: 0.12686902, y: 0.0000000085336715, z: -0.0000000010914782, w: 0.9919195}
+  m_LocalRotation: {x: 0.12686902, y: -0.000000008533673, z: 0.0000000010914786, w: 0.9919195}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43132,7 +43132,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927837268156954456}
-  m_LocalRotation: {x: 0.22973423, y: 0.012410526, z: -0.0029297275, w: 0.97316986}
+  m_LocalRotation: {x: 0.22973423, y: 0.012410563, z: -0.0029297364, w: 0.97316986}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -47564,7 +47564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f403579429fa8684697579cb0fdfa1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyAfterSeconds: 0.25
+  destroyAfterSeconds: 1
   useScaledTime: 1
 --- !u!1 &7136096343090673268
 GameObject:
