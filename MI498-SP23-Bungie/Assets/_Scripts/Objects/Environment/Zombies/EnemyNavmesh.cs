@@ -97,7 +97,7 @@ public class EnemyNavmesh : MonoBehaviour
     void Update()
     {
        
-        if (speedMultiplier != ZombieSpeedController.Instance.speedMultiplier)
+        if (ZombieSpeedController.Instance != null && speedMultiplier != ZombieSpeedController.Instance.speedMultiplier)
         {
             speedMultiplier = ZombieSpeedController.Instance.speedMultiplier;
             CancelMove();

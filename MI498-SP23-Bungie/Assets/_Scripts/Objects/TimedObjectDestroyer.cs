@@ -6,6 +6,7 @@ public class TimedObjectDestroyer : MonoBehaviour
 {
     public float destroyAfterSeconds = 5f;
     private float timer = 0f;
+    public bool useScaledTime = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class TimedObjectDestroyer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
+        timer += useScaledTime ? Time.deltaTime : Time.unscaledDeltaTime;
         if (timer >= destroyAfterSeconds)
         {
             Destroy(gameObject);

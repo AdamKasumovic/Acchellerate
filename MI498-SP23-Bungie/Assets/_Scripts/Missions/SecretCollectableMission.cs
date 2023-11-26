@@ -47,7 +47,7 @@ public class SecretCollectableMission : SingleMission
             MissionName = $"<sprite index=3{tintString}> {SpriteInsideBoxMarkdown}{"Find the Secret Totem"}{secondLine}";
 
         }
-        Debug.Log(MissionName);
+        //Debug.Log(MissionName);
     }
 
 
