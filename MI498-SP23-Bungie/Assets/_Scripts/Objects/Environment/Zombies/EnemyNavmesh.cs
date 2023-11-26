@@ -281,8 +281,12 @@ public class EnemyNavmesh : MonoBehaviour
 
     public void CancelMove()
     {
-        _agent.isStopped = true;
-        _agent.ResetPath();
+        NavMeshHit hit;
+        if (_agent.isActiveAndEnabled && NavMesh.SamplePosition(_agent.transform.position, out hit, 1.0f, NavMesh.AllAreas))
+        {
+            _agent.isStopped = true;
+            _agent.ResetPath();
+        }
     }
 
     public void MoveToTarget()

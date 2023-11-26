@@ -97,6 +97,7 @@ public abstract class SingleMission : MonoBehaviour
     public bool NoCooldownsReward = false;
     [Range(0, 100)]
     public float NoCooldownsLength = 5;
+    public bool DoNuke = false;
     
 
 
@@ -357,6 +358,11 @@ public abstract class SingleMission : MonoBehaviour
             noCooldownsActive = true;
             noCooldownsCoroutine = StartCoroutine(noCooldownsCoroutineDuration());
 
+        }
+
+        if (DoNuke)
+        {
+            NukeManager.Instance.LaunchNuke();
         }
 
 

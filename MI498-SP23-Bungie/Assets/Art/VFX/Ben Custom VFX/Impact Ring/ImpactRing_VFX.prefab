@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyAfterSeconds: 5
+  useScaledTime: 1
 --- !u!1 &7333873207313443716
 GameObject:
   m_ObjectHideFlags: 0
