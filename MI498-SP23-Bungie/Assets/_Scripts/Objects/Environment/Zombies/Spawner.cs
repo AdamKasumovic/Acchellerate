@@ -107,7 +107,7 @@ public class Spawner : MonoBehaviour
 
     void Spawn()
     {
-        if (NukeManager.Instance.nukeActive)
+        if (NukeManager.Instance != null && NukeManager.Instance.nukeActive)
         {
             return;
         }
