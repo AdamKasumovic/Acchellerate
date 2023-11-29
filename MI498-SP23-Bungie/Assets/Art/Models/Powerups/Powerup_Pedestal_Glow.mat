@@ -244,7 +244,7 @@ Material:
     - _FlipbookBlending: 0
     - _FlipbookMode: 0
     - _Glossiness: 0
-    - _Glow_Intensity: 1
+    - _Glow_Intensity: 3
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0
