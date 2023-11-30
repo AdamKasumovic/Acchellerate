@@ -212,7 +212,11 @@ public class EnemyStats : MonoBehaviour
         if (!flashing)
         {
             flashing = true;
-            SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.CarHitZombie);
+            if (!NukeManager.Instance.nukeActive)
+            {
+                SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.CarHitZombie);
+            }
+
             for (int i = 0; i < smrs.Length; i++)
             {
                 smrs[i].material.color = Color.red;
