@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Gaia;
 
 public class Nuke : MonoBehaviour
 {
     public GameObject shockwavePrefab;
+
+    private void Start()
+    {
+        GaiaAPI.StartWeatherRain();
+    }
 
     void OnCollisionEnter(Collision collision)
     {

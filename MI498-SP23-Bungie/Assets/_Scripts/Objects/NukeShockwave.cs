@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Gaia;
 
 public class NukeShockwave : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class NukeShockwave : MonoBehaviour
     private IEnumerator ResetNuke()
     {
         yield return new WaitForSeconds(timeBeforeZombiesSpawnAgain);
+        GaiaAPI.StopWeatherRain();
         NukeManager.Instance.nukeActive = false;
         Destroy(gameObject);
     }
