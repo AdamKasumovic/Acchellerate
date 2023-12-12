@@ -27,7 +27,7 @@ public class FlyMission : SingleMission
     {
         base.Update();
         if (!IsCompleted && !IsFailed)  
-            if (!carController.isGrounded && instance.boost && instance.horBoostTimer > 0 && !instance.boostRefreshing)
+            if (!carController.isGrounded && CarInputManager.Instance.boost && instance.horBoostTimer > 0 && !CarInputManager.Instance.boostRefreshing)
             {
                 Execute();
             }
