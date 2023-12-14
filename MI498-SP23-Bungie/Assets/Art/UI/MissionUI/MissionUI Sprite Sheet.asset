@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6b8de1432e4dc1a40969a695b820b602, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -76,56 +76,110 @@ MonoBehaviour:
     m_StrikethroughOffset: 0
     m_StrikethroughThickness: 0
     m_TabWidth: 0
-  spriteSheet: {fileID: 2800000, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  spriteSheet: {fileID: 2800000, guid: 6b8de1432e4dc1a40969a695b820b602, type: 3}
   m_SpriteCharacterTable:
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 1
-    m_Scale: 0.2
-    m_Name: MissionSkullEyeLeft
-    m_HashCode: -1277927581
-  - m_ElementType: 2
-    m_Unicode: 65534
-    m_GlyphIndex: 7
-    m_Scale: 0.2
-    m_Name: MissionSkullEyeRight
-    m_HashCode: 770653112
-  - m_ElementType: 2
-    m_Unicode: 65534
-    m_GlyphIndex: 2
-    m_Scale: 1.6
-    m_Name: MissionTimer
-    m_HashCode: 501948459
-  - m_ElementType: 2
-    m_Unicode: 65534
-    m_GlyphIndex: 0
-    m_Scale: 1.3914894
-    m_Name: MissionBlank
-    m_HashCode: 494568742
+    m_Scale: 1.4
+    m_Name: StopWatch
+    m_HashCode: 71061809
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 3
-    m_Scale: 1.6415663
-    m_Name: MissionPass
-    m_HashCode: 275663357
-  - m_ElementType: 2
-    m_Unicode: 65534
-    m_GlyphIndex: 5
-    m_Scale: 1.595122
+    m_Scale: 1.4
     m_Name: MissionFail
     m_HashCode: 275156078
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 6
-    m_Scale: 1.6029413
-    m_Name: MissionActive
-    m_HashCode: -808704224
+    m_GlyphIndex: 2
+    m_Scale: 1.6
+    m_Name: MissionAlert
+    m_HashCode: 495683106
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 0
+    m_Scale: 1.6
+    m_Name: MissionSuccess
+    m_HashCode: -890256945
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 4
-    m_Scale: 1.8
-    m_Name: MissionSkull
-    m_HashCode: 512371905
+    m_Scale: 1.4
+    m_Name: Skull
+    m_HashCode: 99712813
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 5
+    m_Scale: 1.2
+    m_Name: Tornado
+    m_HashCode: 226582829
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 6
+    m_Scale: 1.6029413
+    m_Name: Jump
+    m_HashCode: 2785154
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 7
+    m_Scale: 1.4
+    m_Name: Flip
+    m_HashCode: 2625363
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 8
+    m_Scale: 1.4
+    m_Name: Map
+    m_HashCode: 80764
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 9
+    m_Scale: 0.8
+    m_Name: Boost
+    m_HashCode: 82210053
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 10
+    m_Scale: 1.4
+    m_Name: Tilt
+    m_HashCode: 2992165
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 11
+    m_Scale: 1.4
+    m_Name: Burnout
+    m_HashCode: -438722491
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 12
+    m_Scale: 1.4
+    m_Name: Boost2
+    m_HashCode: -1582035561
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 13
+    m_Scale: 1.4
+    m_Name: Boost2
+    m_HashCode: -1582035561
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 14
+    m_Scale: 1.2
+    m_Name: Cancel
+    m_HashCode: -1632427738
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 15
+    m_Scale: 1.4
+    m_Name: Headlights
+    m_HashCode: 2138067621
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 16
+    m_Scale: 1.4
+    m_Name: FlameCircle
+    m_HashCode: 1556001841
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
@@ -135,10 +189,10 @@ MonoBehaviour:
       m_HorizontalBearingY: 186
       m_HorizontalAdvance: 235
     m_GlyphRect:
-      m_X: 289
-      m_Y: 546
-      m_Width: 235
-      m_Height: 235
+      m_X: 38
+      m_Y: 132
+      m_Width: 277
+      m_Height: 266
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
@@ -147,14 +201,14 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 16
       m_Height: 16
-      m_HorizontalBearingX: -86
-      m_HorizontalBearingY: 42.5
+      m_HorizontalBearingX: -1.25
+      m_HorizontalBearingY: 11.49
       m_HorizontalAdvance: 16
     m_GlyphRect:
-      m_X: 302
-      m_Y: 481
-      m_Width: 16
-      m_Height: 16
+      m_X: 5
+      m_Y: -353
+      m_Width: 256
+      m_Height: 326
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
@@ -168,7 +222,7 @@ MonoBehaviour:
       m_HorizontalAdvance: 247
     m_GlyphRect:
       m_X: 18
-      m_Y: 417
+      m_Y: 438
       m_Width: 247
       m_Height: 317
     m_Scale: 1
@@ -179,12 +233,12 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 244
       m_Height: 249
-      m_HorizontalBearingX: -244
-      m_HorizontalBearingY: 240.9
+      m_HorizontalBearingX: 5.34
+      m_HorizontalBearingY: 176.3
       m_HorizontalAdvance: 244
     m_GlyphRect:
       m_X: 340
-      m_Y: 295
+      m_Y: 433
       m_Width: 244
       m_Height: 249
     m_Scale: 1
@@ -199,8 +253,8 @@ MonoBehaviour:
       m_HorizontalBearingY: 253.3
       m_HorizontalAdvance: 256
     m_GlyphRect:
-      m_X: 10
-      m_Y: 56
+      m_X: 346
+      m_Y: 110
       m_Width: 256
       m_Height: 327
     m_Scale: 1
@@ -211,12 +265,12 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 199
       m_Height: 205
-      m_HorizontalBearingX: -242.1
+      m_HorizontalBearingX: 6.5
       m_HorizontalBearingY: 169.1
       m_HorizontalAdvance: 199
     m_GlyphRect:
-      m_X: 387
-      m_Y: 45
+      m_X: 657
+      m_Y: 1414
       m_Width: 199
       m_Height: 205
     m_Scale: 1
@@ -225,15 +279,15 @@ MonoBehaviour:
     sprite: {fileID: 1819849871, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
   - m_Index: 6
     m_Metrics:
-      m_Width: 112
+      m_Width: 156.35
       m_Height: 255
-      m_HorizontalBearingX: -239.3
+      m_HorizontalBearingX: -8.8
       m_HorizontalBearingY: 206.1
       m_HorizontalAdvance: 112
     m_GlyphRect:
-      m_X: 277
-      m_Y: 12
-      m_Width: 112
+      m_X: 701
+      m_Y: 1123
+      m_Width: 126
       m_Height: 255
     m_Scale: 1
     m_AtlasIndex: 0
@@ -243,14 +297,158 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 16
       m_Height: 16
-      m_HorizontalBearingX: -66.5
-      m_HorizontalBearingY: 42.5
+      m_HorizontalBearingX: -0.3
+      m_HorizontalBearingY: 13.4
       m_HorizontalAdvance: 16
     m_GlyphRect:
-      m_X: 302
-      m_Y: 481
-      m_Width: 16
-      m_Height: 16
+      m_X: 655
+      m_Y: 841
+      m_Width: 235
+      m_Height: 233
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -728890296, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  - m_Index: 8
+    m_Metrics:
+      m_Width: 235
+      m_Height: 235
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 186
+      m_HorizontalAdvance: 235
+    m_GlyphRect:
+      m_X: 736
+      m_Y: 467
+      m_Width: 235
+      m_Height: 235
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -728890296, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  - m_Index: 9
+    m_Metrics:
+      m_Width: 764.8
+      m_Height: 235
+      m_HorizontalBearingX: -32.5
+      m_HorizontalBearingY: 218.3
+      m_HorizontalAdvance: 235
+    m_GlyphRect:
+      m_X: 651
+      m_Y: 182
+      m_Width: 412
+      m_Height: 122
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -728890296, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  - m_Index: 10
+    m_Metrics:
+      m_Width: 313.51
+      m_Height: 235
+      m_HorizontalBearingX: -46.8
+      m_HorizontalBearingY: 176
+      m_HorizontalAdvance: 235
+    m_GlyphRect:
+      m_X: 942
+      m_Y: 1450
+      m_Width: 246
+      m_Height: 189
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -728890296, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  - m_Index: 11
+    m_Metrics:
+      m_Width: 235
+      m_Height: 235
+      m_HorizontalBearingX: -20.9
+      m_HorizontalBearingY: 186
+      m_HorizontalAdvance: 235
+    m_GlyphRect:
+      m_X: 994
+      m_Y: 1130
+      m_Width: 246
+      m_Height: 189
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -728890296, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  - m_Index: 12
+    m_Metrics:
+      m_Width: 245.78
+      m_Height: 235
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 186
+      m_HorizontalAdvance: 235
+    m_GlyphRect:
+      m_X: 1066
+      m_Y: 858
+      m_Width: 246
+      m_Height: 189
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -728890296, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  - m_Index: 13
+    m_Metrics:
+      m_Width: 235
+      m_Height: 235
+      m_HorizontalBearingX: -5.2
+      m_HorizontalBearingY: 177.69
+      m_HorizontalAdvance: 235
+    m_GlyphRect:
+      m_X: 1078
+      m_Y: 462
+      m_Width: 265
+      m_Height: 189
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -728890296, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  - m_Index: 14
+    m_Metrics:
+      m_Width: 235
+      m_Height: 235
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 186
+      m_HorizontalAdvance: 235
+    m_GlyphRect:
+      m_X: 1115
+      m_Y: 128
+      m_Width: 235
+      m_Height: 223
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -728890296, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  - m_Index: 15
+    m_Metrics:
+      m_Width: 235
+      m_Height: 235
+      m_HorizontalBearingX: -7.2
+      m_HorizontalBearingY: 178.75
+      m_HorizontalAdvance: 235
+    m_GlyphRect:
+      m_X: 1508
+      m_Y: 417
+      m_Width: 276
+      m_Height: 247
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+    sprite: {fileID: -728890296, guid: bd2e757dda64be249ae6fcd4bdd19d58, type: 3}
+  - m_Index: 16
+    m_Metrics:
+      m_Width: 261.65
+      m_Height: 235
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 186
+      m_HorizontalAdvance: 235
+    m_GlyphRect:
+      m_X: 1470
+      m_Y: 117
+      m_Width: 392
+      m_Height: 247
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0

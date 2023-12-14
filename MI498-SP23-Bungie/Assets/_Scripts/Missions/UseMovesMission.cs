@@ -34,11 +34,27 @@ public class UseMovesMission : SingleMission
     {
         base.Update();
 
-        string progress = $"{MoveCount}/{RequiredMoves}";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
-        string moveAction = GetMoveAction(missionMoveType);
+        if (IsActive)
+        {
+           
+            string moveAction = GetMoveAction(missionMoveType);
+            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+            string timer = UseTimer ? $"{Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string symbol = UseTimer ? $"<sprite index=2{tintString}> " : " ";
+            
 
-        MissionName = $"{moveAction} {RequiredMoves} times ({progress}).{timer}";
+
+
+
+
+
+
+            string progress = $"{MoveCount}/{RequiredMoves}";
+
+            string secondLine = IsActive ? $"\n\n     ({progress}) {timer}" : "";
+            MissionName = $"<sprite index=3{tintString}> {SpriteInsideBoxMarkdown}{symbol} {moveAction} {RequiredMoves} times ({progress}). {timer}";
+
+        }
         //Debug.Log(MissionName);
     }
 
