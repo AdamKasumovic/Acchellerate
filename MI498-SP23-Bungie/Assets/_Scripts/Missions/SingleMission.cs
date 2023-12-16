@@ -157,15 +157,15 @@ public abstract class SingleMission : MonoBehaviour
         progressHighlightValue = Mathf.Max(progressHighlightValue - Time.deltaTime*10f/11f, 0f);
         if (IsFailed)
         {
-            SpriteInsideBoxMarkdown = "<sprite index=5>";
+            SpriteInsideBoxMarkdown = "<sprite index=1>";
         }       
         else if (IsCompleted)
         {
-            SpriteInsideBoxMarkdown = "<sprite index=4>";
+            SpriteInsideBoxMarkdown = "<sprite index=3>";
         }
         else if (IsActive)
         {
-            SpriteInsideBoxMarkdown = "<sprite index=6>";
+            SpriteInsideBoxMarkdown = "<sprite index=2>";
         }
         else
         {
@@ -218,6 +218,7 @@ public abstract class SingleMission : MonoBehaviour
 
     public virtual void FailMission()
     {
+        SpriteInsideBoxMarkdown = "<sprite index=1>";
         IsActive = false;
         IsFailed = true;
         SfxManager.instance.PlaySound(SfxManager.SfxCategory.MissionFail);
@@ -228,6 +229,7 @@ public abstract class SingleMission : MonoBehaviour
     }
     public virtual void CompleteMission()
     {
+        SpriteInsideBoxMarkdown = "<sprite index=3>";
         IsActive = false;
         IsCompleted = true;
         

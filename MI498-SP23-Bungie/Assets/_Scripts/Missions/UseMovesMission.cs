@@ -23,6 +23,7 @@ public class UseMovesMission : SingleMission
     [Header("Use Moves Mission Settings")]
     public int RequiredMoves = 3;
     public MoveType missionMoveType = MoveType.tilt;
+    
 
     protected override void Start()
     {
@@ -40,8 +41,8 @@ public class UseMovesMission : SingleMission
             string moveAction = GetMoveAction(missionMoveType);
             string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
             string timer = UseTimer ? $"{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string symbol = UseTimer ? $"<sprite index=2{tintString}> " : " ";
-            
+            string symbol = UseTimer ? $"<sprite index=0{tintString}> " : " ";
+            string missionSymbol = GetMoveSprite(missionMoveType);
 
 
 
@@ -49,31 +50,76 @@ public class UseMovesMission : SingleMission
 
 
 
-            string progress = $"{MoveCount}/{RequiredMoves}";
+
+    string progress = $"{MoveCount}/{RequiredMoves}";
 
             string secondLine = IsActive ? $"\n\n     ({progress}) {timer}" : "";
-            MissionName = $"<sprite index=3{tintString}> {SpriteInsideBoxMarkdown}{symbol} {moveAction} {RequiredMoves} times ({progress}). {timer}";
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} {moveAction} {RequiredMoves} times ({progress}) {symbol}{timer}";
 
         }
         //Debug.Log(MissionName);
     }
 
+    private string GetMoveSprite(MoveType type)
+    {
+        switch (type)
+        {
+            case MoveType.flip:
+                {
+                    return "<sprite index=7>";
+                    
+                }
+            case MoveType.tilt:
+                {
+                    return "<sprite index=10>";
+                }
+            case MoveType.jump:
+                {
+                    return "<sprite index=6>";
+                }
+            case MoveType.boost:
+                {
+                    return "<sprite index=9>";
+                }
+            case MoveType.burnout:
+                {
+                    return "<sprite index=11>";
+                }
+            default:
+                {
+                    return "";
+                }
+        }
+    }
     private string GetMoveAction(MoveType type)
     {
         switch (type)
         {
             case MoveType.flip:
-                return "Flip";
+                {
+                    return "Flip";
+
+                }
             case MoveType.tilt:
-                return "Tilt";
+                {
+                    return "Tilt";
+                }
             case MoveType.jump:
-                return "Jump";
+                {
+                    return "Jump";
+                }
             case MoveType.boost:
-                return "Boost";
+                {
+                    return "Boost";
+                }
             case MoveType.burnout:
-                return "Burnout";
+                {
+                    return "Burnout";
+                }
             default:
-                return "Use any move";
+                {
+                    return "Use any move";
+                }
         }
     }
 
