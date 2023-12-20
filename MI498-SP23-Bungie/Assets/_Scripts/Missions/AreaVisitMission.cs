@@ -44,7 +44,7 @@ public class AreaVisitMission : SingleMission
         {
             string missionSymbol = "<sprite index=16>";
             string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
 
             string progress = ".";
 
