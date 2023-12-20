@@ -38,10 +38,21 @@ public class AreaVisitMission : SingleMission
             areaChosen = true;
         }
 
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        if (chosenMissionIndex >= 0 && chosenMissionIndex < areaTokens.Count)
-            MissionName = $"Visit Area: {areaTokens[chosenMissionIndex].areaName}.{timer}";
+
+        if (IsActive)
+        {
+            string missionSymbol = "<sprite index=16>";
+            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+            string timer = UseTimer ? $"<sprite index=0{tintString}>Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+
+            string progress = ".";
+
+            string secondLine = IsActive ? $"     ({progress}) {timer}" : "";
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Visit Area: {areaTokens[chosenMissionIndex].areaName} {timer}";
+            //{areaTokens[chosenMissionIndex].areaName}
+
+        }
         //Debug.Log(MissionName);
     }
 
