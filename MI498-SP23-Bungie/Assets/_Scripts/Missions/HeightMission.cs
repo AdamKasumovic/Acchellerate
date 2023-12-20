@@ -39,17 +39,20 @@ public class HeightMission : SingleMission
 
         if (IsActive)
         {
+            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string missionSymbol = $"<sprite index=6>";
             string progress = ".";
-            string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";  // this works already, probably leave it alone. Note that it gives the empty string if there's no timer for the mission.
             if (stayBelow)
             {
-                MissionName = $"Do not go above {height} height.";
+                MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay below {height} height. {timer}";
             }
             else
             {
-                MissionName = $"Do not go below {height} height.";
+                MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay above {height} height. {timer}";
             }
-            Debug.Log(MissionName);
+
+            
         }
     }
 

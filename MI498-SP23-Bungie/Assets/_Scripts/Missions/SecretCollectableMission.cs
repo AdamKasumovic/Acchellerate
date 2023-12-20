@@ -33,7 +33,8 @@ public class SecretCollectableMission : SingleMission
         if (IsActive)
         {
             string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=2{tintString}> Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string timer = UseTimer ? $"<sprite index=2{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string missionSymbol = $"<sprite index=8>";
 
 
             
@@ -43,8 +44,8 @@ public class SecretCollectableMission : SingleMission
 
             string progress = collectable.GetComponent<SecretCollectable>().trigger ? $"." : "Not Found Yet.";
             
-            string secondLine = IsActive ? $"\n\n     ({progress}) {timer}" : "";
-            MissionName = $"<sprite index=3{tintString}> {SpriteInsideBoxMarkdown}{"Find the Secret Totem"}{secondLine}";
+            
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Find the Secret Totem {timer}";
 
         }
         //Debug.Log(MissionName);

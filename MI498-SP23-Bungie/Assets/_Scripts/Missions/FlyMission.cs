@@ -32,11 +32,22 @@ public class FlyMission : SingleMission
                 Execute();
             }
 
-        string progress = $"{Airtime:0.0}s/{RequiredTime:0.0}s";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+       
 
-        MissionName = $"Fly for {RequiredTime:0.0} total seconds ({progress}).{timer}";
-        Debug.Log(MissionName);
+        if (IsActive)
+        {
+            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string missionSymbol = $"<sprite index=6>";
+
+
+
+            string progress = $"{Airtime:0}s/{RequiredTime:0}s";
+
+
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Fly for {RequiredTime:0} total seconds ({progress}).{timer}";
+
+        }
     }
 
     public override void Execute()
