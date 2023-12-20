@@ -552,7 +552,7 @@ Material:
     - _Emissive_Color: {r: 0, g: 0, b: 0, a: 1}
     - _FirstShadeMaskColor: {r: 0, g: 1, b: 1, a: 1}
     - _HSV_Offset: {r: 0, g: 1, b: 0, a: 0}
-    - _HSV_Offset_Random: {r: 50, g: 0.1, b: 0, a: 0}
+    - _HSV_Offset_Random: {r: 15, g: 0.1, b: 0, a: 0}
     - _HighColor: {r: 0, g: 0, b: 0, a: 1}
     - _HighlightMaskColor: {r: 1, g: 1, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
