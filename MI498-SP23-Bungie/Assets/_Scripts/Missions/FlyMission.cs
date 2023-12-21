@@ -34,20 +34,19 @@ public class FlyMission : SingleMission
 
        
 
-        if (IsActive)
-        {
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string missionSymbol = $"<sprite index=6>";
+        
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=6>";
 
 
 
-            string progress = $"{Airtime:0}s/{RequiredTime:0}s";
+        string progress = $"{Airtime:0}s/{RequiredTime:0}s";
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Fly for {RequiredTime:0} total seconds ({progress}) {timer}";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Fly for {RequiredTime:0} total seconds ({progress}) {timer}";
 
-        }
+        
     }
 
     public override void Execute()

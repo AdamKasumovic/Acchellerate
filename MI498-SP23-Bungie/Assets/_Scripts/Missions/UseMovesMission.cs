@@ -35,14 +35,13 @@ public class UseMovesMission : SingleMission
     {
         base.Update();
 
-        if (IsActive)
-        {
+
            
-            string moveAction = GetMoveAction(missionMoveType);
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string symbol = UseTimer ? $"<sprite index=0{tintString}> " : " ";
-            string missionSymbol = GetMoveSprite(missionMoveType);
+        string moveAction = GetMoveAction(missionMoveType);
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string symbol = UseTimer ? $"<sprite index=0{tintString}> " : " ";
+        string missionSymbol = GetMoveSprite(missionMoveType);
 
 
 
@@ -51,13 +50,11 @@ public class UseMovesMission : SingleMission
 
 
 
-            string progress = $"{MoveCount}/{RequiredMoves}";
+        string progress = $"{MoveCount}/{RequiredMoves}";
 
-            string secondLine = IsActive ? $"\n\n     ({progress}) {timer}" : "";
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} {moveAction} {RequiredMoves} times ({progress}) {symbol}{timer}";
+        string secondLine = IsActive ? $"\n\n     ({progress}) {timer}" : "";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} {moveAction} {RequiredMoves} times ({progress}) {symbol}{timer}";
 
-        }
-        //Debug.Log(MissionName);
     }
 
     private string GetMoveSprite(MoveType type)

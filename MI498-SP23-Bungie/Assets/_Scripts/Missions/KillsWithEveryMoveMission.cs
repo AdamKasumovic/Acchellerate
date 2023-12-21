@@ -27,40 +27,39 @@ public class KillsWithEveryMoveMission : SingleMission
     protected override void Update()
     {
         base.Update();
-        if (IsActive)
+
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=4>";
+
+
+        string progress = "";
+        if (groundPoundKillCount < RequiredKills)
         {
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string missionSymbol = $"<sprite index=4>";
-
-
-            string progress = "";
-            if (groundPoundKillCount < RequiredKills)
-            {
-                progress += "<sprite index=6>";
-            }
-            if (frontFlipKillCount< RequiredKills)
-            {
-                progress += "<sprite index=7>";
-            }
-            if (tiltKillCount< RequiredKills)
-            {
-                progress += "<sprite index=10>";
-            }
-            if (burnoutKillCount < RequiredKills)
-            {
-                progress += "<sprite index=11>";
-            }
-            if (strafeKillCount < RequiredKills)
-            {
-                progress += "<sprite index=12>";
-            }
-
-
-
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Kill {RequiredKills} enemies with {progress}. {timer}";
-
+            progress += "<sprite index=6>";
         }
+        if (frontFlipKillCount< RequiredKills)
+        {
+            progress += "<sprite index=7>";
+        }
+        if (tiltKillCount< RequiredKills)
+        {
+            progress += "<sprite index=10>";
+        }
+        if (burnoutKillCount < RequiredKills)
+        {
+            progress += "<sprite index=11>";
+        }
+        if (strafeKillCount < RequiredKills)
+        {
+            progress += "<sprite index=12>";
+        }
+
+
+
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Kill {RequiredKills} enemies with {progress}. {timer}";
+
+        
     }
 
     public void AddKill(KillType killType)

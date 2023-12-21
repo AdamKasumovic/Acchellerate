@@ -37,23 +37,21 @@ public class HeightMission : SingleMission
     {
         base.Update();
 
-        if (IsActive)
+
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=6>";
+        string progress = ".";
+        if (stayBelow)
         {
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string missionSymbol = $"<sprite index=6>";
-            string progress = ".";
-            if (stayBelow)
-            {
-                MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay below {height} height {timer}";
-            }
-            else
-            {
-                MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay above {height} height {timer}";
-            }
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay below {height} height {timer}";
+        }
+        else
+        {
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay above {height} height {timer}";
+        }
 
             
-        }
     }
 
 

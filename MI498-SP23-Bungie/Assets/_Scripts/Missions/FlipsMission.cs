@@ -40,21 +40,19 @@ public class FlipsMission : SingleMission
             }
         }
 
-        if (IsActive)
-        {
-            string flipTypeName = GetFlipName(flipType);
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=2{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string missionSymbol = $"<sprite index=7>";
+        string flipTypeName = GetFlipName(flipType);
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=2{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=7>";
 
 
 
-            string progress = $"{Flips}/{RequiredFlips}";
+        string progress = $"{Flips}/{RequiredFlips}";
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Do {RequiredFlips}{flipTypeName}flips in a row ({progress}) {timer}";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Do {RequiredFlips}{flipTypeName}flips in a row ({progress}) {timer}";
 
-        }
+
     }
     private string GetFlipName(FlipType type)
     {

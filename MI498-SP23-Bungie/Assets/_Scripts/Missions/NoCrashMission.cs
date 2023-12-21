@@ -19,16 +19,15 @@ public class NoCrashMission : SingleMission
     protected override void Update()
     {
         base.Update();
-        if (IsActive)
-        {
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string missionSymbol = $"<sprite index=13>";
+
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=13>";
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't Crash {timer}";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't Crash {timer}";
 
-        }
+        
     }
 
     public override void Execute()

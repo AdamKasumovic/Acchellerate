@@ -30,10 +30,10 @@ public class RankWithinRadiusMission : SingleMission
         }
 
         
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string missionSymbol = $"<sprite index=16>";
-            string grade = GetGradeLetter(missionGradeLetter);
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=16>";
+        string grade = GetGradeLetter(missionGradeLetter);
 
 
 
@@ -42,7 +42,7 @@ public class RankWithinRadiusMission : SingleMission
 
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Reach {grade} rank inside the zone {timer}";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Reach {grade} rank inside the zone {timer}";
 
         
     }

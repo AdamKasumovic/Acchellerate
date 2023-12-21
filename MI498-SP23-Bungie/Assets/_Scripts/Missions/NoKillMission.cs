@@ -30,18 +30,17 @@ public class NoKillMission : SingleMission
 
         // You are responsible for ensuring that "MissionName" contains the appopriate text that informs players
         // about the mission progress at all times.
-        if (IsActive)
-        {
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string missionSymbol = $"<sprite index=14>";
-            string killCountString = (RequiredKills <= 1) ? "any" : $"{RequiredKills}";
-            string enemyName = GetEnemyName(missionEnemyType);
-            string progress = RequiredKills > 1 ? $" ({Mathf.Min(KillCount, RequiredKills - 1)}/{RequiredKills - 1})." : ".";
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't kill {killCountString} {enemyName} {progress} {timer}";
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=14>";
+        string killCountString = (RequiredKills <= 1) ? "any" : $"{RequiredKills}";
+        string enemyName = GetEnemyName(missionEnemyType);
+        string progress = RequiredKills > 1 ? $" ({Mathf.Min(KillCount, RequiredKills - 1)}/{RequiredKills - 1})." : ".";
 
-        }
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't kill {killCountString} {enemyName} {progress} {timer}";
+
+        
     }
 
     private string GetEnemyName(EnemyType type)

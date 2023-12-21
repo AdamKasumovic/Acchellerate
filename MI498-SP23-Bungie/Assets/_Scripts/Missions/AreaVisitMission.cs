@@ -40,19 +40,17 @@ public class AreaVisitMission : SingleMission
 
 
 
-        if (IsActive)
-        {
-            string missionSymbol = "<sprite index=8>";
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-            string progress = ".";
+        string missionSymbol = "<sprite index=8>";
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-            string secondLine = IsActive ? $"     ({progress}) {timer}" : "";
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Visit Area: {areaTokens[chosenMissionIndex].areaName} {timer}";
-            //{areaTokens[chosenMissionIndex].areaName}
+        string progress = ".";
 
-        }
+        string secondLine = IsActive ? $"     ({progress}) {timer}" : "";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Visit Area: {areaTokens[chosenMissionIndex].areaName} {timer}";
+
+
         //Debug.Log(MissionName);
     }
 

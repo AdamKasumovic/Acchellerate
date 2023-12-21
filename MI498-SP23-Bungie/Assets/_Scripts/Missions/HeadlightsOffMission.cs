@@ -9,20 +9,17 @@ public class HeadlightsOffMission : SingleMission
         base.Update();
 
 
-        if (IsActive)
-        {
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string missionSymbol = $"<sprite index=15>";
 
-
-            //string progress = $"{headlightsSitchCounter / 2}/{timesToMashHeadlights}";
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=15>";
 
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Turn off Headlights {timer}";
 
-        }
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Turn off Headlights {timer}";
+
+        
     }
 
     public override void Execute()

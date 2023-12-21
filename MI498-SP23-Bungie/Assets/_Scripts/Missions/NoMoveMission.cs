@@ -29,16 +29,14 @@ public class NoMoveMission : SingleMission
 
 
 
-        if (IsActive)
-        {
 
-            string moveAction = GetMoveAction(missionMoveType);
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string symbol = UseTimer ? $"<sprite index=0{tintString}> " : " ";
-            string missionSymbol = $"<sprite index=14>";
-            string moveCountString = (RequiredMoves <= 1) ? "at all" : $"{RequiredMoves} times";
 
+        string moveAction = GetMoveAction(missionMoveType);
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string symbol = UseTimer ? $"<sprite index=0{tintString}> " : " ";
+        string missionSymbol = $"<sprite index=14>";
+        string moveCountString = (RequiredMoves <= 1) ? "at all" : $"{RequiredMoves} times";
 
 
 
@@ -46,12 +44,13 @@ public class NoMoveMission : SingleMission
 
 
 
-            string progress = RequiredMoves > 1 ? $" ({Mathf.Min(MoveCount, RequiredMoves)}/{RequiredMoves})" : "";
 
-            string secondLine = IsActive ? $"\n\n     ({progress}) {timer}" : "";
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Do not use {moveAction} {moveCountString}{progress} {symbol}{timer}";
+        string progress = RequiredMoves > 1 ? $" ({Mathf.Min(MoveCount, RequiredMoves)}/{RequiredMoves})" : "";
 
-        }
+        string secondLine = IsActive ? $"\n\n     ({progress}) {timer}" : "";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Do not use {moveAction} {moveCountString}{progress} {symbol}{timer}";
+
+
     }
 
     private string GetMoveAction(MoveType type)

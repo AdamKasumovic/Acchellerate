@@ -36,20 +36,19 @@ public class NoCrashForgivingMission : SingleMission
         }
 
 
-        if (IsActive)
-        {
-            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
-            string missionSymbol = $"<sprite index=13>";
+
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=13>";
 
 
-            string progress = $"{Mathf.Round(RequiredTime - ForgivingTimer)}s";
+        string progress = $"{Mathf.Round(RequiredTime - ForgivingTimer)}s";
 
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't crash for ({progress}) {timer}";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't crash for ({progress}) {timer}";
 
-        }
+        
     }
 
     public override void Execute()
