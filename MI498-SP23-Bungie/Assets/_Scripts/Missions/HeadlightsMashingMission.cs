@@ -30,7 +30,7 @@ public class HeadlightsMashingMission : SingleMission
 
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Flicker Headlights ({progress}).{timer}";
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Flicker Headlights ({progress}) {timer}";
 
         }
     }

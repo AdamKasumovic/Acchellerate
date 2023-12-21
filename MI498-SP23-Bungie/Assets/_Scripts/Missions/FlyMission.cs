@@ -45,7 +45,7 @@ public class FlyMission : SingleMission
             string progress = $"{Airtime:0}s/{RequiredTime:0}s";
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Fly for {RequiredTime:0} total seconds ({progress}).{timer}";
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Fly for {RequiredTime:0} total seconds ({progress}) {timer}";
 
         }
     }

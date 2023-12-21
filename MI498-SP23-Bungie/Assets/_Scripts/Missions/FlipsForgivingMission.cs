@@ -38,7 +38,7 @@ public class FlipsForgivingMission : SingleMission
             string progress = $"{Flips}/{RequiredFlips}";
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Do {RequiredFlips}{flipTypeName}flips in a row. ({progress}).{timer}";
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Do {RequiredFlips}{flipTypeName}flips in a row({progress}) {timer}";
 
         }
     }

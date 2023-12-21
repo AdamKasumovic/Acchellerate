@@ -43,7 +43,7 @@ public class FlyWithoutStoppingMission : SingleMission
             string progress = $"{Airtime:0}s/{RequiredTime:0}s";
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't touch the ground ({progress}).{timer}";
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't touch the ground ({progress}) {timer}";
 
         }
     }

@@ -45,11 +45,11 @@ public class HeightMission : SingleMission
             string progress = ".";
             if (stayBelow)
             {
-                MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay below {height} height. {timer}";
+                MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay below {height} height {timer}";
             }
             else
             {
-                MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay above {height} height. {timer}";
+                MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay above {height} height {timer}";
             }
 
             

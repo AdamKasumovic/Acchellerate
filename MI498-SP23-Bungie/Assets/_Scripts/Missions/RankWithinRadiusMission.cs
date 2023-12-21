@@ -28,12 +28,23 @@ public class RankWithinRadiusMission : SingleMission
             tempSphere = Instantiate<GameObject>(sphereRadius, carManager.transform.position, Quaternion.identity, this.transform);
             tempSphere.transform.localScale = new Vector3(radius, radius, radius);
         }
-        string grade = GetGradeLetter(missionGradeLetter);
-        string progress = $"Reach {grade} rank within a sphere with a radius of {radius}";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        MissionName = $"{progress}.{timer}";
-        //Debug.Log(MissionName);
+        
+            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string missionSymbol = $"<sprite index=16>";
+            string grade = GetGradeLetter(missionGradeLetter);
+
+
+
+
+
+
+
+
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Reach {grade} rank inside the zone {timer}";
+
+        
     }
 
     private string GetGradeLetter(GradeLetter type)

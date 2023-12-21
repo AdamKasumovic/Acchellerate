@@ -32,7 +32,7 @@ public class DestroyDestructibleObjectsMission : SingleMission
 
 
 
-            string progress = $"Destroy {RequiredObjectDestroys} Objects.({ObjectDestroysCount}/{RequiredObjectDestroys}) ";
+            string progress = $"Destroy {RequiredObjectDestroys} Objects({ObjectDestroysCount}/{RequiredObjectDestroys}) ";
 
 
             MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} {progress}{timer}";

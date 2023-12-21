@@ -33,7 +33,7 @@ public class SecretCollectableMission : SingleMission
         if (IsActive)
         {
             string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
-            string timer = UseTimer ? $"<sprite index=2{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
             string missionSymbol = $"<sprite index=8>";
 
 

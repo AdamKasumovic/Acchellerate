@@ -20,7 +20,7 @@ public class HeadlightsOffMission : SingleMission
 
 
 
-            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Turn off Headlights.{timer}";
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Turn off Headlights {timer}";
 
         }
     }

@@ -29,11 +29,13 @@ public class SingleMoveKillMission : SingleMission
         base.Update();
 
         string progress = $"{KillCount}/{RequiredKills}";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+
         string enemyName = GetEnemyName(missionEnemyType);
         string killAction = GetKillAction(missionKillType);
-       
-        MissionName = $"Kill {RequiredKills} {enemyName} with a single {killAction} ({progress}).{timer}";
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=4>";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Kill {RequiredKills} {enemyName} in one {killAction}{timer}";
         //Debug.Log(MissionName);
         if (timedReset && Time.time - startTime > 5)
         {
@@ -77,6 +79,38 @@ public class SingleMoveKillMission : SingleMission
                 return "Burnout kill";
             default:
                 return "Kill";
+        }
+    }
+
+    private string GetMoveSprite(MoveType type)
+    {
+        switch (type)
+        {
+            case MoveType.flip:
+                {
+                    return "<sprite index=7>";
+
+                }
+            case MoveType.tilt:
+                {
+                    return "<sprite index=10>";
+                }
+            case MoveType.jump:
+                {
+                    return "<sprite index=6>";
+                }
+            case MoveType.boost:
+                {
+                    return "<sprite index=9>";
+                }
+            case MoveType.burnout:
+                {
+                    return "<sprite index=11>";
+                }
+            default:
+                {
+                    return "";
+                }
         }
     }
 

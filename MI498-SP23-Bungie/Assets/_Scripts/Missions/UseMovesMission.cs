@@ -51,7 +51,7 @@ public class UseMovesMission : SingleMission
 
 
 
-    string progress = $"{MoveCount}/{RequiredMoves}";
+            string progress = $"{MoveCount}/{RequiredMoves}";
 
             string secondLine = IsActive ? $"\n\n     ({progress}) {timer}" : "";
             MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} {moveAction} {RequiredMoves} times ({progress}) {symbol}{timer}";

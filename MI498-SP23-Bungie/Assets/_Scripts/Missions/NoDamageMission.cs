@@ -23,14 +23,21 @@ public class NoDamageMission : SingleMission
     {
         base.Update();
 
-        string progress = $"";  // update this with the progress, or get rid of it from MissionName if this mission doesn't have progress.
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";  // this works already, probably leave it alone. Note that it gives the empty string if there's no timer for the mission.
+        
 
 
         // You are responsible for ensuring that "MissionName" contains the appopriate text that informs players
         // about the mission progress at all times.
-        MissionName = $"Do not take damage! ({progress}).{timer}";
-        Debug.Log(MissionName);
+        if (IsActive)
+        {
+            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string missionSymbol = $"<sprite index=14>";
+
+
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't take damage {timer}";
+
+        }
     }
 
     // Place any helper functions here.
