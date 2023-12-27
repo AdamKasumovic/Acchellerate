@@ -59,6 +59,11 @@ public class ZombieLagReducer : MonoBehaviour
             }
         }
 
+        if (NukeManager.Instance.nukeActive)
+        {
+            thisEnemyStats.enabled = true;
+        }
+
 
     }
 

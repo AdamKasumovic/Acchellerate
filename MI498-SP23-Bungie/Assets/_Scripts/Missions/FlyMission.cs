@@ -27,16 +27,26 @@ public class FlyMission : SingleMission
     {
         base.Update();
         if (!IsCompleted && !IsFailed)  
-            if (!carController.isGrounded && instance.boost && instance.horBoostTimer > 0 && !instance.boostRefreshing)
+            if (!carController.isGrounded && CarInputManager.Instance.boost && instance.horBoostTimer > 0 && !CarInputManager.Instance.boostRefreshing)
             {
                 Execute();
             }
 
-        string progress = $"{Airtime:0.0}s/{RequiredTime:0.0}s";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+       
 
-        MissionName = $"Fly for {RequiredTime:0.0} total seconds ({progress}).{timer}";
-        Debug.Log(MissionName);
+        
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=6>";
+
+
+
+        string progress = $"{Airtime:0}s/{RequiredTime:0}s";
+
+
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Fly for {RequiredTime:0} total seconds ({progress}) {timer}";
+
+        
     }
 
     public override void Execute()

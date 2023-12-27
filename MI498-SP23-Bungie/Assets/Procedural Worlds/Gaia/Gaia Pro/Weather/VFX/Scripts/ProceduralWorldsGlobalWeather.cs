@@ -7350,7 +7350,7 @@ namespace Gaia
                     IsRainingFinished = false;
                     m_rainDuration = GenerateRandomRangeValue(m_rainWeatherSettings.m_durationMinWaitTime, m_rainWeatherSettings.m_durationMaxWaitTime);
                     m_weatherSystemActive = true;
-                    if (m_enableThunder)
+                    if (m_enableThunder || NukeManager.Instance.nukeActive)
                     {
                         IsThundering = true;
                         m_thunderWaitDuration = 5f;

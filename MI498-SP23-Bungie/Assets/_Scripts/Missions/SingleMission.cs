@@ -86,10 +86,18 @@ public abstract class SingleMission : MonoBehaviour
     public float IncreaseToMaxSpeedInMPH = 60f;
     [Range(0, 1000000)]
     public float SpeedIncreaseDuration = 30f;
+    public bool SlowerZombiesReward = false;
+    [Range(0, 2)]
+    public float ZombiesSpeedMultiplier = 0.8f;
+    public float SlowerZombiesDuration = 10;
     public bool JumpBoostReward = false;
     [Range(0, 1000)]
     public float JumpBoostStrength = 100, JumpBoostDuration = 10;
     public bool GriddyReward = false;
+    public bool NoCooldownsReward = false;
+    [Range(0, 100)]
+    public float NoCooldownsLength = 5;
+    public bool DoNuke = false;
     
 
 
@@ -103,12 +111,20 @@ public abstract class SingleMission : MonoBehaviour
     private bool speedBuffActive = false;
     private float oldBoostDuration;
 
+
+    private Coroutine zombiesSpeedCoroutine;
+    private bool slowerZombiesActive = false;
+
     private Coroutine jumpBoostCoroutine;
     private bool jumpBoostActive = false;
     private float JumpOriginal;
 
     private Coroutine griddyCoroutine;
     private bool griddyActive = false;
+
+    private Coroutine noCooldownsCoroutine;
+    private bool noCooldownsActive = false;
+    private List<float> cooldownStorage = new List<float>();
 
     protected virtual void Start()
     {
@@ -141,15 +157,15 @@ public abstract class SingleMission : MonoBehaviour
         progressHighlightValue = Mathf.Max(progressHighlightValue - Time.deltaTime*10f/11f, 0f);
         if (IsFailed)
         {
-            SpriteInsideBoxMarkdown = "<sprite index=5>";
+            SpriteInsideBoxMarkdown = "<sprite index=1>";
         }       
         else if (IsCompleted)
         {
-            SpriteInsideBoxMarkdown = "<sprite index=4>";
+            SpriteInsideBoxMarkdown = "<sprite index=3>";
         }
         else if (IsActive)
         {
-            SpriteInsideBoxMarkdown = "<sprite index=6>";
+            SpriteInsideBoxMarkdown = "<sprite index=2>";
         }
         else
         {
@@ -202,6 +218,7 @@ public abstract class SingleMission : MonoBehaviour
 
     public virtual void FailMission()
     {
+        SpriteInsideBoxMarkdown = "<sprite index=1>";
         IsActive = false;
         IsFailed = true;
         SfxManager.instance.PlaySound(SfxManager.SfxCategory.MissionFail);
@@ -212,6 +229,7 @@ public abstract class SingleMission : MonoBehaviour
     }
     public virtual void CompleteMission()
     {
+        SpriteInsideBoxMarkdown = "<sprite index=3>";
         IsActive = false;
         IsCompleted = true;
         
@@ -264,6 +282,17 @@ public abstract class SingleMission : MonoBehaviour
 
             speedBuffCoroutine = StartCoroutine(ResetSpeedBuffAfterDuration());
         }
+        if (SlowerZombiesReward)
+        {
+            if (slowerZombiesActive && zombiesSpeedCoroutine != null)
+            {
+                StopCoroutine(zombiesSpeedCoroutine);
+            }
+            ZombieSpeedController.Instance.speedMultiplier = ZombiesSpeedMultiplier;
+            slowerZombiesActive = true;
+
+            zombiesSpeedCoroutine = StartCoroutine(ResetSlowerZombiesAfterDuration());
+        }
         if (JumpBoostReward)
         {
             if(jumpBoostActive && jumpBoostCoroutine != null)
@@ -287,6 +316,56 @@ public abstract class SingleMission : MonoBehaviour
             CarManager.Instance.griddy = true;
             griddyActive = true;
             griddyCoroutine = StartCoroutine(ZombieGriddyDuration());
+        }
+
+        if (NoCooldownsReward)
+        {
+            if(noCooldownsActive && noCooldownsCoroutine != null)
+            {
+                StopCoroutine(noCooldownsCoroutine);
+                foreach(float f in cooldownStorage)
+                {
+                    if(CarManager.Instance.frontFlipCooldown == 0)
+                    {
+                        CarManager.Instance.frontFlipCooldown = f;
+                    }
+                    else if (CarManager.Instance.spinCooldown == 0)
+                    {
+                        CarManager.Instance.spinCooldown = f;
+                    }
+                    else if (CarManager.Instance.tiltCooldown == 0)
+                    {
+                        CarManager.Instance.tiltCooldown = f;
+                    }
+                    else if(CarManager.Instance.vertBoostCooldown == 0)
+                    {
+                        CarManager.Instance.vertBoostCooldown = f;
+                    }
+                    else if (CarManager.Instance.horBoostRecharge == 0)
+                    {
+                        CarManager.Instance.horBoostRecharge = f;
+                    }
+                }
+                cooldownStorage.Clear();
+            }
+            cooldownStorage.Add(CarManager.Instance.frontFlipCooldown);
+            cooldownStorage.Add(CarManager.Instance.spinCooldown);
+            cooldownStorage.Add(CarManager.Instance.tiltCooldown);
+            cooldownStorage.Add(CarManager.Instance.vertBoostCooldown);
+            cooldownStorage.Add(CarManager.Instance.horBoostRecharge);
+            CarManager.Instance.frontFlipCooldown = 0;
+            CarManager.Instance.spinCooldown = 0;
+            CarManager.Instance.tiltCooldown = 0;
+            CarManager.Instance.vertBoostCooldown = 0;
+            CarManager.Instance.horBoostRecharge = 0;
+            noCooldownsActive = true;
+            noCooldownsCoroutine = StartCoroutine(noCooldownsCoroutineDuration());
+
+        }
+
+        if (DoNuke)
+        {
+            NukeManager.Instance.LaunchNuke();
         }
 
 
@@ -314,6 +393,14 @@ public abstract class SingleMission : MonoBehaviour
         AkSoundEngine.SetState("TrackState", AudioManager.instance.track.data.ToString());
     }
 
+    private IEnumerator ResetSlowerZombiesAfterDuration()
+    {
+        yield return new WaitForSeconds(SlowerZombiesDuration);
+
+        ZombieSpeedController.Instance.speedMultiplier = 1;
+        slowerZombiesActive = false;
+    }
+
     private IEnumerator ResetJumpBoostAfterDuration()
     {
         yield return new WaitForSeconds(JumpBoostDuration);
@@ -328,6 +415,36 @@ public abstract class SingleMission : MonoBehaviour
         yield return new WaitForSeconds(12.66f);
         CarManager.Instance.griddy = false;
         griddyActive = false;
+    }
+
+    private IEnumerator noCooldownsCoroutineDuration()
+    {
+        yield return new WaitForSeconds(NoCooldownsLength);
+        foreach (float f in cooldownStorage)
+        {
+            if (CarManager.Instance.frontFlipCooldown == 0)
+            {
+                CarManager.Instance.frontFlipCooldown = f;
+            }
+            else if (CarManager.Instance.spinCooldown == 0)
+            {
+                CarManager.Instance.spinCooldown = f;
+            }
+            else if (CarManager.Instance.tiltCooldown == 0)
+            {
+                CarManager.Instance.tiltCooldown = f;
+            }
+            else if (CarManager.Instance.vertBoostCooldown == 0)
+            {
+                CarManager.Instance.vertBoostCooldown = f;
+            }
+            else if (CarManager.Instance.horBoostRecharge == 0)
+            {
+                CarManager.Instance.horBoostRecharge = f;
+            }
+        }
+        cooldownStorage.Clear();
+        noCooldownsActive = false;
     }
 
 }

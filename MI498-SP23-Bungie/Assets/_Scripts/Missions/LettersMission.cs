@@ -47,11 +47,19 @@ public class LettersMission : SingleMission
         // Failsafe. If this is not setup properly, prevent inspector from flooding with errors
         if (chosenMissionIndex != -1)
         {
-            string progress = $"{collectedLetters.Count}/{missionWord.Length}";
-            string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-            MissionName = $"Find all letters of the word: {missionWord} ({progress}).{timer}";
-            //Debug.Log(MissionName);
+            string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+            string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+            string missionSymbol = $"<sprite index=8>";
+
+
+            string progress = $"{collectedLetters.Count}/{missionWord.Length}";
+
+
+
+            MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Find Letters of {missionWord} ({progress}) {timer}";
+
+            
         }
     }
 

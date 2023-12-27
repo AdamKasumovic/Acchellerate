@@ -68,11 +68,13 @@ public class EnemyNavmesh : MonoBehaviour
     public bool inTornado = false;
     bool wasInTornado = false;
 
+    public float speedMultiplier = 1f;
+
     void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
-        _agent.speed = wanderingSpeed;
-       
+        _agent.speed = wanderingSpeed * speedMultiplier;
+
         NavMeshHit hit;
         if (_agent.isActiveAndEnabled && NavMesh.SamplePosition(_agent.transform.position, out hit, 1.0f, NavMesh.AllAreas))
         {
@@ -80,7 +82,7 @@ public class EnemyNavmesh : MonoBehaviour
         }
 
         _agent.stoppingDistance = stoppingDistance;
-        
+
         _stats = GetComponent<EnemyStats>();
 
         _currentCooldownTime = 0;
@@ -94,7 +96,12 @@ public class EnemyNavmesh : MonoBehaviour
 
     void Update()
     {
-
+       
+        if (ZombieSpeedController.Instance != null && speedMultiplier != ZombieSpeedController.Instance.speedMultiplier)
+        {
+            speedMultiplier = ZombieSpeedController.Instance.speedMultiplier;
+            CancelMove();
+        }
         // Makes Zombies hit the griddy if carmanager boolean is set to True
         if (CarManager.Instance.griddy )
         {
@@ -123,11 +130,11 @@ public class EnemyNavmesh : MonoBehaviour
             }
             if ((transform.position - CarManager.Instance.gameObject.transform.position).magnitude < slowdownDist)
             {
-                _agent.speed = (wanderingSpeed + speed) / 2;
+                _agent.speed = ((wanderingSpeed + speed) / 2) * speedMultiplier;
             }
             else
             {
-                _agent.speed = _tryWander ? wanderingSpeed : speed;
+                _agent.speed = _tryWander ? (wanderingSpeed) * speedMultiplier : (speed) * speedMultiplier;
             }
 
             
@@ -255,7 +262,7 @@ public class EnemyNavmesh : MonoBehaviour
             _agent.isStopped = false; // ERROR LINE
         }
         _tryWander = false;
-        _agent.speed = speed;
+        _agent.speed = speed * speedMultiplier;
     }
     
     
@@ -269,13 +276,17 @@ public class EnemyNavmesh : MonoBehaviour
         {
             _agent.isStopped = true; // ERROR LINE
         }
-        _agent.speed = wanderingSpeed;
+        _agent.speed = wanderingSpeed * speedMultiplier;
     }
 
     public void CancelMove()
     {
-        _agent.isStopped = true;
-        _agent.ResetPath();
+        NavMeshHit hit;
+        if (_agent.isActiveAndEnabled && NavMesh.SamplePosition(_agent.transform.position, out hit, 1.0f, NavMesh.AllAreas))
+        {
+            _agent.isStopped = true;
+            _agent.ResetPath();
+        }
     }
 
     public void MoveToTarget()

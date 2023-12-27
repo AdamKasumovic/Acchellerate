@@ -25,13 +25,16 @@ public class MaintainSpeedMission : SingleMission
             if(CurrentSpeed < RequiredMinSpeed) 
             {
                 FailMission();
-            }
+            }            
         }
-        string progress = $"Drive above {RequiredMinSpeed} mph for";
-        string timer = UseTimer ? $" {Mathf.Max(0, timeRemaining):0.0}s" : "";
-        string currentSpeed = $"Your speed is {CurrentSpeed}";
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=9>";
 
-        MissionName = $"{progress}{timer}.{currentSpeed}";
+
+        string progress = $"current: {CurrentSpeed}mph";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Stay above {RequiredMinSpeed}mph({progress}) {timer}";
+
         //Debug.Log(MissionName);
     }
 

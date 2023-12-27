@@ -25,7 +25,7 @@ public class ZombieAnimationController : MonoBehaviour
         }
         speed = (transform.position - lastPosition).magnitude / deltaTime;
         animator.SetFloat("Velocity", speed);
-        animator.SetFloat("SpeedMultiplier", Mathf.Max(speed, speed / 0.5f));
+        animator.SetFloat("SpeedMultiplier", ZombieSpeedController.Instance.speedMultiplier == 0 ? 0 : (5f/9f)*ZombieSpeedController.Instance.speedMultiplier + (4f/9f));
 
         lastPosition = transform.position;
     }

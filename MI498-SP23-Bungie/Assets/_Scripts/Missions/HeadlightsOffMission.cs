@@ -8,10 +8,18 @@ public class HeadlightsOffMission : SingleMission
     {
         base.Update();
 
-        string progress = $"Figure out how to turn headlights on/off";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        MissionName = $"{progress}.{timer}";
+
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=15>";
+
+
+
+
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Turn off Headlights {timer}";
+
+        
     }
 
     public override void Execute()

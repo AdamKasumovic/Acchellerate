@@ -35,10 +35,20 @@ public class NoCrashForgivingMission : SingleMission
             }
         }
 
-        string progress = $"Don't crash! For {Mathf.Round(RequiredTime - ForgivingTimer)}";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        MissionName = $"{progress}{timer}";
+
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=13>";
+
+
+        string progress = $"{Mathf.Round(RequiredTime - ForgivingTimer)}s";
+
+
+
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't crash for ({progress}) {timer}";
+
+        
     }
 
     public override void Execute()

@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:MI498-SP23-Bungie/Assets/Wwise/ScriptableObjects/State/E7BA8622-22D2-4486-A13C-2355D758F485.asset.meta
 guid: 0f3515667e4c9b94983cfd112fce8b6a
 NativeFormatImporter:
+========
+guid: 798f9762f7bcd7a41b231e248b9ca94c
+DefaultImporter:
+>>>>>>>> 4e0d535f3dee280abb4930004f142e7ea74659da:MI498-SP23-Bungie/Assets/Art/Models/Buildings/Ruins/Building_Ruins_Brick01_HP.assbin.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 

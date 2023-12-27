@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyAfterSeconds: 5
+  useScaledTime: 1
 --- !u!1 &7333873207313443716
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +97,7 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 1.471592
+      - m_Value: 10
         m_Name: ImpactSize
         m_Overridden: 1
       - m_Value: 0.02

@@ -89,6 +89,10 @@ public class Spawner : MonoBehaviour
         {
             SpawnUpdate();
         }
+        if (NukeManager.Instance.nukeActive)
+        {
+            numEnemiesSpawned = 0;
+        }
     }
 
     void SpawnUpdate()
@@ -103,6 +107,10 @@ public class Spawner : MonoBehaviour
 
     void Spawn()
     {
+        if (NukeManager.Instance != null && NukeManager.Instance.nukeActive)
+        {
+            return;
+        }
         float rand = Random.Range(0, probabilities[probabilities.Length - 1]);
         int idx = 0;
         for (int i = 1; i < probabilities.Length; i++)

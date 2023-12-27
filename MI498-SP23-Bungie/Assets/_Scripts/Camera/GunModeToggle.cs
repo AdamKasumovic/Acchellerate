@@ -87,6 +87,6 @@ public class GunModeToggle : MonoBehaviour
             if (!wheelCollider.isGrounded)
                 ++ungroundedWheels;
         }
-        rearView.m_Priority = (ungroundedWheels < 2 && cm.rearView && GameManager.instance.gameState == GameManager.GameStates.play) ? rearViewHigh : rearViewLow;
+        rearView.m_Priority = (ungroundedWheels < 2 && CarInputManager.Instance.rearView && GameManager.instance.gameState == GameManager.GameStates.play) ? rearViewHigh : rearViewLow;
     }
 }

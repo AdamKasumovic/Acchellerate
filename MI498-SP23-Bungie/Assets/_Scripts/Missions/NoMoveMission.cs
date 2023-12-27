@@ -25,14 +25,32 @@ public class NoMoveMission : SingleMission
     {
         base.Update();
 
-        string progress = RequiredMoves > 1 ? $" ({Mathf.Min(MoveCount,RequiredMoves-1)}/{RequiredMoves-1})." : ".";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
-        string moveName = GetMoveAction(missionMoveType);
 
-        string moveCountString = (RequiredMoves <= 1) ? "at all" : $"more than {RequiredMoves - 1} times";
 
-        MissionName = $"Do not {moveName} {moveCountString}{progress}{timer}";
-        Debug.Log(MissionName);
+
+
+
+
+        string moveAction = GetMoveAction(missionMoveType);
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string symbol = UseTimer ? $"<sprite index=0{tintString}> " : " ";
+        string missionSymbol = $"<sprite index=14>";
+        string moveCountString = (RequiredMoves <= 1) ? "at all" : $"{RequiredMoves} times";
+
+
+
+
+
+
+
+
+        string progress = RequiredMoves > 1 ? $" ({Mathf.Min(MoveCount, RequiredMoves)}/{RequiredMoves})" : "";
+
+        string secondLine = IsActive ? $"\n\n     ({progress}) {timer}" : "";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Do not use {moveAction} {moveCountString}{progress} {symbol}{timer}";
+
+
     }
 
     private string GetMoveAction(MoveType type)
@@ -50,7 +68,7 @@ public class NoMoveMission : SingleMission
             case MoveType.burnout:
                 return "burnout";
             default:
-                return "use any move";
+                return "any move";
         }
     }
 

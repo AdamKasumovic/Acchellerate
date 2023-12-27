@@ -127,7 +127,7 @@ public class EnemyStats : MonoBehaviour
             //StartCoroutine(GameManager.instance.DoVibration(0.5f, 0.5f, 0.25f));
             CameraShaker.Instance.ShakeCamera(2, 0.1f);
 
-            gameObject.transform.GetChild(0).GetComponent<ZombieRagdollHandler>().EnableRagdoll(true,true, (CarManager.Instance.shouldGib || (CarManager.Instance.boost && !CarManager.Instance.boostRefreshing)) && !CarManager.Instance.groundPoundKillIndicator);
+            gameObject.transform.GetChild(0).GetComponent<ZombieRagdollHandler>().EnableRagdoll(true,true, (!NukeManager.Instance.nukeActive && CarManager.Instance.shouldGib || (CarInputManager.Instance.boost && !CarInputManager.Instance.boostRefreshing)) && !CarManager.Instance.groundPoundKillIndicator);
             return pointReward;
         }
         return 0;
@@ -212,7 +212,11 @@ public class EnemyStats : MonoBehaviour
         if (!flashing)
         {
             flashing = true;
-            SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.CarHitZombie);
+            if (!NukeManager.Instance.nukeActive)
+            {
+                SfxManager.instance.PlaySoundAtRandom(SfxManager.SfxCategory.CarHitZombie);
+            }
+
             for (int i = 0; i < smrs.Length; i++)
             {
                 smrs[i].material.color = Color.red;

@@ -19,10 +19,15 @@ public class DestroyDestructibleObjectsMission : SingleMission
     {
         base.Update();
 
-        string progress = $"Destroy {RequiredObjectDestroys} Objects.({ObjectDestroysCount}/{RequiredObjectDestroys}) ";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
+       
+      
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=2{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=13>";
+        string progress = $"Destroy {RequiredObjectDestroys} Objects({ObjectDestroysCount}/{RequiredObjectDestroys}) ";
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} {progress}{timer}";
 
-        MissionName = $"{progress}{timer}";
+        
         //Debug.Log(MissionName);
     }
 

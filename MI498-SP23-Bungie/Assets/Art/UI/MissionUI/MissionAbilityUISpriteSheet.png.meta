@@ -1,0 +1,688 @@
+fileFormatVersion: 2
+guid: 6b8de1432e4dc1a40969a695b820b602
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mission_Stopwatch
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1500
+        width: 249
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af8c01ba87f33e4c8b965d5495263bf
+      internalID: -1876591934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_MissionCompleteIcon
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1537
+        width: 245
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102d620d3e31e5f4da98aee0154023b3
+      internalID: 720563758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_TornadoIcon
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1473
+        width: 220
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e07c7662a1708459a93ae5134b2ef9
+      internalID: 599220404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_TiltIcon
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1505
+        width: 243
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c52b7e88accfcb40a8036f6284c2426
+      internalID: 1843484702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_HousingTop
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1470
+        width: 751
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36eeba2d943d70c4b95a25fbf21fc2d6
+      internalID: 678573222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_Skull_NoEyes
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1143
+        width: 258
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33a116a0db10374797956e3349c8fe5
+      internalID: -2013056391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_MissionFailIcon
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1222
+        width: 201
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb83dac7ad320d46b4fdf6d396f305f
+      internalID: 1534632684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_JumpIcon
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1174
+        width: 144
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69621b2ac3f4fa14b8173fd2bd0b5b75
+      internalID: -753221722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_BurnoutIcon
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1177
+        width: 244
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a4002791a171849b59affad8ba8a11
+      internalID: 208088881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_BottomHousing
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1171
+        width: 688
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ecbab2689a9f248bc69f2a455d3baf
+      internalID: 126090606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_BlankHousing
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 858
+        width: 238
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e5a6e5458d3274baf700152bc15b46
+      internalID: -1385838251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_MissionActiveIcon
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 852
+        width: 125
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee228ba7a79d4443851b2fa339ebe26
+      internalID: -1335354852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_FlipIcon
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 878
+        width: 199
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c037c4e8e775b0742b6b5ce00767c110
+      internalID: -1240091048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_BoostIcon
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 886
+        width: 257
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa513d0801f60e49afd2c4b313930c4
+      internalID: -1090372566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_Eye
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 791
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a7e8b8d209c4a4289a6ac05fccd583
+      internalID: -2135072966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_MissionActiveHousing
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 471
+        width: 237
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66de2393632793544ac643665ea187a6
+      internalID: -246556407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_MissionFailHousing
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 482
+        width: 237
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ceb516211a7a845be14957537cb6c2
+      internalID: 193285399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_MapIcon
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 493
+        width: 257
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70046faf9389f704e89fd43a2bc39218
+      internalID: -228717610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_HeadlightIcon
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 502
+        width: 309
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89101140c86138d4085799f5299caf13
+      internalID: 1939728198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_HeadlightIco
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 435
+        width: 297
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992ac535194eab1408980d970af184b0
+      internalID: 1337477332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_MissionCompleteHousing
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 127
+        width: 290
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bccdc22027628e147a843689f3bfea46
+      internalID: 2140738713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_Skull_Eyes
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 123
+        width: 258
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4323de645244f6349ba787e92fa32f35
+      internalID: 1218445782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_Boost2Icon
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 179
+        width: 449
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c163209b6a05634b926f374f349dc68
+      internalID: 1613120410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_DontDoIcon
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 140
+        width: 230
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6464584f6363d4c4880e69dbd69a311b
+      internalID: -1242681603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MissionUI_RankInRadius
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 140
+        width: 437
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06e90d4172f54d4c8351ea2be351f29
+      internalID: 386202255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c7f70f3d222e78144990dc5927c479bb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MissionUI_Skull_Eyes: 1218445782
+      MissionUI_TornadoIcon: 599220404
+      MissionUI_RankInRadius: 386202255
+      MissionAbilityUISpriteSheet_22: 882746715
+      MissionUI_BurnoutIcon: 208088881
+      MissionUI_Eye: -2135072966
+      MissionUI_DontDoIcon: -1242681603
+      MissionUI_MissionCompleteHousing: 2140738713
+      MissionUI_BottomHousing: 126090606
+      MissionUI_JumpIcon: -753221722
+      MissionUI_MissionFailHousing: 193285399
+      MissionUI_HousingTop: 678573222
+      MissionUI_MissionCompleteIcon: 720563758
+      Mission_Stopwatch: -1876591934
+      MissionUI_FlipIcon: -1240091048
+      MissionUI_BlankHousing: -1385838251
+      MissionUI_MissionActiveHousing: -246556407
+      MissionAbilityUISpriteSheet_12: 1117682894
+      MissionUI_HeadlightIco: 1337477332
+      MissionAbilityUISpriteSheet_20: -361767211
+      MissionUI_Boost2Icon: 1613120410
+      MissionUI_MissionActiveIcon: -1335354852
+      MissionUI_MapIcon: -228717610
+      MissionUI_MissionFailIcon: 1534632684
+      MissionUI_Skull_NoEyes: -2013056391
+      MissionUI_BoostIcon: -1090372566
+      MissionUI_TiltIcon: 1843484702
+      MissionUI_HeadlightIcon: 1939728198
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

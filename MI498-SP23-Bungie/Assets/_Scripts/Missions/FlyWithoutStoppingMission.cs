@@ -29,10 +29,22 @@ public class FlyWithoutStoppingMission : SingleMission
             else
                 Airtime = 0;
 
-        string progress = $"{Airtime:0.0}s/{RequiredTime:0.0}s";
-        string timer = UseTimer ? $" Time left: {Mathf.Max(0, timeRemaining):0.0}s" : "";
 
-        MissionName = $"Don't touch the ground for {RequiredTime:0.0} seconds ({progress}).{timer}";
+
+
+        
+        string tintString = (!IsCompleted && !IsFailed && !IsActive) ? " tint=1" : "";
+        string timer = UseTimer ? $"<sprite index=0{tintString}>{Mathf.Max(0, timeRemaining):0.0}s" : "";
+        string missionSymbol = $"<sprite index=6>";
+
+
+
+        string progress = $"{Airtime:0}s/{RequiredTime:0}s";
+
+
+        MissionName = $"{SpriteInsideBoxMarkdown} {missionSymbol} Don't touch the ground ({progress}) {timer}";
+
+        
     }
 
     public override void Execute()

@@ -182,7 +182,7 @@ public class ZombieKillbox : MonoBehaviour
             }
         }
         */
-        if (CarManager.Instance.boost && !CarManager.Instance.boostRefreshing)
+        if (CarInputManager.Instance.boost && !CarInputManager.Instance.boostRefreshing)
         {
             //the obstacle is a zombie
             if (stats != null)

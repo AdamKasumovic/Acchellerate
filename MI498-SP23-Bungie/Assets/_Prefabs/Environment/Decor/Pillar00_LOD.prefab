@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3583176947003688466}
   - component: {fileID: 5470208083151375028}
   - component: {fileID: 3586856368034871699}
-  - component: {fileID: 8763922971547063523}
   m_Layer: 0
   m_Name: Pillar00_LP_LOD1
   m_TagString: Untagged
@@ -84,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8763922971547063523
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2267691524578143732}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3771752940530889040, guid: f5492d556296eaf478e9ca1267a76403, type: 3}
 --- !u!1 &2616988304983263753
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +254,6 @@ GameObject:
   - component: {fileID: 3479801694300836408}
   - component: {fileID: 5902961714451706196}
   - component: {fileID: 1631706593723525236}
-  - component: {fileID: 3381274825301059765}
   m_Layer: 0
   m_Name: Pillar00_LP_LOD2
   m_TagString: Untagged
@@ -342,17 +326,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3381274825301059765
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8936865656741594522}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7511372295898722622, guid: f5492d556296eaf478e9ca1267a76403, type: 3}
