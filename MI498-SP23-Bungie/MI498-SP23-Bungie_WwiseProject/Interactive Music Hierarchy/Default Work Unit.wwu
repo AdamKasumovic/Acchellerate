@@ -2519,11 +2519,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Loop 1 D Rank" ID="{378ACA64-19BD-4126-9A70-A54A0A09A076}">
+												<AudioFileSource Name="Acchellerate Loop 1 D Rank 12-27-23" ID="{8C175A1C-5DEE-44BA-B10A-DA7854C760D0}">
 													<Language>SFX</Language>
-													<AudioFile>Acchellerate Loop 1 D Rank.wav</AudioFile>
+													<AudioFile>Acchellerate Loop 1 D Rank 12-27-23.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="589526469"/>
+														<MediaID ID="252991251"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2638,13 +2638,13 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Loop 1 D Rank" ID="{AD539A5C-261F-49E6-9D74-2F39390EAACA}">
+																				<MusicClip Name="Acchellerate Loop 1 D Rank 12-27-23" ID="{EAEB9A60-162A-4349-AFA9-24791B97D66A}">
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Loop 1 D Rank" ID="{378ACA64-19BD-4126-9A70-A54A0A09A076}"/>
+																					<AudioSourceRef Name="Acchellerate Loop 1 D Rank 12-27-23" ID="{8C175A1C-5DEE-44BA-B10A-DA7854C760D0}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2663,11 +2663,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Loop 1 C Rank" ID="{702EDB00-3079-44C6-A1AD-CEE6F486AA91}">
+												<AudioFileSource Name="Acchellerate Loop 1 C Rank (Old and new are same)" ID="{61BB11D7-EE56-4193-85B4-291989AE54D7}">
 													<Language>SFX</Language>
-													<AudioFile>Acchellerate Loop 1 C Rank.wav</AudioFile>
+													<AudioFile>Acchellerate Loop 1 C Rank (Old and new are same).wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="224804180"/>
+														<MediaID ID="404217039"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2786,13 +2786,13 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Loop 1 C Rank" ID="{0766B1CB-5EAB-42A3-AC3B-5798334C9F40}">
+																				<MusicClip Name="Acchellerate Loop 1 C Rank (Old and new are same)" ID="{A9F16589-2516-42DD-8784-4E2E5E340566}">
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Loop 1 C Rank" ID="{702EDB00-3079-44C6-A1AD-CEE6F486AA91}"/>
+																					<AudioSourceRef Name="Acchellerate Loop 1 C Rank (Old and new are same)" ID="{61BB11D7-EE56-4193-85B4-291989AE54D7}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2811,11 +2811,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Loop 1 B Rank" ID="{5019B96A-4D9E-4594-A70D-3EA0427FBE97}">
+												<AudioFileSource Name="Acchellerate Loop 1 B Rank 12-27-23" ID="{76DAB9D1-D5E8-4712-A992-C596337297DC}">
 													<Language>SFX</Language>
-													<AudioFile>Acchellerate Loop 1 B Rank.wav</AudioFile>
+													<AudioFile>Acchellerate Loop 1 B Rank 12-27-23.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="382958651"/>
+														<MediaID ID="457734419"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2938,13 +2938,15 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Loop 1 B Rank" ID="{227E2CEF-4F80-4FA8-91CF-1BC77B7F62F0}">
+																				<MusicClip Name="Acchellerate Loop 1 B Rank 12-27-23" ID="{9C146A8F-2750-42CC-B085-C15552890186}">
 																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="4.57966997657877E-13"/>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-4.57966997657877E-13"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Loop 1 B Rank" ID="{5019B96A-4D9E-4594-A70D-3EA0427FBE97}"/>
+																					<AudioSourceRef Name="Acchellerate Loop 1 B Rank 12-27-23" ID="{76DAB9D1-D5E8-4712-A992-C596337297DC}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2963,11 +2965,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Loop 1 A Rank" ID="{042BB3FC-E10C-4241-A6E6-45507D940051}">
+												<AudioFileSource Name="Acchellerate Loop 1 A Rank 12-27-23" ID="{2683ACF1-CE0E-4D4C-939C-471517A18EC9}">
 													<Language>SFX</Language>
-													<AudioFile>Acchellerate Loop 1 A Rank.wav</AudioFile>
+													<AudioFile>Acchellerate Loop 1 A Rank 12-27-23.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="258938728"/>
+														<MediaID ID="312144867"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -3094,13 +3096,13 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Loop 1 A Rank" ID="{1B2F7F68-13B1-4630-B24D-3BF3F92BCA54}">
+																				<MusicClip Name="Acchellerate Loop 1 A Rank 12-27-23" ID="{7B8D50A8-0EEE-4A76-80D7-FEE8363C7D1F}">
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Loop 1 A Rank" ID="{042BB3FC-E10C-4241-A6E6-45507D940051}"/>
+																					<AudioSourceRef Name="Acchellerate Loop 1 A Rank 12-27-23" ID="{2683ACF1-CE0E-4D4C-939C-471517A18EC9}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -3119,11 +3121,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Loop 1 Z Rank" ID="{FA292590-2725-44A9-8AB6-0EBE2E99BF29}">
+												<AudioFileSource Name="Acchellerate Loop 1 Z Rank 12-27-23" ID="{EBF4785F-6A04-4733-960D-0D3F0AADBFFF}">
 													<Language>SFX</Language>
-													<AudioFile>Acchellerate Loop 1 Z Rank.wav</AudioFile>
+													<AudioFile>Acchellerate Loop 1 Z Rank 12-27-23.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="431964494"/>
+														<MediaID ID="970478707"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -3254,13 +3256,13 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Loop 1 Z Rank" ID="{7AF8668A-80C2-4D8F-815E-BDABF358E364}">
+																				<MusicClip Name="Acchellerate Loop 1 Z Rank 12-27-23" ID="{102363C5-E3AE-4374-8112-1DBE0E19EB58}">
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="64000"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Loop 1 Z Rank" ID="{FA292590-2725-44A9-8AB6-0EBE2E99BF29}"/>
+																					<AudioSourceRef Name="Acchellerate Loop 1 Z Rank 12-27-23" ID="{EBF4785F-6A04-4733-960D-0D3F0AADBFFF}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -4059,11 +4061,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Level 1 Complete D Rank" ID="{5ED0B20E-F7A4-4CB7-ABCE-36B45BEB5D33}">
+												<AudioFileSource Name="Acchellerate Level 1 Complete D Rank 12-27-23" ID="{6C159338-8B3A-490B-B888-26A667E90FC4}">
 													<Language>SFX</Language>
-													<AudioFile>Acchellerate Level 1 Complete D Rank.wav</AudioFile>
+													<AudioFile>Acchellerate Level 1 Complete D Rank 12-27-23.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="989431019"/>
+														<MediaID ID="335257969"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4141,13 +4143,13 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Level 1 Complete D Rank" ID="{E6117EAE-117C-4D0F-BF07-8CB72F26DBA0}">
+																				<MusicClip Name="Acchellerate Level 1 Complete D Rank 12-27-23" ID="{4A7C2035-D8E8-4BF8-A06C-38F53B62BC55}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="6005.21541950113"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="8729.16099773243"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Level 1 Complete D Rank" ID="{5ED0B20E-F7A4-4CB7-ABCE-36B45BEB5D33}"/>
+																					<AudioSourceRef Name="Acchellerate Level 1 Complete D Rank 12-27-23" ID="{6C159338-8B3A-490B-B888-26A667E90FC4}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -4166,7 +4168,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Level 1 Complete C Rank" ID="{AF1541C5-F0A1-4C9B-A337-97106653E963}">
+												<AudioFileSource Name="Acchellerate Level 1 Complete C Rank" ID="{91CFDAF1-D1F8-4091-BB70-96E97814B2D6}">
 													<Language>SFX</Language>
 													<AudioFile>Acchellerate Level 1 Complete C Rank.wav</AudioFile>
 													<MediaIDList>
@@ -4256,13 +4258,13 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Level 1 Complete C Rank" ID="{FE669950-0723-4FB1-875A-50DEBED261B0}">
+																				<MusicClip Name="Acchellerate Level 1 Complete C Rank" ID="{2F9F58DC-4E58-4CF2-8850-ECC4D7FA5BD2}">
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="6005.21541950113"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Level 1 Complete C Rank" ID="{AF1541C5-F0A1-4C9B-A337-97106653E963}"/>
+																					<AudioSourceRef Name="Acchellerate Level 1 Complete C Rank" ID="{91CFDAF1-D1F8-4091-BB70-96E97814B2D6}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -4281,11 +4283,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Level 1 Complete B Rank" ID="{0FA9A177-B06E-498A-9E9D-6B8A42B03EAF}">
+												<AudioFileSource Name="Acchellerate Level 1 Complete B Rank 12-27-23" ID="{89572D10-BFA4-4048-833B-0ABF5F25B227}">
 													<Language>SFX</Language>
-													<AudioFile>Acchellerate Level 1 Complete B Rank.wav</AudioFile>
+													<AudioFile>Acchellerate Level 1 Complete B Rank 12-27-23.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="340410571"/>
+														<MediaID ID="109314837"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4379,13 +4381,13 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Level 1 Complete B Rank" ID="{AAFC8477-B735-4060-AA65-EF09A2F1A8B9}">
+																				<MusicClip Name="Acchellerate Level 1 Complete B Rank 12-27-23" ID="{A4CFE490-91F7-4422-B805-90F50C3B4492}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="6005.21541950113"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="6020.83900226757"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Level 1 Complete B Rank" ID="{0FA9A177-B06E-498A-9E9D-6B8A42B03EAF}"/>
+																					<AudioSourceRef Name="Acchellerate Level 1 Complete B Rank 12-27-23" ID="{89572D10-BFA4-4048-833B-0ABF5F25B227}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -4404,11 +4406,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Level 1 Complete A Rank" ID="{C3ED97B1-4818-44FB-8B1C-AB8A23B14798}">
+												<AudioFileSource Name="Acchellerate Level 1 Complete A Rank 12-27-23" ID="{84B84C7D-6521-4B9C-9591-57F887456F26}">
 													<Language>SFX</Language>
-													<AudioFile>Acchellerate Level 1 Complete A Rank.wav</AudioFile>
+													<AudioFile>Acchellerate Level 1 Complete A Rank 12-27-23.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="91991997"/>
+														<MediaID ID="121464121"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4510,13 +4512,13 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Level 1 Complete A Rank" ID="{5E3DA594-71BA-4F94-A883-81A9C5CE1B99}">
+																				<MusicClip Name="Acchellerate Level 1 Complete A Rank 12-27-23" ID="{152CB8C8-BCED-49DA-B660-3D2C556B9682}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="7057.30158730159"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7062.49433106576"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Level 1 Complete A Rank" ID="{C3ED97B1-4818-44FB-8B1C-AB8A23B14798}"/>
+																					<AudioSourceRef Name="Acchellerate Level 1 Complete A Rank 12-27-23" ID="{84B84C7D-6521-4B9C-9591-57F887456F26}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -4529,17 +4531,24 @@
 											</ObjectLists>
 										</MusicTrack>
 										<MusicTrack Name="Z Rank" ID="{138A7779-EC78-4748-9845-7148FD0C2EA0}" ShortID="17526632">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CBC282E7-8584-4660-B26D-664C4E92C5F6}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Acchellerate Level 1 Complete Z Rank" ID="{BB7F2837-1165-45E6-B8A6-7792E3584E00}">
+												<AudioFileSource Name="Acchellerate Level 1 Complete Z Rank 12-27-23" ID="{852A8D5A-10F6-4130-8641-24A02C52BD57}">
 													<Language>SFX</Language>
-													<AudioFile>Acchellerate Level 1 Complete Z Rank.wav</AudioFile>
+													<AudioFile>Acchellerate Level 1 Complete Z Rank 12-27-23.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="779528907"/>
+														<MediaID ID="398248061"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4649,13 +4658,13 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Acchellerate Level 1 Complete Z Rank" ID="{909A8D5A-F46C-4CA2-A62F-0E00E0D143E6}">
+																				<MusicClip Name="Acchellerate Level 1 Complete Z Rank 12-27-23" ID="{7E7249E2-166B-4387-99AF-3AF9028B8B58}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="6604.17233560091"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="6755.21541950113"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Acchellerate Level 1 Complete Z Rank" ID="{BB7F2837-1165-45E6-B8A6-7792E3584E00}"/>
+																					<AudioSourceRef Name="Acchellerate Level 1 Complete Z Rank 12-27-23" ID="{852A8D5A-10F6-4130-8641-24A02C52BD57}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
